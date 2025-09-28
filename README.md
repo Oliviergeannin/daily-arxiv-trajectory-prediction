@@ -96,14 +96,6 @@ https://你的用户名.github.io/仓库名
 
 ## 自定义配置
 
-### 修改子路径
-
-如果你想修改网站的访问路径，编辑 `scripts/build_site.py` 中的 `BASE_PATH` 变量：
-
-```python
-BASE_PATH = "/你的路径"  # 例如 "/my-papers"
-```
-
 ### 修改网站标题
 
 编辑 `scripts/build_site.py` 中的 `generate_index_html()` 函数来修改网站标题。
