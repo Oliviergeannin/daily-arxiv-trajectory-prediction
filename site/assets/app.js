@@ -75,7 +75,7 @@
   }
 
   /**
-   * @param {{title:string,date:string,summary_html:string,link:string}} it
+   * @param {title:string,date:string,summary_html:string,link:string} it
    */
   function openModal(it){
     modalTitle.textContent = it.title;
@@ -95,5 +95,5 @@
   modal.addEventListener('click', (e)=>{ if(e.target.classList.contains('modal-backdrop')) closeModal(); });
   searchEl.addEventListener('input', sync);
 
-  fetch('assets/data.json').then(r=>r.json()).then(arr=>{ DATA = arr; sync(); });
+  fetch('/vla/assets/data.json').then(r=>r.json()).then(arr=>{ DATA = arr; sync(); });
 })();
