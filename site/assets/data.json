@@ -1,0 +1,2095 @@
+[
+  {
+    "date": "2025-09-25",
+    "title": "RetoVLA: Reusing Register Tokens for Spatial Reasoning in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2509.21243v1",
+    "summary_markdown": "论文提出**RetoVLA**，一种轻量级视觉-语言-动作（VLA）模型，通过**重用Vision Transformer中的Register Tokens增强空间推理能力**，解决传统轻量化方法导致的性能下降问题。核心要点如下：\n###\n1. **核心创新**\n- **Register Tokens再利用**：传统方法将Register Tokens视为“净化器”（吸收ViT中的异常信息后丢弃），本文将其重新定义为**空间上下文提供者**。这些tokens包含场景的全局空间信息（如物体3D布局、工作空间结构）。\n- **空间上下文注入**：设计新模块，将Register Tokens作为Key-Value对直接注入动作专家（Action Expert）的注意力层，使模型同时利用高层语义特征与全局空间信息生成动作。\n- **自适应门控**：引入可学习标量门控（经Sigmoid激活），动态调节Register Tokens的影响强度，避免全局信息干扰需局部精度的任务。\n### 2. **架构设计**\n- **双流信息流**： （1）VLM主干提取语义特征（仅用前一半层以降低计算量）； （2）Register Tokens通过空间聚合器生成场景相关表示，注入动作专家的交叉注意力层。\n- **训练目标**：采用条件流匹配（Conditional Flow Matching），将噪声动作序列逐步优化至真实动作，结合视觉/语言上下文。\n### 3. **关键优势**\n- **效率与性能平衡**：在轻量化VLM（如SmolVLA）基础上，仅增加少量计算开销即显著提升空间推理能力，避免传统方法的信息损失。\n- **任务适应性**：门控机制使模型自动区分需全局理解的任务（如长期规划）与需局部精度的任务。\n### 4. **实验结果**\n- **真实机器人（7-DOF机械臂）**：在7类复杂操作任务（如堆叠积木、关闭抽屉）上，平均成功率从**50.3%提升至67.4%**（+17.1%），其中长视距任务（如摆放多米诺骨牌）提升最高达**28%**。\n- **LIBERO基准测试**：在需工作记忆（+11.5%）和3D空间推理（+9.0%）的任务上表现突出，但局部精确操作任务略有下降。\n- **仿真实验**：在自定义Unity/MuJoCo环境中，平均成功率提升**12%**（62.8% → 74.8%），验证方法的泛化性。\n### 5. **结论与意义**\n- **重新定义信息流**：证明被丢弃的Register Tokens是提升机器人空间智能的关键资源，为轻量化高性能VLA模型提供新范式。\n- **开源承诺**：将发布代码、模型权重及机器人硬件规格以促进复现。 > **局限**：局部精细操作任务存在性能权衡，未来需优化门控机制或融合策略。 > **视频演示**：[https://youtu.be/2CseBR-snZg](https://youtu.be/2CseBR-snZg)",
+    "summary_html": "<p>论文提出<strong>RetoVLA</strong>，一种轻量级视觉-语言-动作（VLA）模型，通过<strong>重用Vision Transformer中的Register Tokens增强空间推理能力</strong>，解决传统轻量化方法导致的性能下降问题。核心要点如下：</p>\n<p>###</p>\n<ol><li><strong>核心创新</strong></li></ol>\n<ul><li><strong>Register Tokens再利用</strong>：传统方法将Register Tokens视为“净化器”（吸收ViT中的异常信息后丢弃），本文将其重新定义为<strong>空间上下文提供者</strong>。这些tokens包含场景的全局空间信息（如物体3D布局、工作空间结构）。</li><li><strong>空间上下文注入</strong>：设计新模块，将Register Tokens作为Key-Value对直接注入动作专家（Action Expert）的注意力层，使模型同时利用高层语义特征与全局空间信息生成动作。</li><li><strong>自适应门控</strong>：引入可学习标量门控（经Sigmoid激活），动态调节Register Tokens的影响强度，避免全局信息干扰需局部精度的任务。</li></ul>\n<h3>2. <strong>架构设计</strong></h3>\n<ul><li><strong>双流信息流</strong>： （1）VLM主干提取语义特征（仅用前一半层以降低计算量）； （2）Register Tokens通过空间聚合器生成场景相关表示，注入动作专家的交叉注意力层。</li><li><strong>训练目标</strong>：采用条件流匹配（Conditional Flow Matching），将噪声动作序列逐步优化至真实动作，结合视觉/语言上下文。</li></ul>\n<h3>3. <strong>关键优势</strong></h3>\n<ul><li><strong>效率与性能平衡</strong>：在轻量化VLM（如SmolVLA）基础上，仅增加少量计算开销即显著提升空间推理能力，避免传统方法的信息损失。</li><li><strong>任务适应性</strong>：门控机制使模型自动区分需全局理解的任务（如长期规划）与需局部精度的任务。</li></ul>\n<h3>4. <strong>实验结果</strong></h3>\n<ul><li><strong>真实机器人（7-DOF机械臂）</strong>：在7类复杂操作任务（如堆叠积木、关闭抽屉）上，平均成功率从<strong>50.3%提升至67.4%</strong>（+17.1%），其中长视距任务（如摆放多米诺骨牌）提升最高达<strong>28%</strong>。</li><li><strong>LIBERO基准测试</strong>：在需工作记忆（+11.5%）和3D空间推理（+9.0%）的任务上表现突出，但局部精确操作任务略有下降。</li><li><strong>仿真实验</strong>：在自定义Unity/MuJoCo环境中，平均成功率提升<strong>12%</strong>（62.8% → 74.8%），验证方法的泛化性。</li></ul>\n<h3>5. <strong>结论与意义</strong></h3>\n<ul><li><strong>重新定义信息流</strong>：证明被丢弃的Register Tokens是提升机器人空间智能的关键资源，为轻量化高性能VLA模型提供新范式。</li><li><strong>开源承诺</strong>：将发布代码、模型权重及机器人硬件规格以促进复现。 > <strong>局限</strong>：局部精细操作任务存在性能权衡，未来需优化门控机制或融合策略。 > <strong>视频演示</strong>：<a href=\\\"https://youtu.be/2CseBR-snZg\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">https://youtu.be/2CseBR-snZg</a></li></ul>"
+  },
+  {
+    "date": "2025-09-25",
+    "title": "Teaching RL Agents to Act Better: VLM as Action Advisor for Online Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2509.21126v1",
+    "summary_markdown": "本文提出**VARL框架**（VLM作为在线强化学习的动作建议器），通过利用视觉语言模型（VLM）生成动作建议提升强化学习（RL）的样本效率。核心要点如下：\n###\n1. **问题背景**\n- 在线RL在复杂任务中样本效率低，需大量交互学习最优策略。\n- 现有方法局限：VLM策略在低级控制表现不足；微调需专家演示；VLM奖励设计依赖模型偏好准确性且计算开销大。\n### 2. **VARL框架设计**\n- **核心创新**：VLM作为**动作建议器**（非奖励设计器），提供启发式动作引导RL探索。\n- **双组件结构**：\n- **VLM动作生成器**：基于当前状态和任务描述生成候选动作（图2），存储至启发式缓冲区。\n- **策略塑形**：将VLM建议动作融入策略更新（公式8），通过门控函数（公式4,7）避免过度拟合次优动作，并在训练后期移除启发式信号（固定步数 \\(N_s\\)）。\n- **优势**：保证RL收敛性，避免奖励函数偏差；显著减少VLM查询量（仅需3次，表1）。\n### 3. **关键优势**\n- **提升样本效率**：在稀疏/稠密奖励任务中，收敛速度均优于SAC及SAC+专家数据（图4），尤其适用于事件驱动型奖励。\n- **低计算开销**：相比奖励塑形方法（如RL-VLM-F、ERL-VLM），VLM调用量减少99%以上（表1）。\n- **任务通用性**：在10种仿真/现实任务验证（图3），支持离散/连续动作空间及视觉/状态输入（Meta-World、AI2-THOR、真实机械臂任务）。\n- **现实可行性**：直接在真实环境（RM-65B机械臂）实现在线RL，无需专家演示或环境建模（目标抓取任务仅需3000次交互）。\n### 4. **实验验证**\n- **效率对比**：VARL在7种环境中样本效率显著优于基线（图4）。\n- **现实部署**：成功学习真实世界推方块（30k–50k次交互）和位置到达任务（3k次交互）。\n- **超参数鲁棒性**：对动作权重系数 \\(\\lambda\\) 和启发式移除步数 \\(N_s\\) 不敏感（图6）。\n### 5. **结论** VARL通过VLM动作建议增强探索多样性，解决在线RL样本效率问题，同时降低计算成本，为无演示真实环境RL提供可行路径。未来将扩展至更复杂任务及视频生成技术融合。",
+    "summary_html": "<p>本文提出<strong>VARL框架</strong>（VLM作为在线强化学习的动作建议器），通过利用视觉语言模型（VLM）生成动作建议提升强化学习（RL）的样本效率。核心要点如下：</p>\n<p>###</p>\n<ol><li><strong>问题背景</strong></li></ol>\n<ul><li>在线RL在复杂任务中样本效率低，需大量交互学习最优策略。</li><li>现有方法局限：VLM策略在低级控制表现不足；微调需专家演示；VLM奖励设计依赖模型偏好准确性且计算开销大。</li></ul>\n<h3>2. <strong>VARL框架设计</strong></h3>\n<ul><li><strong>核心创新</strong>：VLM作为<strong>动作建议器</strong>（非奖励设计器），提供启发式动作引导RL探索。</li><li><strong>双组件结构</strong>：</li><li><strong>VLM动作生成器</strong>：基于当前状态和任务描述生成候选动作（图2），存储至启发式缓冲区。</li><li><strong>策略塑形</strong>：将VLM建议动作融入策略更新（公式8），通过门控函数（公式4,7）避免过度拟合次优动作，并在训练后期移除启发式信号（固定步数 \\(N_s\\)）。</li><li><strong>优势</strong>：保证RL收敛性，避免奖励函数偏差；显著减少VLM查询量（仅需3次，表1）。</li></ul>\n<h3>3. <strong>关键优势</strong></h3>\n<ul><li><strong>提升样本效率</strong>：在稀疏/稠密奖励任务中，收敛速度均优于SAC及SAC+专家数据（图4），尤其适用于事件驱动型奖励。</li><li><strong>低计算开销</strong>：相比奖励塑形方法（如RL-VLM-F、ERL-VLM），VLM调用量减少99%以上（表1）。</li><li><strong>任务通用性</strong>：在10种仿真/现实任务验证（图3），支持离散/连续动作空间及视觉/状态输入（Meta-World、AI2-THOR、真实机械臂任务）。</li><li><strong>现实可行性</strong>：直接在真实环境（RM-65B机械臂）实现在线RL，无需专家演示或环境建模（目标抓取任务仅需3000次交互）。</li></ul>\n<h3>4. <strong>实验验证</strong></h3>\n<ul><li><strong>效率对比</strong>：VARL在7种环境中样本效率显著优于基线（图4）。</li><li><strong>现实部署</strong>：成功学习真实世界推方块（30k–50k次交互）和位置到达任务（3k次交互）。</li><li><strong>超参数鲁棒性</strong>：对动作权重系数 \\(\\lambda\\) 和启发式移除步数 \\(N_s\\) 不敏感（图6）。</li></ul>\n<h3>5. <strong>结论</strong> VARL通过VLM动作建议增强探索多样性，解决在线RL样本效率问题，同时降低计算成本，为无演示真实环境RL提供可行路径。未来将扩展至更复杂任务及视频生成技术融合。</h3>"
+  },
+  {
+    "date": "2025-09-25",
+    "title": "AnywhereVLA: Language-Conditioned Exploration and Mobile Manipulation",
+    "link": "http://arxiv.org/abs/2509.21006v1",
+    "summary_markdown": "论文提出**AnywhereVLA框架**，用于未知室内环境中的语言驱动移动操作机器人系统。核心要点如下：\n1. **模块化架构**：\n- 将自然语言指令解析为任务图，驱动**SLAM（LiDAR+相机）**、**3D语义建图（带置信度）** 和**主动环境探索（AEE）** 模块。\n- 目标检测后，**路径规划模块**选择可达的抓取位姿。\n- **轻量化操作头（SmolVLA）** 基于微调的抓取数据集生成操作动作。\n2. **关键技术**：\n- **语义建图**：融合LiDAR点云与目标检测，通过插值解决稀疏性问题（图3→图4），结合多视角数据估计目标置信度（公式2）。\n- **主动探索**：基于前沿检测算法（算法2），语言指令驱动机器人搜索未知区域直至定位目标物体。\n- **嵌入式部署**：在**Jetson Orin NX**（感知与VLA）和**Intel NUC**（SLAM与控制）上实现全系统实时运行（≥10Hz）。\n3. **实验验证**：\n- 在动态多房间实验室测试50次任务，整体成功率**46%**（VLA操作模块微调后成功率85%）。\n- 表II显示各模块成功率：探索（75%）、导航（90%）、目标检测（85%）、VLA操作（80%）。\n- 5米半径内平均任务时间**133秒**（图7），10米半径内小于10分钟。\n4. **优势与局限**：\n- 结合**经典导航的鲁棒性**与**VLA的语言泛化能力**，开源代码/模型/数据集。\n- 局限：无法处理复杂空间约束（如“桌上的瓶子”）；探索失败率25%（狭窄空间）。\n---\n**结论**：AnywhereVLA通过模块化设计平衡了导航可靠性与语言操作的灵活性，为大规模室内移动操作提供了可行方案。未来需提升空间语义理解能力。",
+    "summary_html": "<p>论文提出<strong>AnywhereVLA框架</strong>，用于未知室内环境中的语言驱动移动操作机器人系统。核心要点如下：</p>\n<ol><li><strong>模块化架构</strong>：</li></ol>\n<ul><li>将自然语言指令解析为任务图，驱动<strong>SLAM（LiDAR+相机）</strong>、<strong>3D语义建图（带置信度）</strong> 和<strong>主动环境探索（AEE）</strong> 模块。</li><li>目标检测后，<strong>路径规划模块</strong>选择可达的抓取位姿。</li><li><strong>轻量化操作头（SmolVLA）</strong> 基于微调的抓取数据集生成操作动作。</li></ul>\n<ol><li><strong>关键技术</strong>：</li></ol>\n<ul><li><strong>语义建图</strong>：融合LiDAR点云与目标检测，通过插值解决稀疏性问题（图3→图4），结合多视角数据估计目标置信度（公式2）。</li><li><strong>主动探索</strong>：基于前沿检测算法（算法2），语言指令驱动机器人搜索未知区域直至定位目标物体。</li><li><strong>嵌入式部署</strong>：在<strong>Jetson Orin NX</strong>（感知与VLA）和<strong>Intel NUC</strong>（SLAM与控制）上实现全系统实时运行（≥10Hz）。</li></ul>\n<ol><li><strong>实验验证</strong>：</li></ol>\n<ul><li>在动态多房间实验室测试50次任务，整体成功率<strong>46%</strong>（VLA操作模块微调后成功率85%）。</li><li>表II显示各模块成功率：探索（75%）、导航（90%）、目标检测（85%）、VLA操作（80%）。</li><li>5米半径内平均任务时间<strong>133秒</strong>（图7），10米半径内小于10分钟。</li></ul>\n<ol><li><strong>优势与局限</strong>：</li></ol>\n<ul><li>结合<strong>经典导航的鲁棒性</strong>与<strong>VLA的语言泛化能力</strong>，开源代码/模型/数据集。</li><li>局限：无法处理复杂空间约束（如“桌上的瓶子”）；探索失败率25%（狭窄空间）。</li></ul>\n<hr/>\n<p><strong>结论</strong>：AnywhereVLA通过模块化设计平衡了导航可靠性与语言操作的灵活性，为大规模室内移动操作提供了可行方案。未来需提升空间语义理解能力。</p>"
+  },
+  {
+    "date": "2025-09-25",
+    "title": "ImaginationPolicy: Towards Generalizable, Precise and Reliable End-to-End Policy for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2509.20841v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-24",
+    "title": "Discrete Diffusion for Reflective Vision-Language-Action Models in Autonomous Driving",
+    "link": "http://arxiv.org/abs/2509.20109v1",
+    "summary_markdown": "论文提出了一种名为ReflectDrive的新型端到端自动驾驶框架，其核心创新点包括：\n1. **离散扩散模型的应用**\n- 首次将离散扩散模型引入自动驾驶轨迹生成，通过将二维驾驶空间离散化为动作码本，将连续轨迹表示为离散token序列。\n- 利用预训练扩散语言模型（DLMs）进行轨迹规划微调，支持并行解码和双向特征融合。\n2. **安全反射机制**\n- **目标条件生成**：首先生成多模态候选轨迹（通过目标点采样和NMS过滤），再基于全局评分器选择最优轨迹。\n- **安全引导再生**：对不安全轨迹点进行局部搜索，找到可行解作为\"安全锚点\"，通过扩散修复（inpainting）重构轨迹，无需梯度计算。\n- 评分函数体系：包含全局安全评分（$S_{\\text{global}}$）、局部安全检测（$S_{\\text{safe}}$）和轨迹质量评估（$S_{\\text{local}}$），确保硬性安全约束（如碰撞避免、可行驶区域合规）。\n3. **实验验证**\n- 在NAVSIM真实驾驶基准测试中，ReflectDrive的PDMS分数达91.1（仅相机输入），显著优于基线模型（+6.3分）。\n- 安全指标突出：可行驶区域合规率（DAC）达99.3%，接近人类水平（100%）；配合精确环境信息时，综合性能达人类驾驶的94.7%。 该方法通过离散token空间的高效搜索与修复机制，解决了模仿学习模型难以保障物理安全的问题，为可验证的端到端自动驾驶提供了新范式。",
+    "summary_html": "<p>论文提出了一种名为ReflectDrive的新型端到端自动驾驶框架，其核心创新点包括：</p>\n<ol><li><strong>离散扩散模型的应用</strong></li></ol>\n<ul><li>首次将离散扩散模型引入自动驾驶轨迹生成，通过将二维驾驶空间离散化为动作码本，将连续轨迹表示为离散token序列。</li><li>利用预训练扩散语言模型（DLMs）进行轨迹规划微调，支持并行解码和双向特征融合。</li></ul>\n<ol><li><strong>安全反射机制</strong></li></ol>\n<ul><li><strong>目标条件生成</strong>：首先生成多模态候选轨迹（通过目标点采样和NMS过滤），再基于全局评分器选择最优轨迹。</li><li><strong>安全引导再生</strong>：对不安全轨迹点进行局部搜索，找到可行解作为\"安全锚点\"，通过扩散修复（inpainting）重构轨迹，无需梯度计算。</li><li>评分函数体系：包含全局安全评分（$S_{\\text{global}}$）、局部安全检测（$S_{\\text{safe}}$）和轨迹质量评估（$S_{\\text{local}}$），确保硬性安全约束（如碰撞避免、可行驶区域合规）。</li></ul>\n<ol><li><strong>实验验证</strong></li></ol>\n<ul><li>在NAVSIM真实驾驶基准测试中，ReflectDrive的PDMS分数达91.1（仅相机输入），显著优于基线模型（+6.3分）。</li><li>安全指标突出：可行驶区域合规率（DAC）达99.3%，接近人类水平（100%）；配合精确环境信息时，综合性能达人类驾驶的94.7%。 该方法通过离散token空间的高效搜索与修复机制，解决了模仿学习模型难以保障物理安全的问题，为可验证的端到端自动驾驶提供了新范式。</li></ul>"
+  },
+  {
+    "date": "2025-09-24",
+    "title": "FreezeVLA: Action-Freezing Attacks against Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2509.19870v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-24",
+    "title": "Beyond Human Demonstrations: Diffusion-Based Reinforcement Learning to Generate Data for VLA Training",
+    "link": "http://arxiv.org/abs/2509.19752v1",
+    "summary_markdown": "论文提出一种基于扩散强化学习的数据生成方法，用于替代人类演示数据训练视觉-语言-动作（VLA）模型。核心要点如下：\n1. **问题背景** VLA模型依赖大规模人类演示数据，但人工收集成本高且数据存在高方差和多模态问题。传统强化学习（RL）在长视野稀疏奖励任务中生成的数据质量低。\n2. **方法创新**\n- **扩散策略优化**：采用扩散模型作为策略表示，通过迭代去噪过程生成平滑、低方差动作序列，结合PPO算法进行在线微调。\n- **两阶段训练**：\n- **阶段1**：多模态行为克隆（BC）预热，利用少量人类数据初始化策略。\n- **阶段2**：扩散PPO优化，通过稳定化技术（DDIM采样器、余弦退火学习率、多样化经验回放）提升训练效率。\n3. **关键优势**\n- **高质量数据**：扩散RL生成的数据比人类演示更高效（轨迹长度缩短23%）、更平滑（运动jerk值降低38%）、更一致（动作方差最低）。\n- **性能提升**：在LIBERO基准（130个任务）上，仅用扩散RL数据训练的VLA模型达到**81.9%**平均成功率，超越人类数据（+5.3%）和高斯RL数据（+12.6%）。\n- **泛化能力**：人类数据与扩散RL数据混合训练，在OOD任务上成功率达**5.2%**（单一数据源最高仅2.06%）。\n4. **实验验证**\n- 架构设计：ResNet+U-Net优于ViT+MLP，防止策略崩溃。\n- 采样效率：DDIM（5步）比DDPM快10倍且性能相当。\n- 数据多样性：并行环境收集数据避免模式坍塌。\n5. **结论** 扩散RL可生成高质量、低方差数据，显著提升VLA模型性能，为减少人类数据依赖提供有效解决方案。",
+    "summary_html": "<p>论文提出一种基于扩散强化学习的数据生成方法，用于替代人类演示数据训练视觉-语言-动作（VLA）模型。核心要点如下：</p>\n<ol><li><strong>问题背景</strong> VLA模型依赖大规模人类演示数据，但人工收集成本高且数据存在高方差和多模态问题。传统强化学习（RL）在长视野稀疏奖励任务中生成的数据质量低。</li><li><strong>方法创新</strong></li></ol>\n<ul><li><strong>扩散策略优化</strong>：采用扩散模型作为策略表示，通过迭代去噪过程生成平滑、低方差动作序列，结合PPO算法进行在线微调。</li><li><strong>两阶段训练</strong>：</li><li><strong>阶段1</strong>：多模态行为克隆（BC）预热，利用少量人类数据初始化策略。</li><li><strong>阶段2</strong>：扩散PPO优化，通过稳定化技术（DDIM采样器、余弦退火学习率、多样化经验回放）提升训练效率。</li></ul>\n<ol><li><strong>关键优势</strong></li></ol>\n<ul><li><strong>高质量数据</strong>：扩散RL生成的数据比人类演示更高效（轨迹长度缩短23%）、更平滑（运动jerk值降低38%）、更一致（动作方差最低）。</li><li><strong>性能提升</strong>：在LIBERO基准（130个任务）上，仅用扩散RL数据训练的VLA模型达到<strong>81.9%</strong>平均成功率，超越人类数据（+5.3%）和高斯RL数据（+12.6%）。</li><li><strong>泛化能力</strong>：人类数据与扩散RL数据混合训练，在OOD任务上成功率达<strong>5.2%</strong>（单一数据源最高仅2.06%）。</li></ul>\n<ol><li><strong>实验验证</strong></li></ol>\n<ul><li>架构设计：ResNet+U-Net优于ViT+MLP，防止策略崩溃。</li><li>采样效率：DDIM（5步）比DDPM快10倍且性能相当。</li><li>数据多样性：并行环境收集数据避免模式坍塌。</li></ul>\n<ol><li><strong>结论</strong> 扩散RL可生成高质量、低方差数据，显著提升VLA模型性能，为减少人类数据依赖提供有效解决方案。</li></ol>"
+  },
+  {
+    "date": "2025-09-23",
+    "title": "Agentic Scene Policies: Unifying Space, Semantics, and Affordances for Robot Action",
+    "link": "http://arxiv.org/abs/2509.19571v1",
+    "summary_markdown": "论文提出了一种名为Agentic Scene Policies (ASP) 的机器人策略框架，旨在解决开放词汇自然语言指令的执行问题。其核心创新点包括：\n1. **框架设计** ASP 通过结构化场景表示（ObjectMap）统一处理空间、语义和功能特性（affordances）。该框架包含：\n- **对象地图**：整合物体几何、语义特征（如CLIP嵌入）和交互功能（如把手部位及对应技能）\n- **LLM智能体**：将用户指令分解为工具调用序列\n- **工具系统**：提供物体检索、空间推理和交互功能（如抓取/推动特定功能部位）\n2. **关键技术突破**\n- **零样本交互**：利用基础模型（Gemini）检测物体功能部位（如按钮/把手），并映射到预定义技能（如`tip_push`按压）\n- **移动扩展**：支持房间级任务，结合导航（基于功能朝向规划路径）与操作，通过多视角建图实现跨场景物体重定位\n- **模块化验证**：在15项桌面操作任务中，ASP 成功率显著超过端到端视觉语言动作模型（VLA），尤其在需精细操作的任务（如拔除图钉/开抽屉）优势达40%以上\n3. **实验验证**\n- 对比VLA基线（如π₀-FAST）显示：ASP在复杂指令理解（空间关系/功能交互）和零样本泛化性上更具优势\n- 消融实验证明功能检测是关键：移除该模块后任务成功率平均下降21%\n- 移动场景测试验证了框架可扩展性（如\"将鸡蛋放入锅\"等需导航+操作的任务）\n4. **局限与展望** 当前技能库限于基础操作（抓取/推拉），未来需结合学习策略处理长时序任务（如折叠衣物）。场景表示的动态更新也是重要改进方向。 ASP 的核心价值在于通过显式场景表示弥合语言指令与机器人动作的鸿沟，为开放场景任务提供可解释且可扩展的解决方案。",
+    "summary_html": "<p>论文提出了一种名为Agentic Scene Policies (ASP) 的机器人策略框架，旨在解决开放词汇自然语言指令的执行问题。其核心创新点包括：</p>\n<ol><li><strong>框架设计</strong> ASP 通过结构化场景表示（ObjectMap）统一处理空间、语义和功能特性（affordances）。该框架包含：</li></ol>\n<ul><li><strong>对象地图</strong>：整合物体几何、语义特征（如CLIP嵌入）和交互功能（如把手部位及对应技能）</li><li><strong>LLM智能体</strong>：将用户指令分解为工具调用序列</li><li><strong>工具系统</strong>：提供物体检索、空间推理和交互功能（如抓取/推动特定功能部位）</li></ul>\n<ol><li><strong>关键技术突破</strong></li></ol>\n<ul><li><strong>零样本交互</strong>：利用基础模型（Gemini）检测物体功能部位（如按钮/把手），并映射到预定义技能（如<code>tip_push</code>按压）</li><li><strong>移动扩展</strong>：支持房间级任务，结合导航（基于功能朝向规划路径）与操作，通过多视角建图实现跨场景物体重定位</li><li><strong>模块化验证</strong>：在15项桌面操作任务中，ASP 成功率显著超过端到端视觉语言动作模型（VLA），尤其在需精细操作的任务（如拔除图钉/开抽屉）优势达40%以上</li></ul>\n<ol><li><strong>实验验证</strong></li></ol>\n<ul><li>对比VLA基线（如π₀-FAST）显示：ASP在复杂指令理解（空间关系/功能交互）和零样本泛化性上更具优势</li><li>消融实验证明功能检测是关键：移除该模块后任务成功率平均下降21%</li><li>移动场景测试验证了框架可扩展性（如\"将鸡蛋放入锅\"等需导航+操作的任务）</li></ul>\n<ol><li><strong>局限与展望</strong> 当前技能库限于基础操作（抓取/推拉），未来需结合学习策略处理长时序任务（如折叠衣物）。场景表示的动态更新也是重要改进方向。 ASP 的核心价值在于通过显式场景表示弥合语言指令与机器人动作的鸿沟，为开放场景任务提供可解释且可扩展的解决方案。</li></ol>"
+  },
+  {
+    "date": "2025-09-23",
+    "title": "OmniVLA: An Omni-Modal Vision-Language-Action Model for Robot Navigation",
+    "link": "http://arxiv.org/abs/2509.19480v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-23",
+    "title": "Pure Vision Language Action (VLA) Models: A Comprehensive Survey",
+    "link": "http://arxiv.org/abs/2509.19012v2",
+    "summary_markdown": "这篇综述论文《Pure Vision Language Action (VLA) Models: A Comprehensive Survey》系统性地总结了视觉语言动作模型的研究进展，要点如下：\n1. **研究背景与目标**\n- VLA模型将传统机器人控制范式转变为通用化智能体，整合视觉感知、语言理解和动作生成，实现复杂环境中的主动决策。\n- 论文提出首个针对纯VLA方法的分类框架，填补现有研究空白。\n2. **核心分类框架** VLA方法分为四大范式：\n- **自回归模型**：基于Transformer架构，通过序列建模生成动作（如Gato、RT系列）。优势在于跨任务泛化能力，但存在误差累积和计算延迟问题。\n- **扩散模型**：将决策建模为条件生成过程（如Diffusion Policy），支持多模态目标条件，但需解决推理效率瓶颈。\n- **强化微调模型**：结合RL优化策略，提升策略稳定性和样本效率。\n- **混合架构与专业模型**：针对特定场景（如手术机器人、无人机）设计多模态融合方案。\n3. **关键资源体系**\n- **数据集**：Open X-Embodiment（跨21机构527技能）、BridgeData等标准化数据集推动模型训练。\n- **仿真平台**：THOR、Habitat、CARLA等提供可扩展的虚拟测试环境。\n- **硬件平台**：涵盖机械臂、四足机器人、人形机器人等多形态载体。\n4. **挑战与未来方向**\n- **核心挑战**：机器人数据稀缺性、架构异构性、实时推理成本、人机伪交互、评估体系局限。\n- **突破方向**：世界模型与跨模态统一、因果推理突破、虚实数据融合、可信生态系统构建。\n5. **贡献总结**\n- 建立首个VLA方法分类学，系统分析300+研究成果。\n- 阐明各范式的技术演进路径（如自回归模型从基础token化→大规模实机训练→语义推理集成）。\n- 指出开放性难题：长时程任务稳定性、安全部署机制、多模态对齐鲁棒性。 该综述为通用具身智能的发展提供了方法论基础和技术路线图，强调需在数据生成、计算效率和安全验证三方面取得突破。",
+    "summary_html": "<p>这篇综述论文《Pure Vision Language Action (VLA) Models: A Comprehensive Survey》系统性地总结了视觉语言动作模型的研究进展，要点如下：</p>\n<ol><li><strong>研究背景与目标</strong></li></ol>\n<ul><li>VLA模型将传统机器人控制范式转变为通用化智能体，整合视觉感知、语言理解和动作生成，实现复杂环境中的主动决策。</li><li>论文提出首个针对纯VLA方法的分类框架，填补现有研究空白。</li></ul>\n<ol><li><strong>核心分类框架</strong> VLA方法分为四大范式：</li></ol>\n<ul><li><strong>自回归模型</strong>：基于Transformer架构，通过序列建模生成动作（如Gato、RT系列）。优势在于跨任务泛化能力，但存在误差累积和计算延迟问题。</li><li><strong>扩散模型</strong>：将决策建模为条件生成过程（如Diffusion Policy），支持多模态目标条件，但需解决推理效率瓶颈。</li><li><strong>强化微调模型</strong>：结合RL优化策略，提升策略稳定性和样本效率。</li><li><strong>混合架构与专业模型</strong>：针对特定场景（如手术机器人、无人机）设计多模态融合方案。</li></ul>\n<ol><li><strong>关键资源体系</strong></li></ol>\n<ul><li><strong>数据集</strong>：Open X-Embodiment（跨21机构527技能）、BridgeData等标准化数据集推动模型训练。</li><li><strong>仿真平台</strong>：THOR、Habitat、CARLA等提供可扩展的虚拟测试环境。</li><li><strong>硬件平台</strong>：涵盖机械臂、四足机器人、人形机器人等多形态载体。</li></ul>\n<ol><li><strong>挑战与未来方向</strong></li></ol>\n<ul><li><strong>核心挑战</strong>：机器人数据稀缺性、架构异构性、实时推理成本、人机伪交互、评估体系局限。</li><li><strong>突破方向</strong>：世界模型与跨模态统一、因果推理突破、虚实数据融合、可信生态系统构建。</li></ul>\n<ol><li><strong>贡献总结</strong></li></ol>\n<ul><li>建立首个VLA方法分类学，系统分析300+研究成果。</li><li>阐明各范式的技术演进路径（如自回归模型从基础token化→大规模实机训练→语义推理集成）。</li><li>指出开放性难题：长时程任务稳定性、安全部署机制、多模态对齐鲁棒性。 该综述为通用具身智能的发展提供了方法论基础和技术路线图，强调需在数据生成、计算效率和安全验证三方面取得突破。</li></ul>"
+  },
+  {
+    "date": "2025-09-23",
+    "title": "Eva-VLA: Evaluating Vision-Language-Action Models' Robustness Under Real-World Physical Variations",
+    "link": "http://arxiv.org/abs/2509.18953v1",
+    "summary_markdown": "该论文提出Eva-VLA框架，首次系统评估视觉-语言-动作（VLA）模型在真实物理变化下的鲁棒性。核心贡献如下：\n1. **问题定义**：针对VLA模型在真实部署中面临的物理变化脆弱性问题（如物体位姿变化、光照干扰、对抗性补丁），提出首个统一评估框架。\n2. **方法创新**：\n- 将物理变化分解为三类连续参数化问题： * 物体3D变换（旋转角α/β/γ） * 光照变化（位置x/y、半径σ、强度I） * 对抗补丁位置（Δx/Δy）\n- 采用黑盒优化算法CMA-ES搜索最坏场景，避免真实数据采集成本\n3. **实验结果**：\n- 在OpenVLA等先进模型上验证，所有物理变化均导致>60%失败率\n- 物体3D变换对长时任务造成最高97.8%失败率\n- 光照变化和对抗补丁分别导致62.6%和71.2%平均失败率\n- 物理实验证实44.6%攻击成功率\n4. **揭示问题**：实验暴露VLA模型在实验室环境与真实部署间的严重差距，证明当前模型对物理变化极度敏感，尤其长时任务存在级联失效风险。 该框架为提升VLA模型鲁棒性提供了评估基准和优化路径。",
+    "summary_html": "<p>该论文提出Eva-VLA框架，首次系统评估视觉-语言-动作（VLA）模型在真实物理变化下的鲁棒性。核心贡献如下：</p>\n<ol><li><strong>问题定义</strong>：针对VLA模型在真实部署中面临的物理变化脆弱性问题（如物体位姿变化、光照干扰、对抗性补丁），提出首个统一评估框架。</li><li><strong>方法创新</strong>：</li></ol>\n<ul><li>将物理变化分解为三类连续参数化问题： * 物体3D变换（旋转角α/β/γ） * 光照变化（位置x/y、半径σ、强度I） * 对抗补丁位置（Δx/Δy）</li><li>采用黑盒优化算法CMA-ES搜索最坏场景，避免真实数据采集成本</li></ul>\n<ol><li><strong>实验结果</strong>：</li></ol>\n<ul><li>在OpenVLA等先进模型上验证，所有物理变化均导致>60%失败率</li><li>物体3D变换对长时任务造成最高97.8%失败率</li><li>光照变化和对抗补丁分别导致62.6%和71.2%平均失败率</li><li>物理实验证实44.6%攻击成功率</li></ul>\n<ol><li><strong>揭示问题</strong>：实验暴露VLA模型在实验室环境与真实部署间的严重差距，证明当前模型对物理变化极度敏感，尤其长时任务存在级联失效风险。 该框架为提升VLA模型鲁棒性提供了评估基准和优化路径。</li></ol>"
+  },
+  {
+    "date": "2025-09-23",
+    "title": "Bi-VLA: Bilateral Control-Based Imitation Learning via Vision-Language Fusion for Action Generation",
+    "link": "http://arxiv.org/abs/2509.18865v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-22",
+    "title": "Latent Action Pretraining Through World Modeling",
+    "link": "http://arxiv.org/abs/2509.18428v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-22",
+    "title": "PEEK: Guiding and Minimal Image Representations for Zero-Shot Generalization of Robot Manipulation Policies",
+    "link": "http://arxiv.org/abs/2509.18282v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-22",
+    "title": "Prepare Before You Act: Learning From Humans to Rearrange Initial States",
+    "link": "http://arxiv.org/abs/2509.18043v1",
+    "summary_markdown": "这篇论文提出了一种名为ReSET的算法，旨在通过模仿人类行为改善机器人模仿学习（IL）在环境状态超出训练分布时的鲁棒性。核心要点如下：\n###\n1. **问题背景**\n- IL策略在目标物体位置异常或被遮挡时容易失败，直接收集大量数据解决该问题效率低下。\n- 人类在面临非常规初始状态时，会先**重构环境**（如移开障碍物、调整物体位姿）简化任务，再进行操作。\n### 2. **ReSET算法核心思想**\n- **分阶段策略**：\n- **简化策略（Reduction Policy）**：将复杂初始状态（如遮挡场景）转化为**锚状态（Anchor States）**（如移除障碍物后的状态），使环境分布更集中（降低方差）。\n- **任务策略（Task Policy）**：在锚状态上执行原任务（如抓取杯子）。\n- **理论支撑**：锚状态满足 $\\text{tr}(\\Sigma_a) < \\text{tr}(\\Sigma_0)$（状态协方差矩阵迹更小），可降低泛化误差上界（公式6），提升数据效率。\n### 3. **关键技术组件**\n- **评分网络**： 基于人类视频训练，评估当前状态是否适合直接执行任务策略（低分表示适合执行）。\n- **点流生成网络**： 从人类视频中提取物体运动轨迹（点流 $\\mathcal{T}$），预测如何重构环境（如移开障碍物的路径）。\n- **简化策略**： 将点流映射为机器人可执行的动作基元（如抓取、推动、旋转）。\n### 4. **实验验证**\n- **任务场景**：抓取遮挡物体、旋转工具、多任务操作等（图4）。\n- **结果**：\n- 在分布外状态上，ReSET成功率（平均85%）显著高于扩散策略（65%）、Dynamics-DP等基线（图5）。\n- 仅需 **20分钟人类视频 + 20分钟机器人通用操作数据**，达到扩散策略 **70次专家演示** 的效果，数据效率更高。\n### 5. **贡献总结**\n- **理论**：证明分阶段策略（环境重构→任务执行）可降低泛化误差。\n- **方法**：结合人类视频（动作无关）与机器人数据（任务无关），实现环境重构决策、运动预测与动作生成。\n- **效果**：在少量数据下提升任务鲁棒性，适用于长视野、多任务场景。 > 论文链接：[https://reset2025paper.github.io](https://reset2025paper.github.io)",
+    "summary_html": "<p>这篇论文提出了一种名为ReSET的算法，旨在通过模仿人类行为改善机器人模仿学习（IL）在环境状态超出训练分布时的鲁棒性。核心要点如下：</p>\n<p>###</p>\n<ol><li><strong>问题背景</strong></li></ol>\n<ul><li>IL策略在目标物体位置异常或被遮挡时容易失败，直接收集大量数据解决该问题效率低下。</li><li>人类在面临非常规初始状态时，会先<strong>重构环境</strong>（如移开障碍物、调整物体位姿）简化任务，再进行操作。</li></ul>\n<h3>2. <strong>ReSET算法核心思想</strong></h3>\n<ul><li><strong>分阶段策略</strong>：</li><li><strong>简化策略（Reduction Policy）</strong>：将复杂初始状态（如遮挡场景）转化为<strong>锚状态（Anchor States）</strong>（如移除障碍物后的状态），使环境分布更集中（降低方差）。</li><li><strong>任务策略（Task Policy）</strong>：在锚状态上执行原任务（如抓取杯子）。</li><li><strong>理论支撑</strong>：锚状态满足 $\\text{tr}(\\Sigma_a) < \\text{tr}(\\Sigma_0)$（状态协方差矩阵迹更小），可降低泛化误差上界（公式6），提升数据效率。</li></ul>\n<h3>3. <strong>关键技术组件</strong></h3>\n<ul><li><strong>评分网络</strong>： 基于人类视频训练，评估当前状态是否适合直接执行任务策略（低分表示适合执行）。</li><li><strong>点流生成网络</strong>： 从人类视频中提取物体运动轨迹（点流 $\\mathcal{T}$），预测如何重构环境（如移开障碍物的路径）。</li><li><strong>简化策略</strong>： 将点流映射为机器人可执行的动作基元（如抓取、推动、旋转）。</li></ul>\n<h3>4. <strong>实验验证</strong></h3>\n<ul><li><strong>任务场景</strong>：抓取遮挡物体、旋转工具、多任务操作等（图4）。</li><li><strong>结果</strong>：</li><li>在分布外状态上，ReSET成功率（平均85%）显著高于扩散策略（65%）、Dynamics-DP等基线（图5）。</li><li>仅需 <strong>20分钟人类视频 + 20分钟机器人通用操作数据</strong>，达到扩散策略 <strong>70次专家演示</strong> 的效果，数据效率更高。</li></ul>\n<h3>5. <strong>贡献总结</strong></h3>\n<ul><li><strong>理论</strong>：证明分阶段策略（环境重构→任务执行）可降低泛化误差。</li><li><strong>方法</strong>：结合人类视频（动作无关）与机器人数据（任务无关），实现环境重构决策、运动预测与动作生成。</li><li><strong>效果</strong>：在少量数据下提升任务鲁棒性，适用于长视野、多任务场景。 > 论文链接：<a href=\\\"https://reset2025paper.github.io\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">https://reset2025paper.github.io</a></li></ul>"
+  },
+  {
+    "date": "2025-09-20",
+    "title": "ProtoVQA: An Adaptable Prototypical Framework for Explainable Fine-Grained Visual Question Answering",
+    "link": "http://arxiv.org/abs/2509.16680v1",
+    "summary_markdown": "论文提出**ProtoVQA框架**，用于可解释的细粒度视觉问答（VQA），核心要点如下：\n1. **研究动机**\n- VQA在医疗诊断、自动驾驶等安全关键领域应用时，需模型提供**可验证的解释**，而现有方法（如注意力可视化）难以忠实反映决策过程。\n- 原型学习在视觉任务中可增强可解释性，但多模态场景下存在**视觉-语言语义鸿沟**、**几何变化建模不足**等问题。\n2. **核心框架ProtoVQA**\n- **问题感知原型**：将问题令牌重塑为 \\(m \\times k \\times D\\) 的3D张量（\\(m\\) 个原型，每个含 \\(k\\) 个子块），作为语义锚点连接答案与图像区域。\n- **空间约束贪婪匹配**：通过迭代选择相似度最高的图像块-子块对（公式2-3），并施加空间连续性约束（半径 \\(r=3\\)），确保证据区域语义相关且空间连贯。\n- **双模态答案处理**：\n- **Type 1（视觉定位）**：直接投影坐标至特征空间。\n- **Type 2（描述性QA）**：冻结的权重共享投影器处理文本答案，避免过拟合。\n- **共享骨干网络**：统一原型框架同时支持VQA和定位任务。\n3. **评估指标VLAS**\n- 提出**视觉-语言对齐分数（VLAS）**，衡量模型关注区域与真实证据的重叠度（IoU>0.5），优于传统像素级指标，更符合人类解释评估需求（公式5）。\n4. **实验结果**\n- **数据集**：Visual7W（32.8万QA对，47K图像）。\n- **性能**：\n- 准确率70.23%（表1），与ViT骨干的基线模型（如Bi-CMA 70.53%）相当。\n- **VLAS@1达0.4103**，较最佳基线提升66.4%；VLAS@3提升119.6%（表2），证明解释忠实性显著领先。\n- **定性可视化**：匹配的局部区域（图2）与真实答案框高度对齐，展示细粒度推理能力（如物体部件、空间关系）。\n5. **意义与局限**\n- 首次将原型学习扩展至多模态VQA，提供**透明推理路径**。\n- 局限：未探索生成式VQA；领域迁移（如医疗）需进一步适配。 **总结**：ProtoVQA通过问题驱动原型匹配和空间约束机制，在保持竞争性准确率的同时，显著提升解释可信度，推动可信VQA系统发展。",
+    "summary_html": "<p>论文提出<strong>ProtoVQA框架</strong>，用于可解释的细粒度视觉问答（VQA），核心要点如下：</p>\n<ol><li><strong>研究动机</strong></li></ol>\n<ul><li>VQA在医疗诊断、自动驾驶等安全关键领域应用时，需模型提供<strong>可验证的解释</strong>，而现有方法（如注意力可视化）难以忠实反映决策过程。</li><li>原型学习在视觉任务中可增强可解释性，但多模态场景下存在<strong>视觉-语言语义鸿沟</strong>、<strong>几何变化建模不足</strong>等问题。</li></ul>\n<ol><li><strong>核心框架ProtoVQA</strong></li></ol>\n<ul><li><strong>问题感知原型</strong>：将问题令牌重塑为 \\(m \\times k \\times D\\) 的3D张量（\\(m\\) 个原型，每个含 \\(k\\) 个子块），作为语义锚点连接答案与图像区域。</li><li><strong>空间约束贪婪匹配</strong>：通过迭代选择相似度最高的图像块-子块对（公式2-3），并施加空间连续性约束（半径 \\(r=3\\)），确保证据区域语义相关且空间连贯。</li><li><strong>双模态答案处理</strong>：</li><li><strong>Type 1（视觉定位）</strong>：直接投影坐标至特征空间。</li><li><strong>Type 2（描述性QA）</strong>：冻结的权重共享投影器处理文本答案，避免过拟合。</li><li><strong>共享骨干网络</strong>：统一原型框架同时支持VQA和定位任务。</li></ul>\n<ol><li><strong>评估指标VLAS</strong></li></ol>\n<ul><li>提出<strong>视觉-语言对齐分数（VLAS）</strong>，衡量模型关注区域与真实证据的重叠度（IoU>0.5），优于传统像素级指标，更符合人类解释评估需求（公式5）。</li></ul>\n<ol><li><strong>实验结果</strong></li></ol>\n<ul><li><strong>数据集</strong>：Visual7W（32.8万QA对，47K图像）。</li><li><strong>性能</strong>：</li><li>准确率70.23%（表1），与ViT骨干的基线模型（如Bi-CMA 70.53%）相当。</li><li><strong>VLAS@1达0.4103</strong>，较最佳基线提升66.4%；VLAS@3提升119.6%（表2），证明解释忠实性显著领先。</li><li><strong>定性可视化</strong>：匹配的局部区域（图2）与真实答案框高度对齐，展示细粒度推理能力（如物体部件、空间关系）。</li></ul>\n<ol><li><strong>意义与局限</strong></li></ol>\n<ul><li>首次将原型学习扩展至多模态VQA，提供<strong>透明推理路径</strong>。</li><li>局限：未探索生成式VQA；领域迁移（如医疗）需进一步适配。 <strong>总结</strong>：ProtoVQA通过问题驱动原型匹配和空间约束机制，在保持竞争性准确率的同时，显著提升解释可信度，推动可信VQA系统发展。</li></ul>"
+  },
+  {
+    "date": "2025-09-19",
+    "title": "Randomized Smoothing Meets Vision-Language Models",
+    "link": "http://arxiv.org/abs/2509.16088v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-19",
+    "title": "CoReVLA: A Dual-Stage End-to-End Autonomous Driving Framework for Long-Tail Scenarios via Collect-and-Refine",
+    "link": "http://arxiv.org/abs/2509.15968v1",
+    "summary_markdown": "论文提出**CoReVLA框架**，旨在提升自动驾驶在**长尾场景**（罕见但高危场景）中的性能。核心要点如下：\n1. **问题背景**\n- 现有自动驾驶系统在长尾场景（如突发事故、极端天气）中表现不佳，导致安全事故。\n- 视觉语言动作模型（VLA）虽具推理能力，但受限于**高质量长尾数据稀缺**和**稀疏数据下训练效率低**。\n2. **解决方案：双阶段框架**\n- **阶段1（Collect）**：\n- 混合开源驾驶QA数据集（LingoQA、BDD、HAD）对Qwen2.5-VL-7B模型进行监督微调（SFT），构建基础场景理解能力。\n- 在CAVE仿真平台进行人机协同测试，收集人类接管失败的场景数据（含视觉输入、接管行为及注意力）。\n- **阶段2（Refine）**：\n- 利用接管数据，通过**直接偏好优化（DPO）** 对齐人类行为偏好：将模型失败行为（次优）与人类接管行为（最优）对比，避免手动设计奖励函数导致的奖励黑客问题。\n3. **实验结果**\n- **开环QA评估**：在LingoQA/BDD/HAD数据集上，BLEU和ROUGE分数显著优于基线（如Llava、Impromptu）。\n- **闭环驾驶测试**（Bench2Drive基准）：\n- 驾驶评分（DS）达 **72.18**，成功率（SR）达 **50%**，较SOTA方法提升 **7.96 DS** 和 **15% SR**。\n- 案例验证：模型能通过接管数据持续优化行为，避免相似场景的重复失败（如雨天避让故障车辆、行人突发横穿）。\n4. **贡献与资源**\n- 提出首个结合**CAVE平台接管数据收集**与**DPO行为优化**的端到端框架。\n- 开源代码、数据集及场景配置：[https://github.com/FanGShiYuu/CoReVLA](https://github.com/FanGShiYuu/CoReVLA)。 > 总结：CoReVLA通过**数据收集+行为精炼**双阶段设计，高效利用人类接管数据优化长尾场景决策，显著提升自动驾驶安全性与泛化能力。",
+    "summary_html": "<p>论文提出<strong>CoReVLA框架</strong>，旨在提升自动驾驶在<strong>长尾场景</strong>（罕见但高危场景）中的性能。核心要点如下：</p>\n<ol><li><strong>问题背景</strong></li></ol>\n<ul><li>现有自动驾驶系统在长尾场景（如突发事故、极端天气）中表现不佳，导致安全事故。</li><li>视觉语言动作模型（VLA）虽具推理能力，但受限于<strong>高质量长尾数据稀缺</strong>和<strong>稀疏数据下训练效率低</strong>。</li></ul>\n<ol><li><strong>解决方案：双阶段框架</strong></li></ol>\n<ul><li><strong>阶段1（Collect）</strong>：</li><li>混合开源驾驶QA数据集（LingoQA、BDD、HAD）对Qwen2.5-VL-7B模型进行监督微调（SFT），构建基础场景理解能力。</li><li>在CAVE仿真平台进行人机协同测试，收集人类接管失败的场景数据（含视觉输入、接管行为及注意力）。</li><li><strong>阶段2（Refine）</strong>：</li><li>利用接管数据，通过<strong>直接偏好优化（DPO）</strong> 对齐人类行为偏好：将模型失败行为（次优）与人类接管行为（最优）对比，避免手动设计奖励函数导致的奖励黑客问题。</li></ul>\n<ol><li><strong>实验结果</strong></li></ol>\n<ul><li><strong>开环QA评估</strong>：在LingoQA/BDD/HAD数据集上，BLEU和ROUGE分数显著优于基线（如Llava、Impromptu）。</li><li><strong>闭环驾驶测试</strong>（Bench2Drive基准）：</li><li>驾驶评分（DS）达 <strong>72.18</strong>，成功率（SR）达 <strong>50%</strong>，较SOTA方法提升 <strong>7.96 DS</strong> 和 <strong>15% SR</strong>。</li><li>案例验证：模型能通过接管数据持续优化行为，避免相似场景的重复失败（如雨天避让故障车辆、行人突发横穿）。</li></ul>\n<ol><li><strong>贡献与资源</strong></li></ol>\n<ul><li>提出首个结合<strong>CAVE平台接管数据收集</strong>与<strong>DPO行为优化</strong>的端到端框架。</li><li>开源代码、数据集及场景配置：<a href=\\\"https://github.com/FanGShiYuu/CoReVLA\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">https://github.com/FanGShiYuu/CoReVLA</a>。 > 总结：CoReVLA通过<strong>数据收集+行为精炼</strong>双阶段设计，高效利用人类接管数据优化长尾场景决策，显著提升自动驾驶安全性与泛化能力。</li></ul>"
+  },
+  {
+    "date": "2025-09-19",
+    "title": "A Vision-Language-Action-Critic Model for Robotic Real-World Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2509.15937v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-18",
+    "title": "RynnVLA-001: Using Human Demonstrations to Improve Robot Manipulation",
+    "link": "http://arxiv.org/abs/2509.15212v1",
+    "summary_markdown": "论文提出RynnVLA-001模型，通过人类演示视频提升机器人操作能力。核心方法包括两阶段预训练：\n1. **自我中心视频生成预训练**：在1200万自我中心操作视频上训练图像到视频模型，基于初始帧和语言指令预测未来帧，学习操作动态。\n2. **人类中心轨迹感知建模**：扩展模型，联合预测未来帧和关键点轨迹，桥接视觉预测与动作表示。 引入**ActionVAE**（变分自编码器）压缩动作序列为紧凑嵌入，简化输出空间并确保动作连贯性。 在相同机器人数据集上微调后，模型优于最先进基线（如GR00T N1.5和Pi0），验证了预训练策略的有效性。",
+    "summary_html": "<p>论文提出RynnVLA-001模型，通过人类演示视频提升机器人操作能力。核心方法包括两阶段预训练：</p>\n<ol><li><strong>自我中心视频生成预训练</strong>：在1200万自我中心操作视频上训练图像到视频模型，基于初始帧和语言指令预测未来帧，学习操作动态。</li><li><strong>人类中心轨迹感知建模</strong>：扩展模型，联合预测未来帧和关键点轨迹，桥接视觉预测与动作表示。 引入<strong>ActionVAE</strong>（变分自编码器）压缩动作序列为紧凑嵌入，简化输出空间并确保动作连贯性。 在相同机器人数据集上微调后，模型优于最先进基线（如GR00T N1.5和Pi0），验证了预训练策略的有效性。</li></ol>"
+  },
+  {
+    "date": "2025-09-18",
+    "title": "Ask-to-Clarify: Resolving Instruction Ambiguity through Multi-turn Dialogue",
+    "link": "http://arxiv.org/abs/2509.15061v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-18",
+    "title": "Robot Control Stack: A Lean Ecosystem for Robot Learning at Scale",
+    "link": "http://arxiv.org/abs/2509.14932v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-18",
+    "title": "CollabVLA: Self-Reflective Vision-Language-Action Model Dreaming Together with Human",
+    "link": "http://arxiv.org/abs/2509.14889v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-18",
+    "title": "RealMirror: A Comprehensive, Open-Source Vision-Language-Action Platform for Embodied AI",
+    "link": "http://arxiv.org/abs/2509.14687v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-18",
+    "title": "VLA-LPAF: Lightweight Perspective-Adaptive Fusion for Vision-Language-Action to Enable More Unconstrained Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2509.18183v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-17",
+    "title": "CLAW: A Vision-Language-Action Framework for Weight-Aware Robotic Grasping",
+    "link": "http://arxiv.org/abs/2509.14143v1",
+    "summary_markdown": "本文提出 **CLAW框架**（一种视觉-语言-动作模型），用于解决机器人抓取任务中**重量感知控制**的难题。以下是核心要点：\n###\n1. **问题背景**\n- 现有视觉-语言-动作（VLA）模型（如π₀）虽能生成连续动作，但**难以精确满足数值阈值约束**（如按重量停止抓取），因其端到端设计缺乏显式状态监控机制。\n### 2. **CLAW框架设计**\n- **核心创新**：**解耦状态监控与动作生成**。\n- **轻量级监控模块**：微调CLIP模型，实时读取秤盘图像并生成二元提示（`继续`/`停止`），基于任务指定的重量阈值。\n- **动作生成模块**：微调后的π₀模型接收CLIP提示+多视角图像，输出连续机器人动作。\n- **优势**：结合符号化重量推理与高频运动控制，支持实时响应。\n### 3. **关键技术**\n- **CLIP微调**：构建含2000张秤盘图像的训练集，通过数值比较任务学习生成精准提示。\n- **π₀微调**：收集50组演示数据，人工标注抓取/停止阶段的提示标签，训练π₀响应提示指令。\n### 4. **实验验证**\n- **任务场景**：\n- 单物体抓取（糖果/大蒜，目标重量20g/30g/40g）。\n- 混合物体抓取（指定物体+重量）。\n- **结果**：\n- CLAW在**动作执行成功率**和**重量停止准确率**均达**100%**（表I）。\n- 显著优于基线（原始π₀动作成功率≤35%，停止率≈0%；微调π₀虽动作成功率达100%，但停止准确率仅0-35%）。\n- **鲁棒性**：即使重量突发波动（图5），CLAW仍能即时调整动作。\n### 5. **贡献总结**\n- 提出首个重量感知VLA框架，通过显式监控提升控制精度。\n- 验证CLIP作为轻量提示生成器的可行性。\n- 实现π₀在提示监督下的高效动作生成。\n- 在单/多物体任务中均表现鲁棒。\n### 6. **未来方向**\n- 增强秤盘定位鲁棒性（无需手动裁剪）。\n- 扩展非数值停止条件（如时间、视觉形态）。\n- 融合多模态输入（声音、触觉）。 > **关键价值**：CLAW为机器人执行需精确量化约束的任务（如按重配料、药品分装）提供了新范式。",
+    "summary_html": "<p>本文提出 <strong>CLAW框架</strong>（一种视觉-语言-动作模型），用于解决机器人抓取任务中<strong>重量感知控制</strong>的难题。以下是核心要点：</p>\n<p>###</p>\n<ol><li><strong>问题背景</strong></li></ol>\n<ul><li>现有视觉-语言-动作（VLA）模型（如π₀）虽能生成连续动作，但<strong>难以精确满足数值阈值约束</strong>（如按重量停止抓取），因其端到端设计缺乏显式状态监控机制。</li></ul>\n<h3>2. <strong>CLAW框架设计</strong></h3>\n<ul><li><strong>核心创新</strong>：<strong>解耦状态监控与动作生成</strong>。</li><li><strong>轻量级监控模块</strong>：微调CLIP模型，实时读取秤盘图像并生成二元提示（<code>继续</code>/<code>停止</code>），基于任务指定的重量阈值。</li><li><strong>动作生成模块</strong>：微调后的π₀模型接收CLIP提示+多视角图像，输出连续机器人动作。</li><li><strong>优势</strong>：结合符号化重量推理与高频运动控制，支持实时响应。</li></ul>\n<h3>3. <strong>关键技术</strong></h3>\n<ul><li><strong>CLIP微调</strong>：构建含2000张秤盘图像的训练集，通过数值比较任务学习生成精准提示。</li><li><strong>π₀微调</strong>：收集50组演示数据，人工标注抓取/停止阶段的提示标签，训练π₀响应提示指令。</li></ul>\n<h3>4. <strong>实验验证</strong></h3>\n<ul><li><strong>任务场景</strong>：</li><li>单物体抓取（糖果/大蒜，目标重量20g/30g/40g）。</li><li>混合物体抓取（指定物体+重量）。</li><li><strong>结果</strong>：</li><li>CLAW在<strong>动作执行成功率</strong>和<strong>重量停止准确率</strong>均达<strong>100%</strong>（表I）。</li><li>显著优于基线（原始π₀动作成功率≤35%，停止率≈0%；微调π₀虽动作成功率达100%，但停止准确率仅0-35%）。</li><li><strong>鲁棒性</strong>：即使重量突发波动（图5），CLAW仍能即时调整动作。</li></ul>\n<h3>5. <strong>贡献总结</strong></h3>\n<ul><li>提出首个重量感知VLA框架，通过显式监控提升控制精度。</li><li>验证CLIP作为轻量提示生成器的可行性。</li><li>实现π₀在提示监督下的高效动作生成。</li><li>在单/多物体任务中均表现鲁棒。</li></ul>\n<h3>6. <strong>未来方向</strong></h3>\n<ul><li>增强秤盘定位鲁棒性（无需手动裁剪）。</li><li>扩展非数值停止条件（如时间、视觉形态）。</li><li>融合多模态输入（声音、触觉）。 > <strong>关键价值</strong>：CLAW为机器人执行需精确量化约束的任务（如按重配料、药品分装）提供了新范式。</li></ul>"
+  },
+  {
+    "date": "2025-09-17",
+    "title": "SeqVLA: Sequential Task Execution for Long-Horizon Manipulation with Completion-Aware Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2509.14138v1",
+    "summary_markdown": "SeqVLA 提出一种基于完成感知的视觉-语言-动作（VLA）模型，用于解决长时程操作任务中的顺序执行问题。核心要点如下：\n1. **问题与动机**：现有 VLA 模型（如 π₀）擅长连续控制，但缺乏子任务完成判断能力，导致长时程任务（如多步骤打包）中错误累积和顺序混乱。\n2. **模型设计**：\n- **双头架构**：在 π₀ 基础上增加轻量级**完成检测头**（Completion Detection Head），共享动作专家层的特征。\n- **功能**：主头输出机器人动作；检测头实时预测当前子任务完成概率（二元分类），触发自主任务切换。\n- **损失函数**：总损失 = 动作损失（π₀ 的流匹配损失） + λ · 完成检测损失（二元交叉熵，λ=0.1）。\n3. **微调策略**：\n- 对比四种策略：**联合 vs. 顺序微调** × **主干网络全微调 vs. 冻结**。\n- **最优方案**：联合微调且不冻结主干（SeqVLA-J），其完成检测置信度最高（熵值最低），KS统计量显著（p<0.001）。\n4. **实验验证**：\n- **任务**：沙拉打包（7个子任务）和糖果打包（4个子任务）。\n- **结果**：\n- SeqVLA 显著超越基线 π₀，消除顺序错误（如重复执行或跳步）。\n- SeqVLA-J 在子任务成功率（图6）和长时程整体成功率（图10）上均最优。\n5. **贡献**：\n- 首次在 VLA 模型中集成完成检测机制，实现自主子任务切换。\n- 明确最佳微调策略（联合+非冻结主干），提升长时程任务鲁棒性。\n- 在真实机器人任务中验证有效性，为顺序操作提供新解决方案。 **未来方向**：探索层次化任务分解、人机协作场景及动态任务序列适应能力。",
+    "summary_html": "<p>SeqVLA 提出一种基于完成感知的视觉-语言-动作（VLA）模型，用于解决长时程操作任务中的顺序执行问题。核心要点如下：</p>\n<ol><li><strong>问题与动机</strong>：现有 VLA 模型（如 π₀）擅长连续控制，但缺乏子任务完成判断能力，导致长时程任务（如多步骤打包）中错误累积和顺序混乱。</li><li><strong>模型设计</strong>：</li></ol>\n<ul><li><strong>双头架构</strong>：在 π₀ 基础上增加轻量级<strong>完成检测头</strong>（Completion Detection Head），共享动作专家层的特征。</li><li><strong>功能</strong>：主头输出机器人动作；检测头实时预测当前子任务完成概率（二元分类），触发自主任务切换。</li><li><strong>损失函数</strong>：总损失 = 动作损失（π₀ 的流匹配损失） + λ · 完成检测损失（二元交叉熵，λ=0.1）。</li></ul>\n<ol><li><strong>微调策略</strong>：</li></ol>\n<ul><li>对比四种策略：<strong>联合 vs. 顺序微调</strong> × <strong>主干网络全微调 vs. 冻结</strong>。</li><li><strong>最优方案</strong>：联合微调且不冻结主干（SeqVLA-J），其完成检测置信度最高（熵值最低），KS统计量显著（p<0.001）。</li></ul>\n<ol><li><strong>实验验证</strong>：</li></ol>\n<ul><li><strong>任务</strong>：沙拉打包（7个子任务）和糖果打包（4个子任务）。</li><li><strong>结果</strong>：</li><li>SeqVLA 显著超越基线 π₀，消除顺序错误（如重复执行或跳步）。</li><li>SeqVLA-J 在子任务成功率（图6）和长时程整体成功率（图10）上均最优。</li></ul>\n<ol><li><strong>贡献</strong>：</li></ol>\n<ul><li>首次在 VLA 模型中集成完成检测机制，实现自主子任务切换。</li><li>明确最佳微调策略（联合+非冻结主干），提升长时程任务鲁棒性。</li><li>在真实机器人任务中验证有效性，为顺序操作提供新解决方案。 <strong>未来方向</strong>：探索层次化任务分解、人机协作场景及动态任务序列适应能力。</li></ul>"
+  },
+  {
+    "date": "2025-09-17",
+    "title": "GeoAware-VLA: Implicit Geometry Aware Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2509.14117v2",
+    "summary_markdown": "本文提出GeoAware-VLA模型，旨在解决视觉-语言-动作（VLA）模型在摄像机视角变化时泛化能力差的问题。核心方法是用预训练的几何视觉模型VGGT作为冻结的特征提取器，替代传统可训练视觉编码器，并添加轻量级可训练投影层适配策略解码器。关键贡献如下：\n1. **几何感知设计**： 引入VGGT模型提取隐含几何特征，使策略无需从零学习3D一致性，显著提升视角不变性。\n2. **性能提升**：\n- 在LIBERO基准测试中，新视角下的零样本成功率提升超2倍（平均82.6% vs 基线37.9%-50.2%）。\n- 真实机器人实验验证有效性，尤其在未训练视角下成功率显著高于基线（如任务5提升27%）。\n3. **技术优势**：\n- 兼容连续（MLP）和离散（VQ-BeT）动作空间，模型轻量（仅投影层可训练）。\n- 消融实验表明均匀选择VGGT中间层特征最有效，优于仅用末层或全层。\n4. **实验验证**：\n- 模拟环境：跨4类任务集（Spatial/Object/Goal/Long）均优于基线（如Long任务新视角成功率47.3% vs 基线3.7%）。\n- 真实场景：5项操作任务成功率高，证明几何先验提升策略鲁棒性。 结论指出，几何感知是提升VLA泛化能力的关键，该方法为构建适应视角变化的通用机器人策略提供有效路径。",
+    "summary_html": "<p>本文提出GeoAware-VLA模型，旨在解决视觉-语言-动作（VLA）模型在摄像机视角变化时泛化能力差的问题。核心方法是用预训练的几何视觉模型VGGT作为冻结的特征提取器，替代传统可训练视觉编码器，并添加轻量级可训练投影层适配策略解码器。关键贡献如下：</p>\n<ol><li><strong>几何感知设计</strong>： 引入VGGT模型提取隐含几何特征，使策略无需从零学习3D一致性，显著提升视角不变性。</li><li><strong>性能提升</strong>：</li></ol>\n<ul><li>在LIBERO基准测试中，新视角下的零样本成功率提升超2倍（平均82.6% vs 基线37.9%-50.2%）。</li><li>真实机器人实验验证有效性，尤其在未训练视角下成功率显著高于基线（如任务5提升27%）。</li></ul>\n<ol><li><strong>技术优势</strong>：</li></ol>\n<ul><li>兼容连续（MLP）和离散（VQ-BeT）动作空间，模型轻量（仅投影层可训练）。</li><li>消融实验表明均匀选择VGGT中间层特征最有效，优于仅用末层或全层。</li></ul>\n<ol><li><strong>实验验证</strong>：</li></ol>\n<ul><li>模拟环境：跨4类任务集（Spatial/Object/Goal/Long）均优于基线（如Long任务新视角成功率47.3% vs 基线3.7%）。</li><li>真实场景：5项操作任务成功率高，证明几何先验提升策略鲁棒性。 结论指出，几何感知是提升VLA泛化能力的关键，该方法为构建适应视角变化的通用机器人策略提供有效路径。</li></ul>"
+  },
+  {
+    "date": "2025-09-17",
+    "title": "Dual-Actor Fine-Tuning of VLA Models: A Talk-and-Tweak Human-in-the-Loop Approach",
+    "link": "http://arxiv.org/abs/2509.13774v1",
+    "summary_markdown": "本文提出了一种人机协作的双执行器VLA模型微调框架，用于解决复杂机器人任务中的性能瓶颈。核心要点如下：\n1. **双执行器架构**：\n- **主执行器**：基于扩散策略生成鲁棒的多任务动作\n- **精炼执行器**：在潜在噪声空间进行细粒度调整，接受语言指令引导\n2. **\"说调\"人机交互机制**：\n- 将物理干预（如SpaceMouse操作）实时转化为语义化语言指令（如\"向右移动\"）\n- 构建\"说-调\"数据集，同时优化主执行器的基线策略和精炼执行器的指令响应能力\n3. **多任务学习策略**：\n- 采用共享执行器+任务特定评论家架构\n- 引入自适应Q值加权机制平衡不同任务的学习进度\n4. **实验效果**：\n- 真实机器人多任务测试：101分钟在线微调后在螺栓直立放置/抓取/装配三个任务均达100%成功率\n- 长时程任务：12步连续操作中维持50%成功率\n- 多机器人扩展：双机器人并行训练实现2倍效率提升\n- 模型泛化性：在Octo和SmolVLA等不同VLA骨干网络上均有效\n5. **局限**：\n- 完全遮挡场景下性能受限\n- 长序列任务存在误差累积\n- 当前仍需人类干预保障安全性 该方法通过语义化人机交互和分层策略优化，显著提升了VLA模型在复杂机器人任务中的适应效率和执行精度。",
+    "summary_html": "<p>本文提出了一种人机协作的双执行器VLA模型微调框架，用于解决复杂机器人任务中的性能瓶颈。核心要点如下：</p>\n<ol><li><strong>双执行器架构</strong>：</li></ol>\n<ul><li><strong>主执行器</strong>：基于扩散策略生成鲁棒的多任务动作</li><li><strong>精炼执行器</strong>：在潜在噪声空间进行细粒度调整，接受语言指令引导</li></ul>\n<ol><li><strong>\"说调\"人机交互机制</strong>：</li></ol>\n<ul><li>将物理干预（如SpaceMouse操作）实时转化为语义化语言指令（如\"向右移动\"）</li><li>构建\"说-调\"数据集，同时优化主执行器的基线策略和精炼执行器的指令响应能力</li></ul>\n<ol><li><strong>多任务学习策略</strong>：</li></ol>\n<ul><li>采用共享执行器+任务特定评论家架构</li><li>引入自适应Q值加权机制平衡不同任务的学习进度</li></ul>\n<ol><li><strong>实验效果</strong>：</li></ol>\n<ul><li>真实机器人多任务测试：101分钟在线微调后在螺栓直立放置/抓取/装配三个任务均达100%成功率</li><li>长时程任务：12步连续操作中维持50%成功率</li><li>多机器人扩展：双机器人并行训练实现2倍效率提升</li><li>模型泛化性：在Octo和SmolVLA等不同VLA骨干网络上均有效</li></ul>\n<ol><li><strong>局限</strong>：</li></ol>\n<ul><li>完全遮挡场景下性能受限</li><li>长序列任务存在误差累积</li><li>当前仍需人类干预保障安全性 该方法通过语义化人机交互和分层策略优化，显著提升了VLA模型在复杂机器人任务中的适应效率和执行精度。</li></ul>"
+  },
+  {
+    "date": "2025-09-17",
+    "title": "AdaThinkDrive: Adaptive Thinking via Reinforcement Learning for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2509.13769v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-16",
+    "title": "The Better You Learn, The Smarter You Prune: Towards Efficient Vision-language-action Models via Differentiable Token Pruning",
+    "link": "http://arxiv.org/abs/2509.12594v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-15",
+    "title": "TrajBooster: Boosting Humanoid Whole-Body Manipulation via Trajectory-Centric Learning",
+    "link": "http://arxiv.org/abs/2509.11839v2",
+    "summary_markdown": "TrajBooster 是一个基于轨迹中心的跨形态框架，旨在利用丰富的轮式人形机器人数据提升双足人形机器人的视觉-语言-动作（VLA）模型性能。其核心创新点包括：\n1. **轨迹作为形态无关接口** 以末端执行器的 6D 轨迹为通用媒介，从轮式人形机器人（如 Agibot）提取真实轨迹，经尺度归一化处理适配目标双足机器人（Unitree G1）。\n2. **仿真中的分层重定向模型**\n- **架构**：分解为手臂策略（逆运动学生成关节角度）、管理者策略（输出基座速度/躯干高度指令）和工作者策略（执行指令控制腿部关节）。\n- **训练**：采用启发式增强的协调在线 DAgger 算法，利用仿真特权信息生成可行全身动作，高效生成大规模目标机器人兼容动作数据。\n3. **两阶段 VLA 微调**\n- **后预训练**：使用重定向数据构建异构三元组（源视觉/语言 + 目标动作），对齐 VLA 动作分布。\n- **后训练**：仅需 10 分钟真实遥操作数据微调，显著降低数据收集成本。\n4. **关键成果**\n- **加速适应**：比仅用真实数据训练快 3 倍以上，实现跨高度操作（如蹲起、抓取）。\n- **增强泛化**：在物体位置分布外场景的成功率提升至 80%（基线为 0%）。\n- **零样本迁移**：解锁未见于遥操作的任务（如 \"传递水杯\"）。\n- **鲁棒性**：在真实部署中展现协调全身运动与动态平衡能力。 **贡献总结**：首次通过轨迹重定向实现双足人形全身操作的 VLA 模型，减少对昂贵同形态数据的依赖，提升动作空间理解与零样本泛化能力。",
+    "summary_html": "<p>TrajBooster 是一个基于轨迹中心的跨形态框架，旨在利用丰富的轮式人形机器人数据提升双足人形机器人的视觉-语言-动作（VLA）模型性能。其核心创新点包括：</p>\n<ol><li><strong>轨迹作为形态无关接口</strong> 以末端执行器的 6D 轨迹为通用媒介，从轮式人形机器人（如 Agibot）提取真实轨迹，经尺度归一化处理适配目标双足机器人（Unitree G1）。</li><li><strong>仿真中的分层重定向模型</strong></li></ol>\n<ul><li><strong>架构</strong>：分解为手臂策略（逆运动学生成关节角度）、管理者策略（输出基座速度/躯干高度指令）和工作者策略（执行指令控制腿部关节）。</li><li><strong>训练</strong>：采用启发式增强的协调在线 DAgger 算法，利用仿真特权信息生成可行全身动作，高效生成大规模目标机器人兼容动作数据。</li></ul>\n<ol><li><strong>两阶段 VLA 微调</strong></li></ol>\n<ul><li><strong>后预训练</strong>：使用重定向数据构建异构三元组（源视觉/语言 + 目标动作），对齐 VLA 动作分布。</li><li><strong>后训练</strong>：仅需 10 分钟真实遥操作数据微调，显著降低数据收集成本。</li></ul>\n<ol><li><strong>关键成果</strong></li></ol>\n<ul><li><strong>加速适应</strong>：比仅用真实数据训练快 3 倍以上，实现跨高度操作（如蹲起、抓取）。</li><li><strong>增强泛化</strong>：在物体位置分布外场景的成功率提升至 80%（基线为 0%）。</li><li><strong>零样本迁移</strong>：解锁未见于遥操作的任务（如 \"传递水杯\"）。</li><li><strong>鲁棒性</strong>：在真实部署中展现协调全身运动与动态平衡能力。 <strong>贡献总结</strong>：首次通过轨迹重定向实现双足人形全身操作的 VLA 模型，减少对昂贵同形态数据的依赖，提升动作空间理解与零样本泛化能力。</li></ul>"
+  },
+  {
+    "date": "2025-09-15",
+    "title": "Cross-Platform Scaling of Vision-Language-Action Models from Edge to Cloud GPUs",
+    "link": "http://arxiv.org/abs/2509.11480v1",
+    "summary_markdown": "本文评估了视觉-语言-动作（VLA）模型在边缘设备（如NVIDIA Jetson AGX Orin）与数据中心GPU（如H100、A100）上的跨平台性能扩展。通过LIBERO基准测试五种代表性VLA模型（包括新提出的VOTE和QwenVLA），测量准确率、延迟、吞吐量和内存占用。主要发现：\n1. **架构选择影响性能**：动作标记化（如VOTE的少令牌设计）和主干大小（如QwenVLA的小型主干）显著优化吞吐量和内存占用。\n2. **边缘功率约束下的非线性下降**：在低功率模式（如15W），性能下降明显，但高功率边缘配置（如Orin MAX模式）可匹配旧数据中心GPU（如V100）。\n3. **高吞吐量可行**：VOTE变体（如VOTE-MLP4）在保持高准确率（VOTE-1T达96.9%）的同时，实现高吞吐量（数据中心达474.78 Hz），无需显著牺牲精度。 这些结果为VLA模型在资源受限场景（如机器人部署）的选择和优化提供了实用指导，挑战了数据中心硬件绝对优越的假设。",
+    "summary_html": "<p>本文评估了视觉-语言-动作（VLA）模型在边缘设备（如NVIDIA Jetson AGX Orin）与数据中心GPU（如H100、A100）上的跨平台性能扩展。通过LIBERO基准测试五种代表性VLA模型（包括新提出的VOTE和QwenVLA），测量准确率、延迟、吞吐量和内存占用。主要发现：</p>\n<ol><li><strong>架构选择影响性能</strong>：动作标记化（如VOTE的少令牌设计）和主干大小（如QwenVLA的小型主干）显著优化吞吐量和内存占用。</li><li><strong>边缘功率约束下的非线性下降</strong>：在低功率模式（如15W），性能下降明显，但高功率边缘配置（如Orin MAX模式）可匹配旧数据中心GPU（如V100）。</li><li><strong>高吞吐量可行</strong>：VOTE变体（如VOTE-MLP4）在保持高准确率（VOTE-1T达96.9%）的同时，实现高吞吐量（数据中心达474.78 Hz），无需显著牺牲精度。 这些结果为VLA模型在资源受限场景（如机器人部署）的选择和优化提供了实用指导，挑战了数据中心硬件绝对优越的假设。</li></ol>"
+  },
+  {
+    "date": "2025-09-14",
+    "title": "Enhancing Generalization in Vision-Language-Action Models by Preserving Pretrained Representations",
+    "link": "http://arxiv.org/abs/2509.11417v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-13",
+    "title": "OpenHA: A Series of Open-Source Hierarchical Agentic Models in Minecraft",
+    "link": "http://arxiv.org/abs/2509.13347v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-11",
+    "title": "SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2509.09674v1",
+    "summary_markdown": "论文提出了一种名为**SimpleVLA-RL**的强化学习框架，用于提升视觉-语言-动作（VLA）模型的训练效率和泛化能力。核心要点如下：\n1. **解决VLA模型的关键挑战**\n- **数据稀缺性**：传统监督微调（SFT）依赖大量人类操作轨迹，成本高昂且难以扩展。\n- **泛化能力差**：模型在分布偏移任务（如场景/物体/目标变化）中表现显著下降。\n2. **框架设计创新**\n- **高效在线RL系统**：基于veRL改进，支持并行环境交互、轨迹采样和损失计算优化。\n- **探索增强策略**：\n- **动态采样**：仅保留混合成功/失败的轨迹组，确保非零梯度。\n- **高温采样**（T=1.6）和**放宽PPO截断范围**（[0.8, 1.28]），提升策略多样性。\n- **简化奖励机制**：仅用二元结果奖励（1/0），避免复杂过程奖励设计。\n3. **显著性能提升**\n- **基准测试结果**：\n- **LIBERO**：平均成功率从91%提升至99.1%，长时任务（LIBERO-Long）从17.1%升至98.5%。\n- **RoboTwin 1.0/2.0**：双臂任务提升30.6%（1.0）和30.5%（2.0），超越π₀等SOTA模型。\n- **数据效率**：仅需单任务演示即可大幅提升性能（如LIBERO-Long从17.1%→91.7%）。\n4. **关键发现**\n- **\"Pushcut\"现象**：RL训练中自发涌现新动作模式，超越监督数据中的策略。\n- **泛化能力**：在空间/物体/目标变化任务中表现优异，且仿真策略可直接迁移至真实机器人（sim-to-real）。\n5. **贡献总结**\n- 降低对大规模数据的依赖，提升长时规划与跨场景泛化能力。\n- 首次在VLA模型中验证纯结果奖励RL的有效性，为VLA训练提供新范式。 > 论文链接：[SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning](https://arxiv.org/abs/2509.09674) > 代码开源：[PRIME-RL/SimpleVLA-RL](https://github.com/PRIME-RL/SimpleVLA-RL)",
+    "summary_html": "<p>论文提出了一种名为<strong>SimpleVLA-RL</strong>的强化学习框架，用于提升视觉-语言-动作（VLA）模型的训练效率和泛化能力。核心要点如下：</p>\n<ol><li><strong>解决VLA模型的关键挑战</strong></li></ol>\n<ul><li><strong>数据稀缺性</strong>：传统监督微调（SFT）依赖大量人类操作轨迹，成本高昂且难以扩展。</li><li><strong>泛化能力差</strong>：模型在分布偏移任务（如场景/物体/目标变化）中表现显著下降。</li></ul>\n<ol><li><strong>框架设计创新</strong></li></ol>\n<ul><li><strong>高效在线RL系统</strong>：基于veRL改进，支持并行环境交互、轨迹采样和损失计算优化。</li><li><strong>探索增强策略</strong>：</li><li><strong>动态采样</strong>：仅保留混合成功/失败的轨迹组，确保非零梯度。</li><li><strong>高温采样</strong>（T=1.6）和<strong>放宽PPO截断范围</strong>（[0.8, 1.28]），提升策略多样性。</li><li><strong>简化奖励机制</strong>：仅用二元结果奖励（1/0），避免复杂过程奖励设计。</li></ul>\n<ol><li><strong>显著性能提升</strong></li></ol>\n<ul><li><strong>基准测试结果</strong>：</li><li><strong>LIBERO</strong>：平均成功率从91%提升至99.1%，长时任务（LIBERO-Long）从17.1%升至98.5%。</li><li><strong>RoboTwin 1.0/2.0</strong>：双臂任务提升30.6%（1.0）和30.5%（2.0），超越π₀等SOTA模型。</li><li><strong>数据效率</strong>：仅需单任务演示即可大幅提升性能（如LIBERO-Long从17.1%→91.7%）。</li></ul>\n<ol><li><strong>关键发现</strong></li></ol>\n<ul><li><strong>\"Pushcut\"现象</strong>：RL训练中自发涌现新动作模式，超越监督数据中的策略。</li><li><strong>泛化能力</strong>：在空间/物体/目标变化任务中表现优异，且仿真策略可直接迁移至真实机器人（sim-to-real）。</li></ul>\n<ol><li><strong>贡献总结</strong></li></ol>\n<ul><li>降低对大规模数据的依赖，提升长时规划与跨场景泛化能力。</li><li>首次在VLA模型中验证纯结果奖励RL的有效性，为VLA训练提供新范式。 > 论文链接：<a href=\\\"https://arxiv.org/abs/2509.09674\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning</a> > 代码开源：<a href=\\\"https://github.com/PRIME-RL/SimpleVLA-RL\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">PRIME-RL/SimpleVLA-RL</a></li></ul>"
+  },
+  {
+    "date": "2025-09-11",
+    "title": "VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2509.09372v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-11",
+    "title": "SQAP-VLA: A Synergistic Quantization-Aware Pruning Framework for High-Performance Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2509.09090v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-10",
+    "title": "RoboChemist: Long-Horizon and Safety-Compliant Robotic Chemical Experimentation",
+    "link": "http://arxiv.org/abs/2509.08820v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-09",
+    "title": "TA-VLA: Elucidating the Design Space of Torque-aware Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2509.07962v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-09",
+    "title": "Graph-Fused Vision-Language-Action for Policy Reasoning in Multi-Arm Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2509.07957v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-08",
+    "title": "F1: A Vision-Language-Action Model Bridging Understanding and Generation to Actions",
+    "link": "http://arxiv.org/abs/2509.06951v2",
+    "summary_markdown": "本文提出了一种名为 \\(\\mathcal{F}_{1}\\) 的视觉-语言-动作（VLA）模型，通过集成视觉预见生成机制，弥合感知、预测与执行之间的鸿沟。其核心要点如下：\n###\n1. **模型架构创新**\n- **三专家混合架构**：采用 Mixture-of-Transformer 结构，包含三个专用模块：\n- **理解专家**：基于预训练视觉语言模型（如 PaliGemma），对齐语言指令与视觉观测。\n- **生成专家**：通过多尺度残差 VQ-VAE 编码历史观测，生成目标导向的视觉预见图像（\\(\\hat{o}_{t+1}\\)），作为显式规划目标。\n- **动作专家**：基于预测逆动力学模型（PIDM），将动作生成转化为视觉目标驱动的逆动力学问题，输出动作序列 \\(\\hat{a}_{t:t+k}\\)。\n- **渐进注意力机制**（UGA）：跨专家信息流遵循\"理解→生成→动作\"的因果层级，避免信息回流，确保稳定性。\n### 2. **训练策略**\n- **三阶段渐进式训练**：\n- **阶段 I**：对齐生成专家与预训练的理解专家，通过教师强制学习视觉预见。\n- **阶段 II**：在大规模机器人数据集（330k 轨迹，136 任务）上联合优化所有专家，学习通用视觉运动知识。\n- **阶段 III**：任务特定数据上微调，适应新机器人本体。\n- **损失函数**：结合自回归视觉预测损失（\\(\\mathcal{L}_{\\mathrm{gen}}^{\\mathrm{pred}}\\)）与流匹配动作损失（\\(\\mathcal{L}_{\\mathrm{action}}\\)），强化预测与执行的协同。\n### 3. **关键优势**\n- **视觉预见引导决策**：通过生成未来观测作为中间目标，将反应式策略转化为基于规划的决策，提升长视野任务鲁棒性。\n- **高效多尺度预测**：采用\"下一尺度预测\"机制，平衡计算效率与生成质量（4 尺度为最优）。\n- **强泛化能力**：三阶段训练注入可迁移的视觉预见能力，支持动态环境适应。\n### 4. **实验结果**\n- **真实任务**：在 9 项 Genie 机器人任务中，平均成功率 **82.2%**（最高任务 **100%**），显著优于 \\(\\pi_0\\)（65.2%）和 gr00t-N1（30.4%）。\n- **仿真基准**：\n- **LIBERO**：平均成功率 **95.7%**，长视野任务提升显著（LIBERO-Long: **91.3%**）。\n- **SimplerEnv Bridge**：平均成功率 **72.9%**，精细操作任务（如 Eggplant）达 **100%**。\n- **消融实验**：验证生成专家（移除后性能下降 17.2%）和三阶段训练（移除预训练阶段 II 下降 3.7%）的必要性。\n### 5. **应用场景**\n- **动态环境**：在传送带抓取任务中成功率达 **66.7%**，展现对移动目标的适应能力。\n- **跨本体迁移**：仅需 47 条演示数据即可适配新机器人（ARX LIFT II）。 > 总结：\\(\\mathcal{F}_{1}\\) 通过视觉预见重构动作生成范式，在动态与长视野任务中实现显著性能突破，为具身智能提供可解释、可规划的决策框架。",
+    "summary_html": "<p>本文提出了一种名为 \\(\\mathcal{F}_{1}\\) 的视觉-语言-动作（VLA）模型，通过集成视觉预见生成机制，弥合感知、预测与执行之间的鸿沟。其核心要点如下：</p>\n<p>###</p>\n<ol><li><strong>模型架构创新</strong></li></ol>\n<ul><li><strong>三专家混合架构</strong>：采用 Mixture-of-Transformer 结构，包含三个专用模块：</li><li><strong>理解专家</strong>：基于预训练视觉语言模型（如 PaliGemma），对齐语言指令与视觉观测。</li><li><strong>生成专家</strong>：通过多尺度残差 VQ-VAE 编码历史观测，生成目标导向的视觉预见图像（\\(\\hat{o}_{t+1}\\)），作为显式规划目标。</li><li><strong>动作专家</strong>：基于预测逆动力学模型（PIDM），将动作生成转化为视觉目标驱动的逆动力学问题，输出动作序列 \\(\\hat{a}_{t:t+k}\\)。</li><li><strong>渐进注意力机制</strong>（UGA）：跨专家信息流遵循\"理解→生成→动作\"的因果层级，避免信息回流，确保稳定性。</li></ul>\n<h3>2. <strong>训练策略</strong></h3>\n<ul><li><strong>三阶段渐进式训练</strong>：</li><li><strong>阶段 I</strong>：对齐生成专家与预训练的理解专家，通过教师强制学习视觉预见。</li><li><strong>阶段 II</strong>：在大规模机器人数据集（330k 轨迹，136 任务）上联合优化所有专家，学习通用视觉运动知识。</li><li><strong>阶段 III</strong>：任务特定数据上微调，适应新机器人本体。</li><li><strong>损失函数</strong>：结合自回归视觉预测损失（\\(\\mathcal{L}_{\\mathrm{gen}}^{\\mathrm{pred}}\\)）与流匹配动作损失（\\(\\mathcal{L}_{\\mathrm{action}}\\)），强化预测与执行的协同。</li></ul>\n<h3>3. <strong>关键优势</strong></h3>\n<ul><li><strong>视觉预见引导决策</strong>：通过生成未来观测作为中间目标，将反应式策略转化为基于规划的决策，提升长视野任务鲁棒性。</li><li><strong>高效多尺度预测</strong>：采用\"下一尺度预测\"机制，平衡计算效率与生成质量（4 尺度为最优）。</li><li><strong>强泛化能力</strong>：三阶段训练注入可迁移的视觉预见能力，支持动态环境适应。</li></ul>\n<h3>4. <strong>实验结果</strong></h3>\n<ul><li><strong>真实任务</strong>：在 9 项 Genie 机器人任务中，平均成功率 <strong>82.2%</strong>（最高任务 <strong>100%</strong>），显著优于 \\(\\pi_0\\)（65.2%）和 gr00t-N1（30.4%）。</li><li><strong>仿真基准</strong>：</li><li><strong>LIBERO</strong>：平均成功率 <strong>95.7%</strong>，长视野任务提升显著（LIBERO-Long: <strong>91.3%</strong>）。</li><li><strong>SimplerEnv Bridge</strong>：平均成功率 <strong>72.9%</strong>，精细操作任务（如 Eggplant）达 <strong>100%</strong>。</li><li><strong>消融实验</strong>：验证生成专家（移除后性能下降 17.2%）和三阶段训练（移除预训练阶段 II 下降 3.7%）的必要性。</li></ul>\n<h3>5. <strong>应用场景</strong></h3>\n<ul><li><strong>动态环境</strong>：在传送带抓取任务中成功率达 <strong>66.7%</strong>，展现对移动目标的适应能力。</li><li><strong>跨本体迁移</strong>：仅需 47 条演示数据即可适配新机器人（ARX LIFT II）。 > 总结：\\(\\mathcal{F}_{1}\\) 通过视觉预见重构动作生成范式，在动态与长视野任务中实现显著性能突破，为具身智能提供可解释、可规划的决策框架。</li></ul>"
+  },
+  {
+    "date": "2025-09-08",
+    "title": "LLaDA-VLA: Vision Language Diffusion Action Models",
+    "link": "http://arxiv.org/abs/2509.06932v2",
+    "summary_markdown": "论文提出**LLaDA-VLA**，首个基于预训练扩散视觉语言模型（d-VLM）的**视觉-语言-扩散-动作模型**，用于机器人操作任务。核心要点如下：\n---\n### **\n1. 研究动机**\n- **现有局限**：主流视觉-语言-动作模型（VLA）依赖自回归模型（ARMs），存在生成效率低、单向生成灵活性不足的问题。\n- **扩散模型优势**：掩码扩散模型（MDMs）支持并行生成与迭代优化，在文本和视觉任务中表现优异，但尚未应用于机器人动作生成。\n---\n### **\n2. 核心创新**\n- **局部化特殊令牌分类（Localized Special-token Classification）** 将分类空间从完整词汇表缩减至机器人动作相关的特殊令牌，显著降低预训练d-VLM适配机器人领域的难度。\n- **分层动作结构化解码（Hierarchical Action-Structured Decoding）**\n- **动作级置信排序**：根据动作整体置信度确定解码顺序。\n- **令牌级置信排序**：在动作内部按令牌置信度细化解码。 *解决扩散模型难以生成结构化动作序列的问题，显式建模动作内/间依赖关系。*\n---\n### **\n3. 模型架构**\n- **基础框架**：基于预训练d-VLM（LLaDA-V），集成视觉编码器（SigLIP-2）和投影模块（MLP）。\n- **输入/输出**：\n- 输入：语言指令 + 第一视角RGB图像。\n- 输出：离散化动作序列（7维/时间步：位移、旋转、夹爪状态）。\n- **动作分块**：预测连续K时间步的动作块（默认K=5），提升轨迹连贯性。\n---\n### **\n4. 实验结果**\n- **仿真基准**：\n- **CALVIN**：平均任务完成长度提升0.74（优于OpenVLA等）。\n- **SimplerEnv**：平均成功率提升51.3%（超越CogACT等）。\n- **真实机器人（WidowX）**：\n- 在4项任务中平均成功率58%（超越π0的35%和CogACT的30%）。\n- **泛化能力**：在未见过的物体/容器任务中平均成功率40%（较π0提升25%）。\n- **消融实验**：\n- 局部化分类策略使平均任务长度提升0.79。\n- 分层解码策略进一步提升0.58。\n---\n### **\n5. 贡献总结**\n- 提出首个**扩散式VLA框架**，为机器人策略学习开辟新范式。\n- 设计两项关键技术解决d-VLM适配机器人任务的挑战。\n- 在仿真与真实场景中均实现**SOTA性能**，验证扩散模型在机器人操作中的潜力。\n---\n**关键结论**：LLaDA-VLA通过结合扩散模型的高效生成与结构化动作解码，显著提升机器人操作的精度与泛化能力，为未来基于d-VLM的机器人研究奠定基础。",
+    "summary_html": "<p>论文提出<strong>LLaDA-VLA</strong>，首个基于预训练扩散视觉语言模型（d-VLM）的<strong>视觉-语言-扩散-动作模型</strong>，用于机器人操作任务。核心要点如下：</p>\n<hr/>\n<h3>**</h3>\n<ol><li>研究动机**</li></ol>\n<ul><li><strong>现有局限</strong>：主流视觉-语言-动作模型（VLA）依赖自回归模型（ARMs），存在生成效率低、单向生成灵活性不足的问题。</li><li><strong>扩散模型优势</strong>：掩码扩散模型（MDMs）支持并行生成与迭代优化，在文本和视觉任务中表现优异，但尚未应用于机器人动作生成。</li></ul>\n<hr/>\n<h3>**</h3>\n<ol><li>核心创新**</li></ol>\n<ul><li><strong>局部化特殊令牌分类（Localized Special-token Classification）</strong> 将分类空间从完整词汇表缩减至机器人动作相关的特殊令牌，显著降低预训练d-VLM适配机器人领域的难度。</li><li><strong>分层动作结构化解码（Hierarchical Action-Structured Decoding）</strong></li><li><strong>动作级置信排序</strong>：根据动作整体置信度确定解码顺序。</li><li><strong>令牌级置信排序</strong>：在动作内部按令牌置信度细化解码。 *解决扩散模型难以生成结构化动作序列的问题，显式建模动作内/间依赖关系。*</li></ul>\n<hr/>\n<h3>**</h3>\n<ol><li>模型架构**</li></ol>\n<ul><li><strong>基础框架</strong>：基于预训练d-VLM（LLaDA-V），集成视觉编码器（SigLIP-2）和投影模块（MLP）。</li><li><strong>输入/输出</strong>：</li><li>输入：语言指令 + 第一视角RGB图像。</li><li>输出：离散化动作序列（7维/时间步：位移、旋转、夹爪状态）。</li><li><strong>动作分块</strong>：预测连续K时间步的动作块（默认K=5），提升轨迹连贯性。</li></ul>\n<hr/>\n<h3>**</h3>\n<ol><li>实验结果**</li></ol>\n<ul><li><strong>仿真基准</strong>：</li><li><strong>CALVIN</strong>：平均任务完成长度提升0.74（优于OpenVLA等）。</li><li><strong>SimplerEnv</strong>：平均成功率提升51.3%（超越CogACT等）。</li><li><strong>真实机器人（WidowX）</strong>：</li><li>在4项任务中平均成功率58%（超越π0的35%和CogACT的30%）。</li><li><strong>泛化能力</strong>：在未见过的物体/容器任务中平均成功率40%（较π0提升25%）。</li><li><strong>消融实验</strong>：</li><li>局部化分类策略使平均任务长度提升0.79。</li><li>分层解码策略进一步提升0.58。</li></ul>\n<hr/>\n<h3>**</h3>\n<ol><li>贡献总结**</li></ol>\n<ul><li>提出首个<strong>扩散式VLA框架</strong>，为机器人策略学习开辟新范式。</li><li>设计两项关键技术解决d-VLM适配机器人任务的挑战。</li><li>在仿真与真实场景中均实现<strong>SOTA性能</strong>，验证扩散模型在机器人操作中的潜力。</li></ul>\n<hr/>\n<p><strong>关键结论</strong>：LLaDA-VLA通过结合扩散模型的高效生成与结构化动作解码，显著提升机器人操作的精度与泛化能力，为未来基于d-VLM的机器人研究奠定基础。</p>"
+  },
+  {
+    "date": "2025-09-06",
+    "title": "SpecPrune-VLA: Accelerating Vision-Language-Action Models via Action-Aware Self-Speculative Pruning",
+    "link": "http://arxiv.org/abs/2509.05614v1",
+    "summary_markdown": "本文提出**SpecPrune-VLA**，一种通过动作感知自推测剪枝加速视觉-语言-动作（VLA）模型的方法。核心贡献如下：\n1. **动作级静态令牌剪枝**\n- 利用历史动作的全局注意力信息识别冗余令牌（如背景），结合当前动作的局部信息（前两层LLM注意力）动态补充关键令牌（如移动物体）。\n- 通过速度自适应的帧采样策略（如公式 \\( T = \\lfloor -\\frac{16}{3} \\cdot v_t + \\frac{22}{3} \\rfloor + 4 \\) ）精准捕捉动态变化区域。\n2. **层级动态令牌剪枝**\n- 设计重要性评分机制（公式 \\( s_i^{(l)} = \\omega_{\\text{rank},i}^{(l)} \\times \\omega_{\\text{conf}}^{(l)} \\) ），结合令牌排名权重和层置信度，在Transformer深层自适应剪枝冗余令牌。\n3. **轻量动作感知控制器**\n- 根据机械臂末端速度（平移 \\( v_t \\) 和旋转 \\( v_r \\) ）区分粗粒度/细粒度动作，动态调整剪枝强度（细粒度时保留更多令牌）。 **实验结果**： 在LIBERO仿真基准测试中，相比OpenVLA-OFT：\n- A800 GPU上平均加速 **1.46×**，任务成功率损失可忽略（<0.7%）\n- RTX 3090 GPU上加速 **1.57×**\n- FLOPs减少约 **57%**，同时保持空间推理、物体操作等任务的高成功率（>96%）。 该方法通过融合跨动作的全局信息和局部推测，显著提升VLA模型推理效率，适用于实时机器人控制场景。",
+    "summary_html": "<p>本文提出<strong>SpecPrune-VLA</strong>，一种通过动作感知自推测剪枝加速视觉-语言-动作（VLA）模型的方法。核心贡献如下：</p>\n<ol><li><strong>动作级静态令牌剪枝</strong></li></ol>\n<ul><li>利用历史动作的全局注意力信息识别冗余令牌（如背景），结合当前动作的局部信息（前两层LLM注意力）动态补充关键令牌（如移动物体）。</li><li>通过速度自适应的帧采样策略（如公式 \\( T = \\lfloor -\\frac{16}{3} \\cdot v_t + \\frac{22}{3} \\rfloor + 4 \\) ）精准捕捉动态变化区域。</li></ul>\n<ol><li><strong>层级动态令牌剪枝</strong></li></ol>\n<ul><li>设计重要性评分机制（公式 \\( s_i^{(l)} = \\omega_{\\text{rank},i}^{(l)} \\times \\omega_{\\text{conf}}^{(l)} \\) ），结合令牌排名权重和层置信度，在Transformer深层自适应剪枝冗余令牌。</li></ul>\n<ol><li><strong>轻量动作感知控制器</strong></li></ol>\n<ul><li>根据机械臂末端速度（平移 \\( v_t \\) 和旋转 \\( v_r \\) ）区分粗粒度/细粒度动作，动态调整剪枝强度（细粒度时保留更多令牌）。 <strong>实验结果</strong>： 在LIBERO仿真基准测试中，相比OpenVLA-OFT：</li><li>A800 GPU上平均加速 <strong>1.46×</strong>，任务成功率损失可忽略（<0.7%）</li><li>RTX 3090 GPU上加速 <strong>1.57×</strong></li><li>FLOPs减少约 <strong>57%</strong>，同时保持空间推理、物体操作等任务的高成功率（>96%）。 该方法通过融合跨动作的全局信息和局部推测，显著提升VLA模型推理效率，适用于实时机器人控制场景。</li></ul>"
+  },
+  {
+    "date": "2025-09-05",
+    "title": "FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action Flow Policies",
+    "link": "http://arxiv.org/abs/2509.04996v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-04",
+    "title": "Balancing Signal and Variance: Adaptive Offline RL Post-Training for VLA Flow Models",
+    "link": "http://arxiv.org/abs/2509.04063v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-04",
+    "title": "FPC-VLA: A Vision-Language-Action Framework with a Supervisor for Failure Prediction and Correction",
+    "link": "http://arxiv.org/abs/2509.04018v1",
+    "summary_markdown": "论文提出FPC-VLA框架，通过集成视觉-语言-动作（VLA）模型与故障预测-校正监督器，提升机器人操作的可靠性。核心创新点如下：\n1. **双模型架构**\n- **监督器模块**：基于视觉语言模型（VLM），在关键帧（如夹爪状态变化时）评估动作可行性。通过视觉-语言查询预测故障风险，并生成空间校正指令（如\"向左大距离移动\"）。\n- **自动化数据集生成**：从RLDS格式数据自动构建故障校正数据集，无需人工标注。通过分析夹爪状态变化轨迹，生成包含图像、任务指令和结构化QA的样本（如表II示例）。\n2. **动作优化机制**\n- **相似性引导融合模块**：聚合历史动作预测，通过余弦相似性（公式15）和时间衰减权重（公式17-18）平滑输出，解决动作突变问题。其中姿态与夹爪状态分开处理（公式19-20）。\n3. **实验验证**\n- **跨平台测试**：在WidowX（SIMPLER基准）、Google Robot（表IV）和Franka（LIBERO基准）上均超越SOTA：\n- WidowX零样本任务成功率64.6%（表III），较次优方法提升22%。\n- Google Robot上\"打开抽屉放苹果\"任务成功率54.5%（表IV）。\n- LIBERO长时程任务成功率82.2%（表V），提升12个百分点。\n- **实时性**：监督器仅触发≤3次/任务，推理延时增加15%但成功率提升34.6%（任务成功率从58.3%→92.9%）。\n4. **应用价值** 成功部署于真实机器人（图4），处理遮挡物体操作等复杂场景，项目页面与代码已开源。 > 该方法解决了传统VLA模型缺乏故障恢复能力的问题，通过轻量化监督机制显著提升系统鲁棒性，为自主机器人提供可扩展的可靠性解决方案。",
+    "summary_html": "<p>论文提出FPC-VLA框架，通过集成视觉-语言-动作（VLA）模型与故障预测-校正监督器，提升机器人操作的可靠性。核心创新点如下：</p>\n<ol><li><strong>双模型架构</strong></li></ol>\n<ul><li><strong>监督器模块</strong>：基于视觉语言模型（VLM），在关键帧（如夹爪状态变化时）评估动作可行性。通过视觉-语言查询预测故障风险，并生成空间校正指令（如\"向左大距离移动\"）。</li><li><strong>自动化数据集生成</strong>：从RLDS格式数据自动构建故障校正数据集，无需人工标注。通过分析夹爪状态变化轨迹，生成包含图像、任务指令和结构化QA的样本（如表II示例）。</li></ul>\n<ol><li><strong>动作优化机制</strong></li></ol>\n<ul><li><strong>相似性引导融合模块</strong>：聚合历史动作预测，通过余弦相似性（公式15）和时间衰减权重（公式17-18）平滑输出，解决动作突变问题。其中姿态与夹爪状态分开处理（公式19-20）。</li></ul>\n<ol><li><strong>实验验证</strong></li></ol>\n<ul><li><strong>跨平台测试</strong>：在WidowX（SIMPLER基准）、Google Robot（表IV）和Franka（LIBERO基准）上均超越SOTA：</li><li>WidowX零样本任务成功率64.6%（表III），较次优方法提升22%。</li><li>Google Robot上\"打开抽屉放苹果\"任务成功率54.5%（表IV）。</li><li>LIBERO长时程任务成功率82.2%（表V），提升12个百分点。</li><li><strong>实时性</strong>：监督器仅触发≤3次/任务，推理延时增加15%但成功率提升34.6%（任务成功率从58.3%→92.9%）。</li></ul>\n<ol><li><strong>应用价值</strong> 成功部署于真实机器人（图4），处理遮挡物体操作等复杂场景，项目页面与代码已开源。 > 该方法解决了传统VLA模型缺乏故障恢复能力的问题，通过轻量化监督机制显著提升系统鲁棒性，为自主机器人提供可扩展的可靠性解决方案。</li></ol>"
+  },
+  {
+    "date": "2025-09-03",
+    "title": "ANNIE: Be Careful of Your Robots",
+    "link": "http://arxiv.org/abs/2509.03383v1",
+    "summary_markdown": "本文《Annie: Be Careful of Your Robots》针对具身AI（EAI）系统的安全风险展开研究，核心贡献如下：\n1. **安全定义与分类**：基于ISO/TS 15066标准，首次为EAI系统建立安全框架，将安全违规分为三类：\n- **关键违规**（Critical）：涉及危险工具（如刀具）与人类距离过近，违反物理隔离约束。\n- **危险违规**（Dangerous）：物体速度超限或过早释放，导致潜在伤害。\n- **风险违规**（Risky）：机器人与环境物体碰撞，引发间接损害。\n2. **安全基准Annie-Bench**：构建首个EAI安全专用数据集，包含9个安全关键场景（每类3个），共2,400个视频-动作序列，覆盖三类违规场景，支持安全攻击与防御评估。\n3. **攻击框架Annie-Attack**：提出任务感知对抗攻击框架，通过“攻击领导者模型”将长期安全目标分解为帧级扰动，实现：\n- **高攻击成功率**：在ACT、Baku等EAI模型上，关键、危险、风险任务的攻击成功率分别达52%、67%、50%。\n- **隐蔽性优化**：支持稀疏攻击（如每3帧扰动）和自适应策略，降低攻击频率同时保持高成功率。\n4. **评估与影响**：实验验证攻击在模拟和真实机器人场景的有效性，暴露EAI系统在物理交互中的安全漏洞，呼吁加强安全防御机制。 论文强调传统机器学习安全方法不适用于EAI，需重新定义安全指标并设计物理环境下的防御策略。",
+    "summary_html": "<p>本文《Annie: Be Careful of Your Robots》针对具身AI（EAI）系统的安全风险展开研究，核心贡献如下：</p>\n<ol><li><strong>安全定义与分类</strong>：基于ISO/TS 15066标准，首次为EAI系统建立安全框架，将安全违规分为三类：</li></ol>\n<ul><li><strong>关键违规</strong>（Critical）：涉及危险工具（如刀具）与人类距离过近，违反物理隔离约束。</li><li><strong>危险违规</strong>（Dangerous）：物体速度超限或过早释放，导致潜在伤害。</li><li><strong>风险违规</strong>（Risky）：机器人与环境物体碰撞，引发间接损害。</li></ul>\n<ol><li><strong>安全基准Annie-Bench</strong>：构建首个EAI安全专用数据集，包含9个安全关键场景（每类3个），共2,400个视频-动作序列，覆盖三类违规场景，支持安全攻击与防御评估。</li><li><strong>攻击框架Annie-Attack</strong>：提出任务感知对抗攻击框架，通过“攻击领导者模型”将长期安全目标分解为帧级扰动，实现：</li></ol>\n<ul><li><strong>高攻击成功率</strong>：在ACT、Baku等EAI模型上，关键、危险、风险任务的攻击成功率分别达52%、67%、50%。</li><li><strong>隐蔽性优化</strong>：支持稀疏攻击（如每3帧扰动）和自适应策略，降低攻击频率同时保持高成功率。</li></ul>\n<ol><li><strong>评估与影响</strong>：实验验证攻击在模拟和真实机器人场景的有效性，暴露EAI系统在物理交互中的安全漏洞，呼吁加强安全防御机制。 论文强调传统机器学习安全方法不适用于EAI，需重新定义安全指标并设计物理环境下的防御策略。</li></ol>"
+  },
+  {
+    "date": "2025-09-02",
+    "title": "Align-Then-stEer: Adapting the Vision-Language Action Models through Unified Latent Guidance",
+    "link": "http://arxiv.org/abs/2509.02055v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-09-02",
+    "title": "AutoDrive-R$^2$: Incentivizing Reasoning and Self-Reflection Capacity for VLA Model in Autonomous Driving",
+    "link": "http://arxiv.org/abs/2509.01944v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-31",
+    "title": "OmniReason: A Temporal-Guided Vision-Language-Action Framework for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2509.00789v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-30",
+    "title": "Galaxea Open-World Dataset and G0 Dual-System VLA Model",
+    "link": "http://arxiv.org/abs/2509.00576v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-30",
+    "title": "Mechanistic interpretability for steering vision-language-action models",
+    "link": "http://arxiv.org/abs/2509.00328v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-28",
+    "title": "CogVLA: Cognition-Aligned Vision-Language-Action Model via Instruction-Driven Routing & Sparsification",
+    "link": "http://arxiv.org/abs/2508.21046v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-28",
+    "title": "EmbodiedOneVision: Interleaved Vision-Text-Action Pretraining for General Robot Control",
+    "link": "http://arxiv.org/abs/2508.21112v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-27",
+    "title": "Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in Vision-Language-Action Policies",
+    "link": "http://arxiv.org/abs/2508.20072v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-27",
+    "title": "Long-VLA: Unleashing Long-Horizon Capability of Vision Language Action Model for Robot Manipulation",
+    "link": "http://arxiv.org/abs/2508.19958v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-27",
+    "title": "Ego-centric Predictive Model Conditioned on Hand Trajectories",
+    "link": "http://arxiv.org/abs/2508.19852v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-26",
+    "title": "MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2508.19236v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-25",
+    "title": "FlowVLA: Thinking in Motion with a Visual Chain of Thought",
+    "link": "http://arxiv.org/abs/2508.18269v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-23",
+    "title": "NinA: Normalizing Flows in Action. Training VLA Models with Normalizing Flows",
+    "link": "http://arxiv.org/abs/2508.16845v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-22",
+    "title": "Do What? Teaching Vision-Language-Action Models to Reject the Impossible",
+    "link": "http://arxiv.org/abs/2508.16292v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-21",
+    "title": "Survey of Vision-Language-Action Models for Embodied Manipulation",
+    "link": "http://arxiv.org/abs/2508.15201v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-19",
+    "title": "CAST: Counterfactual Labels Improve Instruction Following in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2508.13446v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-18",
+    "title": "Grounding Actions in Camera Space: Observation-Centric Vision-Language-Action Policy",
+    "link": "http://arxiv.org/abs/2508.13103v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-18",
+    "title": "Large VLM-based Vision-Language-Action Models for Robotic Manipulation: A Survey",
+    "link": "http://arxiv.org/abs/2508.13073v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-17",
+    "title": "Improving Pre-Trained Vision-Language-Action Policies with Model-Based Search",
+    "link": "http://arxiv.org/abs/2508.12211v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-16",
+    "title": "Toward General Physical Intelligence for Resilient Agile Manufacturing Automation",
+    "link": "http://arxiv.org/abs/2508.11960v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-15",
+    "title": "TTF-VLA: Temporal Token Fusion via Pixel-Attention Integration for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2508.19257v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-14",
+    "title": "CorrectNav: Self-Correction Flywheel Empowers Vision-Language-Action Navigation Model",
+    "link": "http://arxiv.org/abs/2508.10416v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-14",
+    "title": "Large Model Empowered Embodied AI: A Survey on Decision-Making and Embodied Learning",
+    "link": "http://arxiv.org/abs/2508.10399v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-14",
+    "title": "ReconVLA: Reconstructive Vision-Language-Action Model as Effective Robot Perceiver",
+    "link": "http://arxiv.org/abs/2508.10333v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-12",
+    "title": "GeoVLA: Empowering 3D Representations in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2508.09071v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-12",
+    "title": "Spatial Traces: Enhancing VLA Models with Spatial-Temporal Understanding",
+    "link": "http://arxiv.org/abs/2508.09032v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-12",
+    "title": "OmniVTLA: Vision-Tactile-Language-Action Model with Semantic-Aligned Tactile Sensing",
+    "link": "http://arxiv.org/abs/2508.08706v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-11",
+    "title": "GraphCoT-VLA: A 3D Spatial-Aware Reasoning Vision-Language-Action Model for Robotic Manipulation with Ambiguous Instructions",
+    "link": "http://arxiv.org/abs/2508.07650v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-07",
+    "title": "Information-Theoretic Graph Fusion with Vision-Language-Action Model for Policy Reasoning and Dual Robotic Control",
+    "link": "http://arxiv.org/abs/2508.05342v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-07",
+    "title": "Towards Embodied Agentic AI: Review and Classification of LLM- and VLM-Driven Robot Autonomy and Interaction",
+    "link": "http://arxiv.org/abs/2508.05294v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-07",
+    "title": "Learning to See and Act: Task-Aware View Planning for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2508.05186v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-07",
+    "title": "IRL-VLA: Training an Vision-Language-Action Policy via Reward World Model",
+    "link": "http://arxiv.org/abs/2508.06571v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-06",
+    "title": "Static and Plugged: Make Embodied Evaluation Simple",
+    "link": "http://arxiv.org/abs/2508.06553v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-06",
+    "title": "A tutorial note on collecting simulated data for vision-language-action models",
+    "link": "http://arxiv.org/abs/2508.06547v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-04",
+    "title": "MonoDream: Monocular Vision-Language Navigation with Panoramic Dreaming",
+    "link": "http://arxiv.org/abs/2508.02549v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-04",
+    "title": "CO-RFT: Efficient Fine-Tuning of Vision-Language-Action Models through Chunked Offline Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2508.02219v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-04",
+    "title": "FedVLA: Federated Vision-Language-Action Learning with Dual Gating Mixture-of-Experts for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2508.02190v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-08-04",
+    "title": "RICL: Adding In-Context Adaptability to Pre-Trained Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2508.02062v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "XRoboToolkit: A Cross-Platform Framework for Robot Teleoperation",
+    "link": "http://arxiv.org/abs/2508.00097v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "villa-X: Enhancing Latent Action Modeling in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2507.23682v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "A Unified Perception-Language-Action Framework for Adaptive Autonomous Driving",
+    "link": "http://arxiv.org/abs/2507.23540v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-31",
+    "title": "FastDriveVLA: Efficient End-to-End Driving via Plug-and-Play Reconstruction-based Token Pruning",
+    "link": "http://arxiv.org/abs/2507.23318v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-30",
+    "title": "Spec-VLA: Speculative Decoding for Vision-Language-Action Models with Relaxed Acceptance",
+    "link": "http://arxiv.org/abs/2507.22424v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-23",
+    "title": "InstructVLA: Vision-Language-Action Instruction Tuning from Understanding to Manipulation",
+    "link": "http://arxiv.org/abs/2507.17520v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-23",
+    "title": "ERMV: Editing 4D Robotic Multi-view images to enhance embodied agents",
+    "link": "http://arxiv.org/abs/2507.17462v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-23",
+    "title": "Confidence Calibration in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2507.17383v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-23",
+    "title": "VLA-Touch: Enhancing Vision-Language-Action Models with Dual-Level Tactile Feedback",
+    "link": "http://arxiv.org/abs/2507.17294v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-22",
+    "title": "ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent Planning",
+    "link": "http://arxiv.org/abs/2507.16815v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-21",
+    "title": "Being-H0: Vision-Language-Action Pretraining from Large-Scale Human Videos",
+    "link": "http://arxiv.org/abs/2507.15597v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-21",
+    "title": "GR-3 Technical Report",
+    "link": "http://arxiv.org/abs/2507.15493v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-18",
+    "title": "VLA-Mark: A cross modal watermark for large vision-language alignment model",
+    "link": "http://arxiv.org/abs/2507.14067v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-18",
+    "title": "EdgeVLA: Efficient Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2507.14049v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-17",
+    "title": "AnyPos: Automated Task-Agnostic Actions for Bimanual Manipulation",
+    "link": "http://arxiv.org/abs/2507.12768v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-16",
+    "title": "EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos",
+    "link": "http://arxiv.org/abs/2507.12440v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-14",
+    "title": "Vision Language Action Models in Robotic Manipulation: A Systematic Review",
+    "link": "http://arxiv.org/abs/2507.10672v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-12",
+    "title": "Tactile-VLA: Unlocking Vision-Language-Action Model's Physical Knowledge for Tactile Generalization",
+    "link": "http://arxiv.org/abs/2507.09160v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-07",
+    "title": "VOTE: Vision-Language-Action Optimization with Trajectory Ensemble Voting",
+    "link": "http://arxiv.org/abs/2507.05116v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-06",
+    "title": "DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive World Knowledge",
+    "link": "http://arxiv.org/abs/2507.04447v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-03",
+    "title": "DexVLG: Dexterous Vision-Language-Grasp Model at Scale",
+    "link": "http://arxiv.org/abs/2507.02747v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-02",
+    "title": "cVLA: Towards Efficient Camera-Space VLAs",
+    "link": "http://arxiv.org/abs/2507.02190v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-02",
+    "title": "A Survey on Vision-Language-Action Models: An Action Tokenization Perspective",
+    "link": "http://arxiv.org/abs/2507.01925v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-02",
+    "title": "TriVLA: A Triple-System-Based Unified Vision-Language-Action Model for General Robot Control",
+    "link": "http://arxiv.org/abs/2507.01424v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-07-01",
+    "title": "Evo-0: Vision-Language-Action Model with Implicit Spatial Understanding",
+    "link": "http://arxiv.org/abs/2507.00416v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-30",
+    "title": "A Survey on Vision-Language-Action Models for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2506.24044v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-29",
+    "title": "IR3D-Bench: Evaluating Vision-Language Model Scene Understanding as Agentic Inverse Rendering",
+    "link": "http://arxiv.org/abs/2506.23329v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-27",
+    "title": "4D-VLA: Spatiotemporal Vision-Language-Action Pretraining with Cross-Scene Calibration",
+    "link": "http://arxiv.org/abs/2506.22242v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-26",
+    "title": "WorldVLA: Towards Autoregressive Action World Model",
+    "link": "http://arxiv.org/abs/2506.21539v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-26",
+    "title": "Parallels Between VLA Model Post-Training and Human Motor Learning: Progress, Challenges, and Trends",
+    "link": "http://arxiv.org/abs/2506.20966v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-24",
+    "title": "Unified Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2506.19850v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-24",
+    "title": "CronusVLA: Transferring Latent Motion Across Time for Multi-Frame Prediction in Manipulation",
+    "link": "http://arxiv.org/abs/2506.19816v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-23",
+    "title": "MinD: Learning A Dual-System World Model for Real-Time Planning and Implicit Risk Analysis",
+    "link": "http://arxiv.org/abs/2506.18897v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-22",
+    "title": "RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain Randomization for Robust Bimanual Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2506.18088v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-21",
+    "title": "RoboMonkey: Scaling Test-Time Sampling and Verification for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.17811v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-21",
+    "title": "RLRC: Reinforcement Learning-based Recovery for Compressed Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.17639v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-21",
+    "title": "VLA-OS: Structuring and Dissecting Planning Representations and Paradigms in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.17561v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-19",
+    "title": "CapsDT: Diffusion-Transformer for Capsule Robot Manipulation",
+    "link": "http://arxiv.org/abs/2506.16263v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-19",
+    "title": "ControlVLA: Few-shot Object-centric Adaptation for Pre-trained Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.16211v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-17",
+    "title": "FormGym: Doing Paperwork with Agents",
+    "link": "http://arxiv.org/abs/2506.14079v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-16",
+    "title": "GRaD-Nav++: Vision-Language Model Enabled Visual Drone Navigation with Gaussian Radiance Fields and Differentiable Dynamics",
+    "link": "http://arxiv.org/abs/2506.14009v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-16",
+    "title": "AutoVLA: A Vision-Language-Action Model for End-to-End Autonomous Driving with Adaptive Reasoning and Reinforcement Fine-Tuning",
+    "link": "http://arxiv.org/abs/2506.13757v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-16",
+    "title": "LeVERB: Humanoid Whole-Body Control with Latent Vision-Language Instruction",
+    "link": "http://arxiv.org/abs/2506.13751v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-16",
+    "title": "CEED-VLA: Consistency Vision-Language-Action Model with Early-Exit Decoding",
+    "link": "http://arxiv.org/abs/2506.13725v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-16",
+    "title": "ROSA: Harnessing Robot States for Vision-Language and Action Alignment",
+    "link": "http://arxiv.org/abs/2506.13679v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-15",
+    "title": "SP-VLA: A Joint Model Scheduling and Token Pruning Approach for VLA Model Acceleration",
+    "link": "http://arxiv.org/abs/2506.12723v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-11",
+    "title": "EfficientVLA: Training-Free Acceleration and Compression for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.10100v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-11",
+    "title": "SAFE: Multitask Failure Detection for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.09937v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-11",
+    "title": "From Intention to Execution: Probing the Generalization Boundaries of Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.09930v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-11",
+    "title": "OctoNav: Towards Generalist Embodied Navigation",
+    "link": "http://arxiv.org/abs/2506.09839v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-10",
+    "title": "An Open-Source Software Toolkit & Benchmark Suite for the Evaluation and Adaptation of Multimodal Action Models",
+    "link": "http://arxiv.org/abs/2506.09172v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-10",
+    "title": "FreqPolicy: Efficient Flow-based Visuomotor Policy via Frequency Consistency",
+    "link": "http://arxiv.org/abs/2506.08822v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-10",
+    "title": "Hybrid Reasoning for Perception, Explanation, and Autonomous Action in Manufacturing",
+    "link": "http://arxiv.org/abs/2506.08462v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-10",
+    "title": "TGRPO :Fine-tuning Vision-Language-Action Model via Trajectory-wise Group Relative Policy Optimization",
+    "link": "http://arxiv.org/abs/2506.08440v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-09",
+    "title": "HiBerNAC: Hierarchical Brain-emulated Robotic Neural Agent Collective for Disentangling Complex Manipulation",
+    "link": "http://arxiv.org/abs/2506.08296v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-09",
+    "title": "Agentic Surgical AI: Surgeon Style Fingerprinting and Privacy Risk Quantification via Discrete Diffusion in a Vision-Language-Action Framework",
+    "link": "http://arxiv.org/abs/2506.08185v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-09",
+    "title": "BridgeVLA: Input-Output Alignment for Efficient 3D Manipulation Learning with Vision-Language Models",
+    "link": "http://arxiv.org/abs/2506.07961v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-09",
+    "title": "Fast ECoT: Efficient Embodied Chain-of-Thought via Thoughts Reuse",
+    "link": "http://arxiv.org/abs/2506.07639v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-09",
+    "title": "BitVLA: 1-bit Vision-Language-Action Models for Robotics Manipulation",
+    "link": "http://arxiv.org/abs/2506.07530v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-09",
+    "title": "Real-Time Execution of Action Chunking Flow Policies",
+    "link": "http://arxiv.org/abs/2506.07339v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-08",
+    "title": "Robotic Policy Learning via Human-assisted Action Preference Optimization",
+    "link": "http://arxiv.org/abs/2506.07127v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-07",
+    "title": "RoboCerebra: A Large-scale Benchmark for Long-horizon Robotic Manipulation Evaluation",
+    "link": "http://arxiv.org/abs/2506.06677v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-06",
+    "title": "DriveAction: A Benchmark for Exploring Human-like Driving Decisions in VLA Models",
+    "link": "http://arxiv.org/abs/2506.05667v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-04",
+    "title": "SwitchVLA: Execution-Aware Task Switching for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2506.03574v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-03",
+    "title": "Adversarial Attacks on Robotic Vision Language Action Models",
+    "link": "http://arxiv.org/abs/2506.03350v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-02",
+    "title": "SAB3R: Semantic-Augmented Backbone in 3D Reconstruction",
+    "link": "http://arxiv.org/abs/2506.02112v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-02",
+    "title": "Fast-in-Slow: A Dual-System Foundation Model Unifying Fast Manipulation within Slow Reasoning",
+    "link": "http://arxiv.org/abs/2506.01953v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-02",
+    "title": "SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics",
+    "link": "http://arxiv.org/abs/2506.01844v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-01",
+    "title": "OG-VLA: 3D-Aware Vision Language Action Model via Orthographic Image Generation",
+    "link": "http://arxiv.org/abs/2506.01196v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-06-01",
+    "title": "GraphPad: Inference-Time 3D Scene Graph Updates for Embodied Question Answering",
+    "link": "http://arxiv.org/abs/2506.01174v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-31",
+    "title": "LoHoVLA: A Unified Vision-Language-Action Model for Long-Horizon Embodied Tasks",
+    "link": "http://arxiv.org/abs/2506.00411v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-30",
+    "title": "Towards a Generalizable Bimanual Foundation Policy via Flow-based Video Prediction",
+    "link": "http://arxiv.org/abs/2505.24156v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-29",
+    "title": "Impromptu VLA: Open Weights and Open Data for Driving Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2505.23757v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-29",
+    "title": "Knowledge Insulating Vision-Language-Action Models: Train Fast, Run Fast, Generalize Better",
+    "link": "http://arxiv.org/abs/2505.23705v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-29",
+    "title": "TrackVLA: Embodied Visual Tracking in the Wild",
+    "link": "http://arxiv.org/abs/2505.23189v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-28",
+    "title": "Zero-Shot 3D Visual Grounding from Vision-Language Models",
+    "link": "http://arxiv.org/abs/2505.22429v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-28",
+    "title": "ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation",
+    "link": "http://arxiv.org/abs/2505.22159v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-28",
+    "title": "ChatVLA-2: Vision-Language-Action Model with Open-World Embodied Reasoning from Pretrained Knowledge",
+    "link": "http://arxiv.org/abs/2505.21906v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-27",
+    "title": "Hume: Introducing System-2 Thinking in Visual-Language-Action Model",
+    "link": "http://arxiv.org/abs/2505.21432v4",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-27",
+    "title": "Think Twice, Act Once: Token-Aware Compression and Action Reuse for Efficient Inference in Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2505.21200v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-27",
+    "title": "EaqVLA: Encoding-aligned Quantization for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2505.21567v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-27",
+    "title": "Hierarchical Instruction-aware Embodied Visual Tracking",
+    "link": "http://arxiv.org/abs/2505.20710v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-26",
+    "title": "What Can RL Bring to VLA Generalization? An Empirical Study",
+    "link": "http://arxiv.org/abs/2505.19789v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-26",
+    "title": "RFTF: Reinforcement Fine-tuning for Embodied Agents with Temporal Feedback",
+    "link": "http://arxiv.org/abs/2505.19767v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-26",
+    "title": "DiffVLA: Vision-Language Guided Diffusion Planning for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2505.19381v4",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-25",
+    "title": "ReFineVLA: Reasoning-Aware Teacher-Guided Transfer Fine-Tuning",
+    "link": "http://arxiv.org/abs/2505.19080v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-24",
+    "title": "Genie Centurion: Accelerating Scalable Real-World Robot Training with Human Rewind-and-Refine Guidance",
+    "link": "http://arxiv.org/abs/2505.18793v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-24",
+    "title": "VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2505.18719v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-22",
+    "title": "ScanBot: Towards Intelligent Surface Scanning in Embodied Robotic Systems",
+    "link": "http://arxiv.org/abs/2505.17295v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-22",
+    "title": "Interactive Post-Training for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2505.17016v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-22",
+    "title": "DriveMoE: Mixture-of-Experts for Vision-Language-Action Model in End-to-End Autonomous Driving",
+    "link": "http://arxiv.org/abs/2505.16278v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "UAV-Flow Colosseo: A Real-World Benchmark for Flying-on-a-Word UAV Imitation Learning",
+    "link": "http://arxiv.org/abs/2505.15725v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "From Grounding to Manipulation: Case Studies of Foundation Model Integration in Embodied Robotic Systems",
+    "link": "http://arxiv.org/abs/2505.15685v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "Exploring the Limits of Vision-Language-Action Manipulations in Cross-task Generalization",
+    "link": "http://arxiv.org/abs/2505.15660v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "FLARE: Robot Learning with Implicit World Modeling",
+    "link": "http://arxiv.org/abs/2505.15659v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "Saliency-Aware Quantized Imitation Learning for Efficient Robotic Control",
+    "link": "http://arxiv.org/abs/2505.15304v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "EndoVLA: Dual-Phase Vision-Language-Action Model for Autonomous Tracking in Endoscopy",
+    "link": "http://arxiv.org/abs/2505.15206v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-21",
+    "title": "Object-Focus Actor for Data-efficient Robot Generalization Dexterous Manipulation",
+    "link": "http://arxiv.org/abs/2505.15098v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-20",
+    "title": "AutoBio: A Simulation and Benchmark for Robotic Automation in Digital Biology Laboratory",
+    "link": "http://arxiv.org/abs/2505.14030v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-20",
+    "title": "InSpire: Vision-Language-Action Models with Intrinsic Spatial Reasoning",
+    "link": "http://arxiv.org/abs/2505.13888v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-19",
+    "title": "SPKLIP: Aligning Spike Video Streams with Natural Language",
+    "link": "http://arxiv.org/abs/2505.12656v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-18",
+    "title": "RoboFAC: A Comprehensive Framework for Robotic Failure Analysis and Correction",
+    "link": "http://arxiv.org/abs/2505.12224v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-16",
+    "title": "Unveiling the Potential of Vision-Language-Action Models with Open-Ended Multimodal Instructions",
+    "link": "http://arxiv.org/abs/2505.11214v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-16",
+    "title": "Conditioning Matters: Training Diffusion Policies is Faster Than You Think",
+    "link": "http://arxiv.org/abs/2505.11123v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-14",
+    "title": "Real2Render2Real: Scaling Robot Data Without Dynamics Simulation or Robot Hardware",
+    "link": "http://arxiv.org/abs/2505.09601v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-14",
+    "title": "VTLA: Vision-Tactile-Language-Action Model with Preference Learning for Insertion Manipulation",
+    "link": "http://arxiv.org/abs/2505.09577v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-13",
+    "title": "From Seeing to Doing: Bridging Reasoning and Decision for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2505.08548v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-13",
+    "title": "Training Strategies for Efficient Embodied Reasoning",
+    "link": "http://arxiv.org/abs/2505.08243v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-12",
+    "title": "ReinboT: Amplifying Robot Visual-Language Manipulation with Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2505.07395v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-09",
+    "title": "UniVLA: Learning to Act Anywhere with Task-centric Latent Actions",
+    "link": "http://arxiv.org/abs/2505.06111v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-09",
+    "title": "3D CAVLA: Leveraging Depth and 3D Context to Generalize Vision Language Action Models for Unseen Tasks",
+    "link": "http://arxiv.org/abs/2505.05800v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-08",
+    "title": "Benchmarking Vision, Language, & Action Models in Procedurally Generated, Open Ended Action Environments",
+    "link": "http://arxiv.org/abs/2505.05540v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-07",
+    "title": "Vision-Language-Action Models: Concepts, Progress, Applications and Challenges",
+    "link": "http://arxiv.org/abs/2505.04769v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-06",
+    "title": "OpenHelix: A Short Survey, Empirical Analysis, and Open-Source Dual-System VLA Model for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2505.03912v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-06",
+    "title": "RoboOS: A Hierarchical Embodied Framework for Cross-Embodiment and Multi-Agent Collaboration",
+    "link": "http://arxiv.org/abs/2505.03673v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-06",
+    "title": "Task Reconstruction and Extrapolation for $π_0$ using Text Latent",
+    "link": "http://arxiv.org/abs/2505.03500v4",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-06",
+    "title": "GraspVLA: a Grasping Foundation Model Pre-trained on Billion-scale Synthetic Action Data",
+    "link": "http://arxiv.org/abs/2505.03233v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-06",
+    "title": "Automated Data Curation Using GPS & NLP to Generate Instruction-Action Pairs for Autonomous Vehicle Vision-Language Navigation Datasets",
+    "link": "http://arxiv.org/abs/2505.03174v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-05-04",
+    "title": "Interleave-VLA: Enhancing Robot Manipulation with Interleaved Image-Text Instructions",
+    "link": "http://arxiv.org/abs/2505.02152v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-04-28",
+    "title": "NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied Tasks",
+    "link": "http://arxiv.org/abs/2504.19854v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-04-22",
+    "title": "$π_{0.5}$: a Vision-Language-Action Model with Open-World Generalization",
+    "link": "http://arxiv.org/abs/2504.16054v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-04-01",
+    "title": "Grounding Multimodal LLMs to Embodied Agents that Ask for Help with Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2504.00907v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-30",
+    "title": "OpenDriveVLA: Towards End-to-end Autonomous Driving with Large Vision Language Action Model",
+    "link": "http://arxiv.org/abs/2503.23463v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-27",
+    "title": "CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2503.22020v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-26",
+    "title": "MoLe-VLA: Dynamic Layer-skipping Vision Language Action Model via Mixture-of-Layers for Efficient Robot Manipulation",
+    "link": "http://arxiv.org/abs/2503.20384v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-25",
+    "title": "Gemini Robotics: Bringing AI into the Physical World",
+    "link": "http://arxiv.org/abs/2503.20020v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-25",
+    "title": "Boosting Robotic Manipulation Generalization with Minimal Costly Data",
+    "link": "http://arxiv.org/abs/2503.19516v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-20",
+    "title": "JARVIS-VLA: Post-Training Large-Scale Vision Language Models to Play Visual Games with Keyboards and Mouse",
+    "link": "http://arxiv.org/abs/2503.16365v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-20",
+    "title": "IRef-VLA: A Benchmark for Interactive Referential Grounding with Imperfect Language in 3D Scenes",
+    "link": "http://arxiv.org/abs/2503.17406v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-18",
+    "title": "GR00T N1: An Open Foundation Model for Generalist Humanoid Robots",
+    "link": "http://arxiv.org/abs/2503.14734v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-17",
+    "title": "MoManipVLA: Transferring Vision-language-action Models for General Mobile Manipulation",
+    "link": "http://arxiv.org/abs/2503.13446v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-15",
+    "title": "ReBot: Scaling Robot Learning with Real-to-Sim-to-Real Robotic Video Synthesis",
+    "link": "http://arxiv.org/abs/2503.14526v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-13",
+    "title": "HybridVLA: Collaborative Diffusion and Autoregression in a Unified Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2503.10631v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-12",
+    "title": "CombatVLA: An Efficient Vision-Language-Action Model for Combat Tasks in 3D Action Role-Playing Games",
+    "link": "http://arxiv.org/abs/2503.09527v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-11",
+    "title": "MoRE: Unlocking Scalability in Reinforcement Learning for Quadruped Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2503.08007v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-10",
+    "title": "PointVLA: Injecting the 3D World into Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2503.07511v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-06",
+    "title": "Refined Policy Distillation: From VLA Generalists to RL Experts",
+    "link": "http://arxiv.org/abs/2503.05833v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-06",
+    "title": "VLA Model-Expert Collaboration for Bi-directional Manipulation Learning",
+    "link": "http://arxiv.org/abs/2503.04163v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-05",
+    "title": "OTTER: A Vision-Language-Action Model with Text-Aware Visual Feature Extraction",
+    "link": "http://arxiv.org/abs/2503.03734v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-05",
+    "title": "SafeVLA: Towards Safety Alignment of Vision-Language-Action Model via Constrained Learning",
+    "link": "http://arxiv.org/abs/2503.03480v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-04",
+    "title": "RaceVLA: VLA-based Racing Drone Navigation with Human-like Behaviour",
+    "link": "http://arxiv.org/abs/2503.02572v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-04",
+    "title": "Accelerating Vision-Language-Action Model Integrated with Action Chunking via Parallel Decoding",
+    "link": "http://arxiv.org/abs/2503.02310v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-03-03",
+    "title": "CognitiveDrone: A VLA Model and Evaluation Benchmark for Real-Time Cognitive Task Solving and Reasoning in UAVs",
+    "link": "http://arxiv.org/abs/2503.01378v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-27",
+    "title": "Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success",
+    "link": "http://arxiv.org/abs/2502.19645v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-26",
+    "title": "ObjectVLA: End-to-End Open-World Object Manipulation Without Demonstration",
+    "link": "http://arxiv.org/abs/2502.19250v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-24",
+    "title": "Evolution 6.0: Evolving Robotic Capabilities Through Generative Design",
+    "link": "http://arxiv.org/abs/2502.17034v4",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-20",
+    "title": "Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration",
+    "link": "http://arxiv.org/abs/2502.14795v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-20",
+    "title": "ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2502.14420v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-19",
+    "title": "VLAS: Vision-Language-Action Model With Speech Instructions For Customized Robot Manipulation",
+    "link": "http://arxiv.org/abs/2502.13508v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-14",
+    "title": "Diffusion Trajectory-guided Policy for Long-horizon Robot Manipulation",
+    "link": "http://arxiv.org/abs/2502.10040v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-13",
+    "title": "GEVRM: Goal-Expressive Video Generation Model For Robust Visual Manipulation",
+    "link": "http://arxiv.org/abs/2502.09268v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-09",
+    "title": "DexVLA: Vision-Language Model with Plug-In Diffusion Expert for General Robot Control",
+    "link": "http://arxiv.org/abs/2502.05855v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-08",
+    "title": "HAMSTER: Hierarchical Action Models For Open-World Robot Manipulation",
+    "link": "http://arxiv.org/abs/2502.05485v4",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-08",
+    "title": "ConRFT: A Reinforced Fine-tuning Method for VLA Models via Consistency Policy",
+    "link": "http://arxiv.org/abs/2502.05450v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-07",
+    "title": "Survey on Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2502.06851v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-06",
+    "title": "Probing a Vision-Language-Action Model for Symbolic States and Integration into a Cognitive Architecture",
+    "link": "http://arxiv.org/abs/2502.04558v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-04",
+    "title": "VLA-Cache: Towards Efficient Vision-Language-Action Model via Adaptive Token Caching in Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2502.02175v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-02-03",
+    "title": "Scalable, Training-Free Visual Language Robotics: A Modular Multi-Model Framework for Consumer-Grade GPUs",
+    "link": "http://arxiv.org/abs/2502.01071v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-31",
+    "title": "UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent",
+    "link": "http://arxiv.org/abs/2501.18867v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-28",
+    "title": "Improving Vision-Language-Action Model with Online Reinforcement Learning",
+    "link": "http://arxiv.org/abs/2501.16664v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-25",
+    "title": "An Atomic Skill Library Construction Method for Data-Efficient Embodied Manipulation",
+    "link": "http://arxiv.org/abs/2501.15068v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-16",
+    "title": "FAST: Efficient Action Tokenization for Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2501.09747v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-12",
+    "title": "Shake-VLA: Vision-Language-Action Model-Based System for Bimanual Robotic Manipulations and Liquid Mixing",
+    "link": "http://arxiv.org/abs/2501.06919v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-09",
+    "title": "UAV-VLA: Vision-Language-Action System for Large Scale Aerial Mission Generation",
+    "link": "http://arxiv.org/abs/2501.05014v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-08",
+    "title": "Beyond Sight: Finetuning Generalist Robot Policies with Heterogeneous Sensors via Language Grounding",
+    "link": "http://arxiv.org/abs/2501.04693v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-07",
+    "title": "OmniManip: Towards General Robotic Manipulation via Object-Centric Interaction Primitives as Spatial Constraints",
+    "link": "http://arxiv.org/abs/2501.03841v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-07",
+    "title": "Bridged Semantic Alignment for Zero-shot 3D Medical Image Diagnosis",
+    "link": "http://arxiv.org/abs/2501.03565v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2025-01-06",
+    "title": "Large language models for artificial general intelligence (AGI): A survey of foundational principles and approaches",
+    "link": "http://arxiv.org/abs/2501.03151v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-29",
+    "title": "CoA-VLA: Improving Vision-Language-Action Models via Visual-Textual Chain-of-Affordance",
+    "link": "http://arxiv.org/abs/2412.20451v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-24",
+    "title": "VLABench: A Large-Scale Benchmark for Language-Conditioned Robotics Manipulation with Long-Horizon Reasoning Tasks",
+    "link": "http://arxiv.org/abs/2412.18194v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-20",
+    "title": "QUART-Online: Latency-Free Large Multimodal Language Model for Quadruped Robot Learning",
+    "link": "http://arxiv.org/abs/2412.15576v5",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-18",
+    "title": "Towards Generalist Robot Policies: What Matters in Building Vision-Language-Action Models",
+    "link": "http://arxiv.org/abs/2412.14058v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-18",
+    "title": "RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for Robot Manipulation",
+    "link": "http://arxiv.org/abs/2412.13877v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-16",
+    "title": "Emma-X: An Embodied Multimodal Action Model with Grounded Chain of Thought and Look-ahead Spatial Reasoning",
+    "link": "http://arxiv.org/abs/2412.11974v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-13",
+    "title": "TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for Generalist Robotic Policies",
+    "link": "http://arxiv.org/abs/2412.10345v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-09",
+    "title": "Uni-NaVid: A Video-based Vision-Language-Action Model for Unifying Embodied Navigation Tasks",
+    "link": "http://arxiv.org/abs/2412.06224v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-05",
+    "title": "NaVILA: Legged Robot Vision-Language-Action Model for Navigation",
+    "link": "http://arxiv.org/abs/2412.04453v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-12-02",
+    "title": "Quantization-Aware Imitation-Learning for Resource-Efficient Robotic Control",
+    "link": "http://arxiv.org/abs/2412.01034v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-29",
+    "title": "SOLAMI: Social Vision-Language-Action Modeling for Immersive Interaction with 3D Autonomous Characters",
+    "link": "http://arxiv.org/abs/2412.00174v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-29",
+    "title": "RoboMatrix: A Skill-centric Hierarchical Framework for Scalable Robot Task Planning and Execution in Open-World",
+    "link": "http://arxiv.org/abs/2412.00171v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-29",
+    "title": "CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition and Action in Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2411.19650v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-28",
+    "title": "GRAPE: Generalizing Robot Policy via Preference Alignment",
+    "link": "http://arxiv.org/abs/2411.19309v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-18",
+    "title": "Exploring the Adversarial Vulnerabilities of Vision-Language-Action Models in Robotics",
+    "link": "http://arxiv.org/abs/2411.13587v4",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-15",
+    "title": "Visual-Linguistic Agent: Towards Collaborative Contextual Object Reasoning",
+    "link": "http://arxiv.org/abs/2411.10252v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-05",
+    "title": "VLA-3D: A Dataset for 3D Semantic Scene Understanding and Navigation",
+    "link": "http://arxiv.org/abs/2411.03540v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-04",
+    "title": "DeeR-VLA: Dynamic Inference of Multimodal Large Language Models for Efficient Robot Execution",
+    "link": "http://arxiv.org/abs/2411.02359v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-04",
+    "title": "Benchmarking Vision, Language, & Action Models on Robotic Learning Tasks",
+    "link": "http://arxiv.org/abs/2411.05821v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-11-01",
+    "title": "CLIP-RT: Learning Language-Conditioned Robotic Policies from Natural Language Supervision",
+    "link": "http://arxiv.org/abs/2411.00508v4",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-21",
+    "title": "The Duality of Generative AI and Reinforcement Learning in Robotics: A Review",
+    "link": "http://arxiv.org/abs/2410.16411v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-21",
+    "title": "VLASCD: A Visual Language Action Model for Simultaneous Chatting and Decision Making",
+    "link": "http://arxiv.org/abs/2410.15885v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-21",
+    "title": "A Dual Process VLA: Efficient Robotic Manipulation Leveraging VLM",
+    "link": "http://arxiv.org/abs/2410.15549v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-17",
+    "title": "Vision-Language-Action Model and Diffusion Policy Switching Enables Dexterous Control of an Anthropomorphic Hand",
+    "link": "http://arxiv.org/abs/2410.14022v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-15",
+    "title": "Latent Action Pretraining from Videos",
+    "link": "http://arxiv.org/abs/2410.11758v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-10",
+    "title": "Towards Synergistic, Generalized, and Efficient Dual-System for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2410.08001v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-07",
+    "title": "LADEV: A Language-Driven Testing and Evaluation Platform for Vision-Language-Action Models in Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2410.05191v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-10-02",
+    "title": "Run-time Observation Interventions Make Vision-Language-Action Models More Visually Robust",
+    "link": "http://arxiv.org/abs/2410.01971v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-09-29",
+    "title": "RoboNurse-VLA: Robotic Scrub Nurse System based on Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2409.19590v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-09-19",
+    "title": "TinyVLA: Towards Fast, Data-Efficient Vision-Language-Action Models for Robotic Manipulation",
+    "link": "http://arxiv.org/abs/2409.12514v5",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-09-12",
+    "title": "HiRT: Enhancing Robotic Control with Hierarchical Robot Transformers",
+    "link": "http://arxiv.org/abs/2410.05273v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-09-05",
+    "title": "OccLLaMA: An Occupancy-Language-Action Generative World Model for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2409.03272v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-08-19",
+    "title": "CoVLA: Comprehensive Vision-Language-Action Dataset for Autonomous Driving",
+    "link": "http://arxiv.org/abs/2408.10845v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-07-25",
+    "title": "Unified Lexical Representation for Interpretable Visual-Language Alignment",
+    "link": "http://arxiv.org/abs/2407.17827v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-07-11",
+    "title": "Robotic Control via Embodied Chain-of-Thought Reasoning",
+    "link": "http://arxiv.org/abs/2407.08693v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-07-10",
+    "title": "Mobility VLA: Multimodal Instruction Navigation with Long-Context VLMs and Topological Graphs",
+    "link": "http://arxiv.org/abs/2407.07775v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-06-28",
+    "title": "LLaRA: Supercharging Robot Learning Data for Vision-Language Policy",
+    "link": "http://arxiv.org/abs/2406.20095v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-06-27",
+    "title": "OmniJARVIS: Unified Vision-Language-Action Tokenization Enables Open-World Instruction Following Agents",
+    "link": "http://arxiv.org/abs/2407.00114v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-06-21",
+    "title": "Learning Efficient and Robust Language-conditioned Manipulation using Textual-Visual Relevancy and Equivariant Language Mapping",
+    "link": "http://arxiv.org/abs/2406.15677v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-06-13",
+    "title": "OpenVLA: An Open-Source Vision-Language-Action Model",
+    "link": "http://arxiv.org/abs/2406.09246v3",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-06-06",
+    "title": "RoboMamba: Efficient Vision-Language-Action Model for Robotic Reasoning and Manipulation",
+    "link": "http://arxiv.org/abs/2406.04339v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-05-31",
+    "title": "Empowering Visual Creativity: A Vision-Language Assistant to Image Editing Recommendations",
+    "link": "http://arxiv.org/abs/2406.00121v1",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-05-27",
+    "title": "A Self-Correcting Vision-Language-Action Model for Fast and Slow System Manipulation",
+    "link": "http://arxiv.org/abs/2405.17418v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-05-23",
+    "title": "A Survey on Vision-Language-Action Models for Embodied AI",
+    "link": "http://arxiv.org/abs/2405.14093v5",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  },
+  {
+    "date": "2024-05-09",
+    "title": "Bi-VLA: Vision-Language-Action Model-Based System for Bimanual Robotic Dexterous Manipulations",
+    "link": "http://arxiv.org/abs/2405.06039v2",
+    "summary_markdown": "待生成",
+    "summary_html": "<p>待生成</p>"
+  }
+]

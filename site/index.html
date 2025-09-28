@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ArXiv Papers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <h1>ArXiv 精选</h1>
+      <div class="controls"> 
+        <input id="search" type="search" placeholder="搜索标题或内容…" aria-label="搜索" />
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="groups"></section>
+    </main>
+
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title"> 
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <button id="modal-close" class="icon-btn" aria-label="关闭">✕</button>
+        <h2 id="modal-title"></h2>
+        <div id="modal-meta" class="muted"></div>
+        <article id="modal-body"></article>
+      </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+  </body>
+</html>
