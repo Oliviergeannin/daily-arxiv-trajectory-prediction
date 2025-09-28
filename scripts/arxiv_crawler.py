@@ -189,8 +189,17 @@ def _default_papers_path() -> str:
 
 
 if __name__ == "__main__":
-	# 无条件执行初始化：生成四列（含“简要总结”折叠占位）的 papers.md
+	import sys
+	
 	papers_md = _default_papers_path()
 	collector = ArxivVLACollector(papers_md)
-	count = collector.initialize()
-	print(f"初始化完成，新增 {count} 篇论文，写入 {papers_md}")
+	
+	# 检查是否已有 papers.md 文件，决定运行模式
+	if os.path.exists(papers_md) and os.path.getsize(papers_md) > 0:
+		# 文件存在且不为空，执行每日增量更新
+		count = collector.run_daily()
+		print(f"每日更新完成，新增 {count} 篇论文，写入 {papers_md}")
+	else:
+		# 文件不存在或为空，执行初始化
+		count = collector.initialize()
+		print(f"初始化完成，新增 {count} 篇论文，写入 {papers_md}")
