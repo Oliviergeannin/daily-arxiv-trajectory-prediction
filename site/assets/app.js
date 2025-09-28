@@ -95,5 +95,5 @@
   modal.addEventListener('click', (e)=>{ if(e.target.classList.contains('modal-backdrop')) closeModal(); });
   searchEl.addEventListener('input', sync);
 
-  fetch('/vla/assets/data.json').then(r=>r.json()).then(arr=>{ DATA = arr; sync(); });
+  fetch('/daily-arxiv-vla/assets/data.json').then(r=>r.json()).then(arr=>{ DATA = arr; sync(); });
 })();
