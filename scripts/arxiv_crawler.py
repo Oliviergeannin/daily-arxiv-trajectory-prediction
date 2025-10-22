@@ -19,9 +19,6 @@ class ArxivTPCollector:
 	_ALLOWED_PRIMARY_CATEGORIES = {
 		"cs.CV",
 		"cs.AI",
-		"cs.CL",
-		"cs.LG",
-		"cs.MM",
 		"cs.RO",
 	}
 
@@ -48,7 +45,8 @@ class ArxivTPCollector:
 		 */
 		"""
 		search = arxiv.Search(
-			query="trajectory prediction",
+			# query="trajectory prediction",
+			query='"trajectory prediction" OR "trajectory forecasting"',
 			# trajectory prediction OR motion forecasting OR path prediction
 			max_results=max_results,
 			sort_by=arxiv.SortCriterion.SubmittedDate,
