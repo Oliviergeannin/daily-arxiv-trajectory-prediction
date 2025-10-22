@@ -6,11 +6,11 @@ from typing import List, Set
 import arxiv
 
 
-class ArxivVLACollector:
+class ArxivTPCollector:
 	"""
 	/**
-	 * @class ArxivVLACollector
-	 * @description 每日自动获取 arXiv 上包含 "VLA" 关键词的论文，并维护项目根目录下的
+	 * @class ArxivTPCollector
+	 * @description 每日自动获取 arXiv 上包含 "TP" 关键词的论文，并维护项目根目录下的
 	 * `papers.md` 表格（列：日期、标题、链接）。首次运行无数据时执行初始化，之后每日增量并去重。
 	 */
 	"""
@@ -54,7 +54,17 @@ class ArxivVLACollector:
 			sort_by=arxiv.SortCriterion.SubmittedDate,
 			sort_order=arxiv.SortOrder.Descending,
 		)
-		return list(self._client.results(search))
+		# return list(self._client.results(search))
+
+		try:
+			results = list(self._client.results(search))
+			return results
+		except arxiv.UnexpectedEmptyPageError as e:
+			print(f"[警告] Arxiv 返回空页面，已停止抓取：{e}")
+			return []
+		except Exception as e:
+			print(f"[错误] 抓取失败：{e}")
+			return []
 
 	def _filter_categories(self, results: List[arxiv.Result]) -> List[arxiv.Result]:
 		"""
@@ -193,7 +203,7 @@ if __name__ == "__main__":
 	import sys
 	
 	papers_md = _default_papers_path()
-	collector = ArxivVLACollector(papers_md)
+	collector = ArxivTPCollector(papers_md)
 	
 	# 检查是否已有 papers.md 文件，决定运行模式
 	if os.path.exists(papers_md) and os.path.getsize(papers_md) > 0:
