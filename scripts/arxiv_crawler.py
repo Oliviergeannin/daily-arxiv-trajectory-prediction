@@ -48,7 +48,8 @@ class ArxivVLACollector:
 		 */
 		"""
 		search = arxiv.Search(
-			query="VLA",
+			query="trajectory prediction",
+			# trajectory prediction OR motion forecasting OR path prediction
 			max_results=max_results,
 			sort_by=arxiv.SortCriterion.SubmittedDate,
 			sort_order=arxiv.SortOrder.Descending,

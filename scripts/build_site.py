@@ -26,7 +26,7 @@ SITE_DIR = PROJECT_ROOT / "site"
 ASSETS_DIR = SITE_DIR / "assets"
 
 # GitHub Pages 子路径配置
-BASE_PATH = "/daily-arxiv-vla"  # 仓库名对应的路径
+BASE_PATH = "/daily-arxiv-trajectory-prediction"  # 仓库名对应的路径
 
 
 def read_text(path: Path) -> str:
