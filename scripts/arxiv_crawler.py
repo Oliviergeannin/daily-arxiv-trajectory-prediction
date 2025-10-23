@@ -22,7 +22,7 @@ class ArxivTPCollector:
 		"cs.RO",
 	}
 
-	def __init__(self, papers_path: str, init_results: int = 10, daily_results: int = 20):
+	def __init__(self, papers_path: str, init_results: int = 200, daily_results: int = 20):
 		"""
 		/**
 		 * @constructor
@@ -46,7 +46,7 @@ class ArxivTPCollector:
 		"""
 		search = arxiv.Search(
 			# query="trajectory prediction",
-			query='"trajectory prediction" OR "trajectory forecasting"',
+			query='"trajectory prediction" OR "trajectory forecasting" OR "motion prediction" OR "motion forecasting"',
 			# trajectory prediction OR motion forecasting OR path prediction
 			max_results=max_results,
 			sort_by=arxiv.SortCriterion.SubmittedDate,
