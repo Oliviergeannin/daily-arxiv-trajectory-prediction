@@ -22,7 +22,7 @@ class ArxivTPCollector:
 		"cs.RO",
 	}
 
-	def __init__(self, papers_path: str, init_results: int = 200, daily_results: int = 20):
+	def __init__(self, papers_path: str, init_results: int = 10, daily_results: int = 20):
 		"""
 		/**
 		 * @constructor
