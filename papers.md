@@ -1,5 +1,16 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-11-24 | In-Video Instructions: Visual Signals as Generative Control | http://arxiv.org/abs/2511.19401v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-24 | Percept-WAM: Perception-Enhanced World-Awareness-Action Model for Robust End-to-End Autonomous Driving | http://arxiv.org/abs/2511.19221v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-24 | Reference-Free Sampling-Based Model Predictive Control | http://arxiv.org/abs/2511.19204v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-24 | Autonomous Docking of Multi-Rotor UAVs on Blimps under the Influence of Wind Gusts | http://arxiv.org/abs/2511.19135v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-24 | VeCoR - Velocity Contrastive Regularization for Flow Matching | http://arxiv.org/abs/2511.18942v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-24 | GContextFormer: A global context-aware hybrid multi-head attention approach with scaled additive aggregation for multimodal trajectory prediction | http://arxiv.org/abs/2511.18874v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-24 | AutoOdom: Learning Auto-regressive Proprioceptive Odometry for Legged Locomotion | http://arxiv.org/abs/2511.18857v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-24 | Robust Long-term Test-Time Adaptation for 3D Human Pose Estimation through Motion Discretization | http://arxiv.org/abs/2511.18851v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-23 | C3Po: Cross-View Cross-Modality Correspondence by Pointmap Prediction | http://arxiv.org/abs/2511.18559v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-23 | Gaze Beyond the Frame: Forecasting Egocentric 3D Visual Span | http://arxiv.org/abs/2511.18470v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-23 | Wireless Power Transfer and Intent-Driven Network Optimization in AAVs-assisted IoT for 6G Sustainable Connectivity | http://arxiv.org/abs/2511.18368v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-21 | MDG: Masked Denoising Generation for Multi-Agent Behavior Modeling in Traffic Environments | http://arxiv.org/abs/2511.17496v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-21 | Planning with Sketch-Guided Verification for Physics-Aware Video Generation | http://arxiv.org/abs/2511.17450v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-21 | Feasibility of Embodied Dynamics Based Bayesian Learning for Continuous Pursuit Motion Control of Assistive Mobile Robots in the Built Environment | http://arxiv.org/abs/2511.17401v1 | <details><summary>展开</summary>待生成</details> |
