@@ -1,5 +1,20 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-11-25 | Evaluating the Performance of Deep Learning Models in Whole-body Dynamic 3D Posture Prediction During Load-reaching Activities | http://arxiv.org/abs/2511.20615v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Safe and Stable Neural Network Dynamical Systems for Robot Motion Planning | http://arxiv.org/abs/2511.20593v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Metric, inertially aligned monocular state estimation via kinetodynamic priors | http://arxiv.org/abs/2511.20496v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | FREE: Uncertainty-Aware Autoregression for Parallel Diffusion Transformers | http://arxiv.org/abs/2511.20390v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | 3D Motion Perception of Binocular Vision Target with PID-CNN | http://arxiv.org/abs/2511.20332v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | How Robot Kinematics Influence Human Performance in Virtual Robot-to-Human Handover Tasks | http://arxiv.org/abs/2511.20299v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Back to the Feature: Explaining Video Classifiers with Video Counterfactual Explanations | http://arxiv.org/abs/2511.20295v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Dynamic-ICP: Doppler-Aware Iterative Closest Point Registration for Dynamic Scenes | http://arxiv.org/abs/2511.20292v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | SKEL-CF: Coarse-to-Fine Biomechanical Skeleton and Surface Mesh Recovery | http://arxiv.org/abs/2511.20157v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Map-World: Masked Action planning and Path-Integral World Model for Autonomous Driving | http://arxiv.org/abs/2511.20156v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Alzheimers Disease Progression Prediction Based on Manifold Mapping of Irregularly Sampled Longitudinal Data | http://arxiv.org/abs/2511.20154v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | WPT: World-to-Policy Transfer via Online World Model Distillation | http://arxiv.org/abs/2511.20095v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | ACIT: Attention-Guided Cross-Modal Interaction Transformer for Pedestrian Crossing Intention Prediction | http://arxiv.org/abs/2511.20020v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Multi-Context Fusion Transformer for Pedestrian Crossing Intention Prediction in Urban Environments | http://arxiv.org/abs/2511.20011v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-25 | Pedestrian Crossing Intention Prediction Using Multimodal Fusion Network | http://arxiv.org/abs/2511.20008v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-24 | In-Video Instructions: Visual Signals as Generative Control | http://arxiv.org/abs/2511.19401v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-24 | Percept-WAM: Perception-Enhanced World-Awareness-Action Model for Robust End-to-End Autonomous Driving | http://arxiv.org/abs/2511.19221v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-24 | Reference-Free Sampling-Based Model Predictive Control | http://arxiv.org/abs/2511.19204v1 | <details><summary>展开</summary>待生成</details> |
