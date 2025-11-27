@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-11-26 | TraceGen: World Modeling in 3D Trace Space Enables Learning from Cross-Embodiment Videos | http://arxiv.org/abs/2511.21690v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-26 | Model-Based Policy Adaptation for Closed-Loop End-to-End Autonomous Driving | http://arxiv.org/abs/2511.21584v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-26 | SocialNav: Training Human-Inspired Foundation Model for Socially-Aware Embodied Navigation | http://arxiv.org/abs/2511.21135v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-26 | Inversion-Free Style Transfer with Dual Rectified Flows | http://arxiv.org/abs/2511.20986v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-25 | Evaluating the Performance of Deep Learning Models in Whole-body Dynamic 3D Posture Prediction During Load-reaching Activities | http://arxiv.org/abs/2511.20615v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-25 | Safe and Stable Neural Network Dynamical Systems for Robot Motion Planning | http://arxiv.org/abs/2511.20593v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-25 | Metric, inertially aligned monocular state estimation via kinetodynamic priors | http://arxiv.org/abs/2511.20496v1 | <details><summary>展开</summary>待生成</details> |
