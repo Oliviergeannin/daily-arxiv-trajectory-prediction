@@ -1,5 +1,14 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-11-28 | Field-programmable dynamics in a soft magnetic actuator enabling true random number generation and reservoir computing | http://arxiv.org/abs/2511.23215v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-28 | LatBot: Distilling Universal Latent Actions for Vision-Language-Action Models | http://arxiv.org/abs/2511.23034v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-28 | McSc: Motion-Corrective Preference Alignment for Video Generation with Self-Critic Hierarchical Reasoning | http://arxiv.org/abs/2511.22974v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-28 | DenoiseGS: Gaussian Reconstruction Model for Burst Denoising | http://arxiv.org/abs/2511.22939v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-28 | Threat-Aware UAV Dodging of Human-Thrown Projectiles with an RGB-D Camera | http://arxiv.org/abs/2511.22847v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-27 | CoT4AD: A Vision-Language-Action Model with Explicit Chain-of-Thought Reasoning for Autonomous Driving | http://arxiv.org/abs/2511.22532v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-27 | UAV-MM3D: A Large-Scale Synthetic Benchmark for 3D Perception of Unmanned Aerial Vehicles with Multi-Modal Data | http://arxiv.org/abs/2511.22404v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-27 | Tracing Footsteps of Similar Cities: Modeling Urban Economic Vitality with Dynamic Inter-City Graph Embeddings | http://arxiv.org/abs/2511.22325v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-27 | Co-Evolving Agents: Learning from Failures as Hard Negatives | http://arxiv.org/abs/2511.22254v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-26 | TraceGen: World Modeling in 3D Trace Space Enables Learning from Cross-Embodiment Videos | http://arxiv.org/abs/2511.21690v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-26 | Model-Based Policy Adaptation for Closed-Loop End-to-End Autonomous Driving | http://arxiv.org/abs/2511.21584v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-26 | SocialNav: Training Human-Inspired Foundation Model for Socially-Aware Embodied Navigation | http://arxiv.org/abs/2511.21135v1 | <details><summary>展开</summary>待生成</details> |
