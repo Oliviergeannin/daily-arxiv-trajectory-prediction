@@ -1,5 +1,16 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-01 | EfficientFlow: Efficient Equivariant Flow Policy Learning for Embodied AI | http://arxiv.org/abs/2512.02020v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | GrndCtrl: Grounding World Models via Self-Supervised Reward Alignment | http://arxiv.org/abs/2512.01952v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | Physical ID-Transfer Attacks against Multi-Object Tracking via Adversarial Trajectory | http://arxiv.org/abs/2512.01934v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | StreamGaze: Gaze-Guided Temporal Reasoning and Proactive Understanding in Streaming Videos | http://arxiv.org/abs/2512.01707v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | Dynamic Log-Gaussian Process Control Barrier Function for Safe Robotic Navigation in Dynamic Environments | http://arxiv.org/abs/2512.01668v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | CourtMotion: Learning Event-Driven Motion Representations from Skeletal Data for Basketball | http://arxiv.org/abs/2512.01478v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | InternVideo-Next: Towards General Video Foundation Models without Video-Text Supervision | http://arxiv.org/abs/2512.01342v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | RoboDriveVLM: A Novel Benchmark and Baseline towards Robust Vision-Language Models for Autonomous Driving | http://arxiv.org/abs/2512.01300v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | DPAC: Distribution-Preserving Adversarial Control for Diffusion Sampling | http://arxiv.org/abs/2512.01153v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-30 | Weakly Supervised Continuous Micro-Expression Intensity Estimation Using Temporal Deep Neural Network | http://arxiv.org/abs/2512.01145v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-30 | Estimation of Kinematic Motion from Dashcam Footage | http://arxiv.org/abs/2512.01104v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-28 | Field-programmable dynamics in a soft magnetic actuator enabling true random number generation and reservoir computing | http://arxiv.org/abs/2511.23215v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-28 | LatBot: Distilling Universal Latent Actions for Vision-Language-Action Models | http://arxiv.org/abs/2511.23034v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-11-28 | McSc: Motion-Corrective Preference Alignment for Video Generation with Self-Critic Hierarchical Reasoning | http://arxiv.org/abs/2511.22974v1 | <details><summary>展开</summary>待生成</details> |
