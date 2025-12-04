@@ -1,5 +1,16 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-03 | Driving is a Game: Combining Planning and Prediction with Bayesian Iterative Best Response | http://arxiv.org/abs/2512.03936v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | MPCFormer: A physics-informed data-driven approach for explainable socially-aware autonomous driving | http://arxiv.org/abs/2512.03795v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | Safety Reinforced Model Predictive Control (SRMPC): Improving MPC with Reinforcement Learning for Motion Planning in Autonomous Driving | http://arxiv.org/abs/2512.03774v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | Bayesian Optimization for Automatic Tuning of Torque-Level Nonlinear Model Predictive Control | http://arxiv.org/abs/2512.03772v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | Prediction-Driven Motion Planning: Route Integration Strategies in Attention-Based Prediction Models | http://arxiv.org/abs/2512.03756v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | RoboScape-R: Unified Reward-Observation World Models for Generalizable Robotics Training via RL | http://arxiv.org/abs/2512.03556v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | GeoVideo: Introducing Geometric Regularization into Video Generation Model | http://arxiv.org/abs/2512.03453v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | ProtoEFNet: Dynamic Prototype Learning for Inherently Interpretable Ejection Fraction Estimation in Echocardiography | http://arxiv.org/abs/2512.03339v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-02 | Flux4D: Flow-based Unsupervised 4D Reconstruction | http://arxiv.org/abs/2512.03210v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-02 | DGGT: Feedforward 4D Reconstruction of Dynamic Driving Scenes using Unposed Images | http://arxiv.org/abs/2512.03004v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-02 | SwarmDiffusion: End-To-End Traversability-Guided Diffusion for Embodiment-Agnostic Navigation of Heterogeneous Robots | http://arxiv.org/abs/2512.02851v2 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-01 | EfficientFlow: Efficient Equivariant Flow Policy Learning for Embodied AI | http://arxiv.org/abs/2512.02020v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-01 | GrndCtrl: Grounding World Models via Self-Supervised Reward Alignment | http://arxiv.org/abs/2512.01952v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-01 | Physical ID-Transfer Attacks against Multi-Object Tracking via Adversarial Trajectory | http://arxiv.org/abs/2512.01934v1 | <details><summary>展开</summary>待生成</details> |
