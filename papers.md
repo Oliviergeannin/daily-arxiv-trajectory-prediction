@@ -1,5 +1,12 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-04 | Contact-Implicit Modeling and Simulation of a Snake Robot on Compliant and Granular Terrain | http://arxiv.org/abs/2512.05008v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-04 | Back to Basics: Motion Representation Matters for Human Motion Generation Using Diffusion Model | http://arxiv.org/abs/2512.04499v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-04 | DeRA: Decoupled Representation Alignment for Video Tokenization | http://arxiv.org/abs/2512.04483v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-04 | MindDrive: An All-in-One Framework Bridging World Models and Vision-Language Model for End-to-End Autonomous Driving | http://arxiv.org/abs/2512.04441v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-04 | FMA-Net++: Motion- and Exposure-Aware Real-World Joint Video Super-Resolution and Deblurring | http://arxiv.org/abs/2512.04390v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | Gamma-from-Mono: Road-Relative, Metric, Self-Supervised Monocular Geometry for Vehicular Applications | http://arxiv.org/abs/2512.04303v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-03 | Inference-time Stochastic Refinement of GRU-Normalizing Flow for Real-time Video Motion Transfer | http://arxiv.org/abs/2512.04282v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-03 | Driving is a Game: Combining Planning and Prediction with Bayesian Iterative Best Response | http://arxiv.org/abs/2512.03936v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-03 | MPCFormer: A physics-informed data-driven approach for explainable socially-aware autonomous driving | http://arxiv.org/abs/2512.03795v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-03 | Safety Reinforced Model Predictive Control (SRMPC): Improving MPC with Reinforcement Learning for Motion Planning in Autonomous Driving | http://arxiv.org/abs/2512.03774v1 | <details><summary>展开</summary>待生成</details> |
