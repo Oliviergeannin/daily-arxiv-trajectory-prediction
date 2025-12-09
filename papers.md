@@ -1,5 +1,12 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-05 | Multi-Modal Zero-Shot Prediction of Color Trajectories in Food Drying | http://arxiv.org/abs/2512.06190v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-02 | CogDrive: Cognition-Driven Multimodal Prediction-Planning Fusion for Safe Autonomy | http://arxiv.org/abs/2512.02777v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-02 | Multi-Domain Enhanced Map-Free Trajectory Prediction with Selective Attention | http://arxiv.org/abs/2512.02368v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-30 | SemAgent: Semantic-Driven Agentic AI Empowered Trajectory Prediction in Vehicular Networks | http://arxiv.org/abs/2512.00834v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-29 | SMamDiff: Spatial Mamba for Stochastic Human Motion Prediction | http://arxiv.org/abs/2512.00355v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-29 | mmPred: Radar-based Human Motion Prediction in the Dark | http://arxiv.org/abs/2512.00345v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-11-27 | MTR-VP: Towards End-to-End Trajectory Planning through Context-Driven Image Encoding and Multiple Trajectory Prediction | http://arxiv.org/abs/2511.22181v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-05 | Training-Time Action Conditioning for Efficient Real-Time Chunking | http://arxiv.org/abs/2512.05964v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-05 | Scenario-aware Uncertainty Quantification for Trajectory Prediction with Statistical Guarantees | http://arxiv.org/abs/2512.05682v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-04 | XR-DT: Extended Reality-Enhanced Digital Twin for Agentic Mobile Robots | http://arxiv.org/abs/2512.05270v1 | <details><summary>展开</summary>待生成</details> |
