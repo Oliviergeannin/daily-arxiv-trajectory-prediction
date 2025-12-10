@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-09 | Mind to Hand: Purposeful Robotic Control via Embodied Reasoning | http://arxiv.org/abs/2512.08580v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-01 | CourtMotion: Learning Event-Driven Motion Representations from Skeletal Data for Basketball | http://arxiv.org/abs/2512.01478v2 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-05 | Multi-Modal Zero-Shot Prediction of Color Trajectories in Food Drying | http://arxiv.org/abs/2512.06190v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-02 | CogDrive: Cognition-Driven Multimodal Prediction-Planning Fusion for Safe Autonomy | http://arxiv.org/abs/2512.02777v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-02 | Multi-Domain Enhanced Map-Free Trajectory Prediction with Selective Attention | http://arxiv.org/abs/2512.02368v1 | <details><summary>展开</summary>待生成</details> |
