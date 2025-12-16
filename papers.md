@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-14 | HMPCC: Human-Aware Model Predictive Coverage Control | http://arxiv.org/abs/2512.12717v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-13 | Measuring What Matters: Scenario-Driven Evaluation for Trajectory Predictors in Autonomous Driving | http://arxiv.org/abs/2512.12211v1 | <details><summary>展开</summary>待生成</details> |
+| 2025-12-06 | WAM-Diff: A Masked Diffusion VLA Framework with MoE and Online Reinforcement Learning for Autonomous Driving | http://arxiv.org/abs/2512.11872v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-10 | An Automated Tip-and-Cue Framework for Optimized Satellite Tasking and Visual Intelligence | http://arxiv.org/abs/2512.09670v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-10 | FunPhase: A Periodic Functional Autoencoder for Motion Generation via Phase Manifolds | http://arxiv.org/abs/2512.09423v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-09 | Mind to Hand: Purposeful Robotic Control via Embodied Reasoning | http://arxiv.org/abs/2512.08580v2 | <details><summary>展开</summary>待生成</details> |
