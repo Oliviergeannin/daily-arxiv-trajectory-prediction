@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-18 | Predictive Modeling of Maritime Radar Data Using Transformer Architecture | http://arxiv.org/abs/2512.17098v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-18 | Flowing from Reasoning to Motion: Learning 3D Hand Trajectory Prediction from Egocentric Human Interaction Videos | http://arxiv.org/abs/2512.16907v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-18 | R3ST: A Synthetic 3D Dataset With Realistic Trajectories | http://arxiv.org/abs/2512.16784v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-15 | PrediFlow: A Flow-Based Prediction-Refinement Framework for Real-Time Human Motion Prediction in Human-Robot Collaboration | http://arxiv.org/abs/2512.13903v1 | <details><summary>展开</summary>待生成</details> |
