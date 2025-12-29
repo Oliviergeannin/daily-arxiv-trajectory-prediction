@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2025-12-25 | Spatiotemporal-Untrammelled Mixture of Experts for Multi-Person Motion Prediction | http://arxiv.org/abs/2512.21707v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-24 | SparScene: Efficient Traffic Scene Representation via Sparse Graph Learning for Large-Scale Trajectory Generation | http://arxiv.org/abs/2512.21133v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-20 | LLaViDA: A Large Language Vision Driving Assistant for Explicit Reasoning and Enhanced Trajectory Planning | http://arxiv.org/abs/2512.18211v1 | <details><summary>展开</summary>待生成</details> |
 | 2025-12-18 | Predictive Modeling of Maritime Radar Data Using Transformer Architecture | http://arxiv.org/abs/2512.17098v2 | <details><summary>展开</summary>待生成</details> |
