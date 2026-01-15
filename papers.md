@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-01-14 | ReflexDiffusion: Reflection-Enhanced Trajectory Planning for High-lateral-acceleration Scenarios in Autonomous Driving | http://arxiv.org/abs/2601.09377v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-13 | How vehicles change lanes after encountering crashes: Empirical analysis and modeling | http://arxiv.org/abs/2601.08125v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-09 | LatentVLA: Efficient Vision-Language Models for Autonomous Driving via Latent Action Prediction | http://arxiv.org/abs/2601.05611v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-07 | Semantic Belief-State World Model for 3D Human Motion Prediction | http://arxiv.org/abs/2601.03517v1 | <details><summary>展开</summary>待生成</details> |
