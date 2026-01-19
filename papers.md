@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-01-15 | Future Optical Flow Prediction Improves Robot Control & Video Generation | http://arxiv.org/abs/2601.10781v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-15 | DeepUrban: Interaction-Aware Trajectory Prediction and Planning for Automated Driving by Aerial Imagery | http://arxiv.org/abs/2601.10554v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-15 | Proactive Local-Minima-Free Robot Navigation: Blending Motion Prediction with Safe Control | http://arxiv.org/abs/2601.10233v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-14 | How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces | http://arxiv.org/abs/2601.09856v1 | <details><summary>展开</summary>待生成</details> |
