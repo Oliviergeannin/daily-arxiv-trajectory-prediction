@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-02 | Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation | http://arxiv.org/abs/2602.02401v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-02-01 | FlowCast: Trajectory Forecasting for Scalable Zero-Cost Speculative Flow Matching | http://arxiv.org/abs/2602.01329v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-01-31 | Physics-informed Diffusion Mamba Transformer for Real-world Driving | http://arxiv.org/abs/2602.00808v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-01-31 | DISK: Dynamic Inference SKipping for World Models | http://arxiv.org/abs/2602.00440v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-01-26 | Efficient UAV trajectory prediction: A multi-modal deep diffusion framework | http://arxiv.org/abs/2602.00107v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-29 | Don't double it: Efficient Agent Prediction in Occlusions | http://arxiv.org/abs/2601.21504v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-29 | HPTune: Hierarchical Proactive Tuning for Collision-Free Model Predictive Control | http://arxiv.org/abs/2601.21346v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-26 | SKETCH: Semantic Key-Point Conditioning for Long-Horizon Vessel Trajectory Prediction | http://arxiv.org/abs/2601.18537v2 | <details><summary>展开</summary>待生成</details> |
