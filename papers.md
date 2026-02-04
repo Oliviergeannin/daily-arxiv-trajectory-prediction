@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-03 | PlanTRansformer: Unified Prediction and Planning with Goal-conditioned Transformer | http://arxiv.org/abs/2602.03376v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-01-15 | DeepUrban: Interaction-Aware Trajectory Prediction and Planning for Automated Driving by Aerial Imagery | http://arxiv.org/abs/2601.10554v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-02 | Superman: Unifying Skeleton and Vision for Human Motion Perception and Generation | http://arxiv.org/abs/2602.02401v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-01 | FlowCast: Trajectory Forecasting for Scalable Zero-Cost Speculative Flow Matching | http://arxiv.org/abs/2602.01329v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-31 | Physics-informed Diffusion Mamba Transformer for Real-world Driving | http://arxiv.org/abs/2602.00808v1 | <details><summary>展开</summary>待生成</details> |
