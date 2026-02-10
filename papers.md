@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-08 | Integrating Specialized and Generic Agent Motion Prediction with Dynamic Occupancy Grid Maps | http://arxiv.org/abs/2602.07938v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-04 | DiMo: Discrete Diffusion Modeling for Motion Generation and Understanding | http://arxiv.org/abs/2602.04188v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-05 | UniSurg: A Video-Native Foundation Model for Universal Understanding of Surgical Videos | http://arxiv.org/abs/2602.05638v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-04 | A Unified Complementarity-based Approach for Rigid-Body Manipulation and Motion Prediction | http://arxiv.org/abs/2602.04522v1 | <details><summary>展开</summary>待生成</details> |
