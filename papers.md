@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-13 | MASAR: Motion-Appearance Synergy Refinement for Joint Detection and Trajectory Forecasting | http://arxiv.org/abs/2602.13003v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-02-13 | Eva-Tracker: ESDF-update-free, Visibility-aware Planning with Target Reacquisition for Robust Aerial Tracking | http://arxiv.org/abs/2602.12549v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-11 | Human Preference Modeling Using Visual Motion Prediction Improves Robot Skill Learning from Egocentric Human Video | http://arxiv.org/abs/2602.11393v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-11 | DD-MDN: Human Trajectory Forecasting with Diffusion-Based Dual Mixture Density Networks and Uncertainty Self-Calibration | http://arxiv.org/abs/2602.11214v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-01-30 | Mitigating Error Accumulation in Continuous Navigation via Memory-Augmented Kalman Filtering | http://arxiv.org/abs/2602.11183v1 | <details><summary>展开</summary>待生成</details> |
