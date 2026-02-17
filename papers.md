@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-15 | A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving | http://arxiv.org/abs/2602.13936v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-13 | MASAR: Motion-Appearance Synergy Refinement for Joint Detection and Trajectory Forecasting | http://arxiv.org/abs/2602.13003v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-13 | Eva-Tracker: ESDF-update-free, Visibility-aware Planning with Target Reacquisition for Robust Aerial Tracking | http://arxiv.org/abs/2602.12549v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-11 | Human Preference Modeling Using Visual Motion Prediction Improves Robot Skill Learning from Egocentric Human Video | http://arxiv.org/abs/2602.11393v1 | <details><summary>展开</summary>待生成</details> |
