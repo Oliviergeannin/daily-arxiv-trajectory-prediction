@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-19 | HiMAP: History-aware Map-occupancy Prediction with Fallback | http://arxiv.org/abs/2602.17231v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-17 | SpecFuse: A Spectral-Temporal Fusion Predictive Control Framework for UAV Landing on Oscillating Marine Platforms | http://arxiv.org/abs/2602.15633v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-15 | A Generalizable Physics-guided Causal Model for Trajectory Prediction in Autonomous Driving | http://arxiv.org/abs/2602.13936v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-13 | MASAR: Motion-Appearance Synergy Refinement for Joint Detection and Trajectory Forecasting | http://arxiv.org/abs/2602.13003v1 | <details><summary>展开</summary>待生成</details> |
