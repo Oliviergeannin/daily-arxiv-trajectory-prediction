@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-24 | ParkDiffusion++: Ego Intention Conditioned Joint Multi-Agent Trajectory Prediction for Automated Parking using Diffusion Models | http://arxiv.org/abs/2602.20923v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-02-24 | VGGDrive: Empowering Vision-Language Models with Cross-View Geometric Grounding for Autonomous Driving | http://arxiv.org/abs/2602.20794v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-02-23 | TraceVision: Trajectory-Aware Vision-Language Model for Human-Like Spatial Understanding | http://arxiv.org/abs/2602.19768v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-23 | TraceVision: Trajectory-Aware Vision-Language Model for Human-Like Spatial Understanding | http://arxiv.org/abs/2602.19768v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-20 | Homotopic information gain for sparse active target tracking | http://arxiv.org/abs/2602.17926v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-19 | HiMAP: History-aware Map-occupancy Prediction with Fallback | http://arxiv.org/abs/2602.17231v1 | <details><summary>展开</summary>待生成</details> |
