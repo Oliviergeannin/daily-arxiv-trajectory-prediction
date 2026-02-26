@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-02-25 | Learning to Drive is a Free Gift: Large-Scale Label-Free Autonomy Pretraining from Unposed In-The-Wild Videos | http://arxiv.org/abs/2602.22091v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-24 | ParkDiffusion++: Ego Intention Conditioned Joint Multi-Agent Trajectory Prediction for Automated Parking using Diffusion Models | http://arxiv.org/abs/2602.20923v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-24 | VGGDrive: Empowering Vision-Language Models with Cross-View Geometric Grounding for Autonomous Driving | http://arxiv.org/abs/2602.20794v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-23 | TraceVision: Trajectory-Aware Vision-Language Model for Human-Like Spatial Understanding | http://arxiv.org/abs/2602.19768v2 | <details><summary>展开</summary>待生成</details> |
