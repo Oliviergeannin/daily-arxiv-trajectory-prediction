@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-02 | Event-Only Drone Trajectory Forecasting with RPM-Modulated Kalman Filtering | http://arxiv.org/abs/2603.01997v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-02 | Streaming Real-Time Trajectory Prediction Using Endpoint-Aware Modeling | http://arxiv.org/abs/2603.01864v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-01 | FoSS: Modeling Long Range Dependencies and Multimodal Uncertainty in Trajectory Prediction via Fourier State Space Integration | http://arxiv.org/abs/2603.01284v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-01 | Fast Confidence-Aware Human Prediction via Hardware-accelerated Bayesian Inference for Safe Robot Navigation | http://arxiv.org/abs/2603.01122v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-01 | DriveCode: Domain Specific Numerical Encoding for LLM-Based Autonomous Driving | http://arxiv.org/abs/2603.00919v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-26 | Robust Human Trajectory Prediction via Self-Supervised Skeleton Representation Learning | http://arxiv.org/abs/2602.22791v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-25 | Learning to Drive is a Free Gift: Large-Scale Label-Free Autonomy Pretraining from Unposed In-The-Wild Videos | http://arxiv.org/abs/2602.22091v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-02-24 | ParkDiffusion++: Ego Intention Conditioned Joint Multi-Agent Trajectory Prediction for Automated Parking using Diffusion Models | http://arxiv.org/abs/2602.20923v1 | <details><summary>展开</summary>待生成</details> |
