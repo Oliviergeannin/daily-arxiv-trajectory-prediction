@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-04 | SimpliHuMoN: Simplifying Human Motion Prediction | http://arxiv.org/abs/2603.04399v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-03 | ShipTraj-R1: Reinforcing Ship Trajectory Prediction in Large Language Models via Group Relative Policy Optimization | http://arxiv.org/abs/2603.02939v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-02 | Event-Only Drone Trajectory Forecasting with RPM-Modulated Kalman Filtering | http://arxiv.org/abs/2603.01997v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-02 | Streaming Real-Time Trajectory Prediction Using Endpoint-Aware Modeling | http://arxiv.org/abs/2603.01864v1 | <details><summary>展开</summary>待生成</details> |
