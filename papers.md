@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-05 | U-OBCA: Uncertainty-Aware Optimization-Based Collision Avoidance via Wasserstein Distributionally Robust Chance Constraints | http://arxiv.org/abs/2603.04914v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-05 | Selecting Spots by Explicitly Predicting Intention from Motion History Improves Performance in Autonomous Parking | http://arxiv.org/abs/2603.04695v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-02-25 | Learning to Drive is a Free Gift: Large-Scale Label-Free Autonomy Pretraining from Unposed In-The-Wild Videos | http://arxiv.org/abs/2602.22091v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-04 | SimpliHuMoN: Simplifying Human Motion Prediction | http://arxiv.org/abs/2603.04399v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-03 | ShipTraj-R1: Reinforcing Ship Trajectory Prediction in Large Language Models via Group Relative Policy Optimization | http://arxiv.org/abs/2603.02939v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-02 | Event-Only Drone Trajectory Forecasting with RPM-Modulated Kalman Filtering | http://arxiv.org/abs/2603.01997v1 | <details><summary>展开</summary>待生成</details> |
