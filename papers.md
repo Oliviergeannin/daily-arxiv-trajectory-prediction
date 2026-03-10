@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-09 | Fusion-Poly: A Polyhedral Framework Based on Spatial-Temporal Fusion for 3D Multi-Object Tracking | http://arxiv.org/abs/2603.08199v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-09 | AutoTraces: Autoregressive Trajectory Forecasting via Multimodal Large Language Models | http://arxiv.org/abs/2603.07989v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-07 | A Lightweight Digital-Twin-Based Framework for Edge-Assisted Vehicle Tracking and Collision Prediction | http://arxiv.org/abs/2603.07338v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-07 | Towards Scalable Probabilistic Human Motion Prediction with Gaussian Processes for Safe Human-Robot Collaboration | http://arxiv.org/abs/2603.07096v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-06 | A prior information informed learning architecture for flying trajectory prediction | http://arxiv.org/abs/2603.06863v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-06 | TaPD: Temporal-adaptive Progressive Distillation for Observation-Adaptive Trajectory Forecasting in Autonomous Driving | http://arxiv.org/abs/2603.06231v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-04 | Digital-Twin Losses for Lane-Compliant Trajectory Prediction at Urban Intersections | http://arxiv.org/abs/2603.05546v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-05 | U-OBCA: Uncertainty-Aware Optimization-Based Collision Avoidance via Wasserstein Distributionally Robust Chance Constraints | http://arxiv.org/abs/2603.04914v1 | <details><summary>展开</summary>待生成</details> |
