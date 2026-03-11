@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-10 | Open-World Motion Forecasting | http://arxiv.org/abs/2603.09420v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-10 | MetaDAT: Generalizable Trajectory Prediction via Meta Pre-training and Data-Adaptive Test-Time Updating | http://arxiv.org/abs/2603.09419v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-09 | Fusion-Poly: A Polyhedral Framework Based on Spatial-Temporal Fusion for 3D Multi-Object Tracking | http://arxiv.org/abs/2603.08199v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-09 | AutoTraces: Autoregressive Trajectory Forecasting via Multimodal Large Language Models | http://arxiv.org/abs/2603.07989v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-07 | A Lightweight Digital-Twin-Based Framework for Edge-Assisted Vehicle Tracking and Collision Prediction | http://arxiv.org/abs/2603.07338v1 | <details><summary>展开</summary>待生成</details> |
