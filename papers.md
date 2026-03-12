@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-11 | Recover to Predict: Progressive Retrospective Learning for Variable-Length Trajectory Prediction | http://arxiv.org/abs/2603.10597v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-11 | Rethinking Gaussian Trajectory Predictors: Calibrated Uncertainty for Safe Planning | http://arxiv.org/abs/2603.10407v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-10 | Open-World Motion Forecasting | http://arxiv.org/abs/2603.09420v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-10 | MetaDAT: Generalizable Trajectory Prediction via Meta Pre-training and Data-Adaptive Test-Time Updating | http://arxiv.org/abs/2603.09419v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-09 | Fusion-Poly: A Polyhedral Framework Based on Spatial-Temporal Fusion for 3D Multi-Object Tracking | http://arxiv.org/abs/2603.08199v1 | <details><summary>展开</summary>待生成</details> |
