@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-16 | TrajMamba: An Ego-Motion-Guided Mamba Model for Pedestrian Trajectory Prediction from an Egocentric Perspective | http://arxiv.org/abs/2603.14739v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-15 | CyboRacket: A Perception-to-Action Framework for Humanoid Racket Sports | http://arxiv.org/abs/2603.14605v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-15 | Latent Dynamics-Aware OOD Monitoring for Trajectory Prediction with Provable Guarantees | http://arxiv.org/abs/2603.14603v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-14 | TransDex: Pre-training Visuo-Tactile Policy with Point Cloud Reconstruction for Dexterous Manipulation of Transparent Objects | http://arxiv.org/abs/2603.13869v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-10 | Open-World Motion Forecasting | http://arxiv.org/abs/2603.09420v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-12 | A Neuro-Symbolic Framework Combining Inductive and Deductive Reasoning for Autonomous Driving Planning | http://arxiv.org/abs/2603.12421v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-11 | Recover to Predict: Progressive Retrospective Learning for Variable-Length Trajectory Prediction | http://arxiv.org/abs/2603.10597v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-11 | Rethinking Gaussian Trajectory Predictors: Calibrated Uncertainty for Safe Planning | http://arxiv.org/abs/2603.10407v1 | <details><summary>展开</summary>待生成</details> |
