@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-17 | ASCENT: Transformer-Based Aircraft Trajectory Prediction in Non-Towered Terminal Airspace | http://arxiv.org/abs/2603.16550v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-17 | PanguMotion: Continuous Driving Motion Forecasting with Pangu Transformers | http://arxiv.org/abs/2603.16196v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-17 | SE(3)-LIO: Smooth IMU Propagation With Jointly Distributed Poses on SE(3) Manifold for Accurate and Robust LiDAR-Inertial Odometry | http://arxiv.org/abs/2603.16118v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-16 | TrajMamba: An Ego-Motion-Guided Mamba Model for Pedestrian Trajectory Prediction from an Egocentric Perspective | http://arxiv.org/abs/2603.14739v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-15 | CyboRacket: A Perception-to-Action Framework for Humanoid Racket Sports | http://arxiv.org/abs/2603.14605v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-15 | Latent Dynamics-Aware OOD Monitoring for Trajectory Prediction with Provable Guarantees | http://arxiv.org/abs/2603.14603v1 | <details><summary>展开</summary>待生成</details> |
