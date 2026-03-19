@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-18 | GigaWorld-Policy: An Efficient Action-Centered World--Action Model | http://arxiv.org/abs/2603.17240v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-17 | ASCENT: Transformer-Based Aircraft Trajectory Prediction in Non-Towered Terminal Airspace | http://arxiv.org/abs/2603.16550v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-17 | PanguMotion: Continuous Driving Motion Forecasting with Pangu Transformers | http://arxiv.org/abs/2603.16196v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-17 | SE(3)-LIO: Smooth IMU Propagation With Jointly Distributed Poses on SE(3) Manifold for Accurate and Robust LiDAR-Inertial Odometry | http://arxiv.org/abs/2603.16118v1 | <details><summary>展开</summary>待生成</details> |
