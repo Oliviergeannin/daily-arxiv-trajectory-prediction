@@ -1,5 +1,12 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-23 | ThinkJEPA: Empowering Latent World Models with Large Vision-Language Reasoning Model | http://arxiv.org/abs/2603.22281v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-23 | Future-Interactions-Aware Trajectory Prediction via Braid Theory | http://arxiv.org/abs/2603.22035v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-22 | EmoTaG: Emotion-Aware Talking Head Synthesis on Gaussian Splatting with Few-Shot Personalization | http://arxiv.org/abs/2603.21332v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-22 | KHMP: Frequency-Domain Kalman Refinement for High-Fidelity Human Motion Prediction | http://arxiv.org/abs/2603.21327v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-22 | Single-Eye View: Monocular Real-time Perception Package for Autonomous Driving | http://arxiv.org/abs/2603.21061v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-21 | GHOST: Ground-projected Hypotheses from Observed Structure-from-Motion Trajectories | http://arxiv.org/abs/2603.20583v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-18 | GigaWorld-Policy: An Efficient Action-Centered World--Action Model | http://arxiv.org/abs/2603.17240v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-20 | Uncertainty Matters: Structured Probabilistic Online Mapping for Motion Prediction in Autonomous Driving | http://arxiv.org/abs/2603.20076v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-19 | Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting | http://arxiv.org/abs/2603.19193v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-19 | Motion-o: Trajectory-Grounded Video Reasoning | http://arxiv.org/abs/2603.18856v1 | <details><summary>展开</summary>待生成</details> |
