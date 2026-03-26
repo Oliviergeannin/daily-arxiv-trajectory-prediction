@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-25 | Goal-Oriented Reactive Simulation for Closed-Loop Trajectory Prediction | http://arxiv.org/abs/2603.24155v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-24 | Rectify, Don't Regret: Avoiding Pitfalls of Differentiable Simulation in Trajectory Prediction | http://arxiv.org/abs/2603.23393v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-21 | GHOST: Ground-projected Hypotheses from Observed Structure-from-Motion Trajectories | http://arxiv.org/abs/2603.20583v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-23 | ThinkJEPA: Empowering Latent World Models with Large Vision-Language Reasoning Model | http://arxiv.org/abs/2603.22281v1 | <details><summary>展开</summary>待生成</details> |
