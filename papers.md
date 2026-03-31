@@ -1,5 +1,13 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-03-30 | SHARP: Short-Window Streaming for Accurate and Robust Prediction in Motion Forecasting | http://arxiv.org/abs/2603.28091v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-29 | E-TIDE: Fast, Structure-Preserving Motion Forecasting from Event Sequences | http://arxiv.org/abs/2603.27757v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-28 | Predictive Modeling in AUV Navigation: A Perspective from Kalman Filtering | http://arxiv.org/abs/2603.27422v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-28 | Online Inertia Tensor Identification for Non-Cooperative Spacecraft via Augmented UKF | http://arxiv.org/abs/2603.27361v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-27 | Tunable Soft Equivariance with Guarantees | http://arxiv.org/abs/2603.26657v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-27 | DTP-Attack: A decision-based black-box adversarial attack on trajectory prediction | http://arxiv.org/abs/2603.26462v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-23 | Language-Conditioned World Modeling for Visual Navigation | http://arxiv.org/abs/2603.26741v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-22 | EmoTaG: Emotion-Aware Talking Head Synthesis on Gaussian Splatting with Few-Shot Personalization | http://arxiv.org/abs/2603.21332v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-26 | UMBRELLA: Uncertainty-aware Multi-robot Reactive Coordination under Dynamic Temporal Logic Tasks | http://arxiv.org/abs/2603.25395v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-26 | TIGFlow-GRPO: Trajectory Forecasting via Interaction-Aware Flow Matching and Reward-Driven Optimization | http://arxiv.org/abs/2603.24936v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-25 | Goal-Oriented Reactive Simulation for Closed-Loop Trajectory Prediction | http://arxiv.org/abs/2603.24155v1 | <details><summary>展开</summary>待生成</details> |
