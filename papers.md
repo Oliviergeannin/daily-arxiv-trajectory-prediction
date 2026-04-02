@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-01 | COTTA: Context-Aware Transfer Adaptation for Trajectory Prediction in Autonomous Driving | http://arxiv.org/abs/2604.00402v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-31 | Communication Outage-Resistant UUV State Estimation: A Variational History Distillation Approach | http://arxiv.org/abs/2603.29512v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-31 | Uncertainty-Aware Trajectory Prediction: A Unified Framework Harnessing Positional and Semantic Uncertainties | http://arxiv.org/abs/2603.29362v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-30 | SHARP: Short-Window Streaming for Accurate and Robust Prediction in Motion Forecasting | http://arxiv.org/abs/2603.28091v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-29 | E-TIDE: Fast, Structure-Preserving Motion Forecasting from Event Sequences | http://arxiv.org/abs/2603.27757v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-28 | Predictive Modeling in AUV Navigation: A Perspective from Kalman Filtering | http://arxiv.org/abs/2603.27422v1 | <details><summary>展开</summary>待生成</details> |
