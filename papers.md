@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-02 | UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving | http://arxiv.org/abs/2604.02190v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-01 | COTTA: Context-Aware Transfer Adaptation for Trajectory Prediction in Autonomous Driving | http://arxiv.org/abs/2604.00402v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-31 | Communication Outage-Resistant UUV State Estimation: A Variational History Distillation Approach | http://arxiv.org/abs/2603.29512v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-31 | Uncertainty-Aware Trajectory Prediction: A Unified Framework Harnessing Positional and Semantic Uncertainties | http://arxiv.org/abs/2603.29362v1 | <details><summary>展开</summary>待生成</details> |
