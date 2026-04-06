@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-03 | Joint Prediction of Human Motions and Actions in Human-Robot Collaboration | http://arxiv.org/abs/2604.03065v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-03 | GP-4DGS: Probabilistic 4D Gaussian Splatting from Monocular Video via Variational Gaussian Processes | http://arxiv.org/abs/2604.02915v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-03 | ExploreVLA: Dense World Modeling and Exploration for End-to-End Autonomous Driving | http://arxiv.org/abs/2604.02714v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-02 | PlayGen-MoG: Framework for Diverse Multi-Agent Play Generation via Mixture-of-Gaussians Trajectory Prediction | http://arxiv.org/abs/2604.02447v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-03-31 | Communication Outage-Resistant UUV State Estimation: A Variational History Distillation Approach | http://arxiv.org/abs/2603.29512v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-02 | UniDriveVLA: Unifying Understanding, Perception, and Action Planning for Autonomous Driving | http://arxiv.org/abs/2604.02190v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-01 | COTTA: Context-Aware Transfer Adaptation for Trajectory Prediction in Autonomous Driving | http://arxiv.org/abs/2604.00402v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-03-31 | Communication Outage-Resistant UUV State Estimation: A Variational History Distillation Approach | http://arxiv.org/abs/2603.29512v1 | <details><summary>展开</summary>待生成</details> |
