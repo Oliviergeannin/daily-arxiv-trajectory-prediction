@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-04 | ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations | http://arxiv.org/abs/2604.03649v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-03 | Joint Prediction of Human Motions and Actions in Human-Robot Collaboration | http://arxiv.org/abs/2604.03065v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-03 | GP-4DGS: Probabilistic 4D Gaussian Splatting from Monocular Video via Variational Gaussian Processes | http://arxiv.org/abs/2604.02915v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-03 | ExploreVLA: Dense World Modeling and Exploration for End-to-End Autonomous Driving | http://arxiv.org/abs/2604.02714v1 | <details><summary>展开</summary>待生成</details> |
