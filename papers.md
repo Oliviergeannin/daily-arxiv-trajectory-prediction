@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-08 | Self-Discovered Intention-aware Transformer for Multi-modal Vehicle Trajectory Prediction | http://arxiv.org/abs/2604.07126v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-08 | SCT-MOT: Enhancing Air-to-Air Multiple UAVs Tracking with Swarm-Coupled Motion and Trajectory Guidance | http://arxiv.org/abs/2604.06883v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-08 | Telecom World Models: Unifying Digital Twins, Foundation Models, and Predictive Planning for 6G | http://arxiv.org/abs/2604.06882v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-08 | FlowInOne:Unifying Multimodal Generation as Image-in, Image-out Flow Matching | http://arxiv.org/abs/2604.06757v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-04 | ART: Adaptive Relational Transformer for Pedestrian Trajectory Prediction with Temporal-Aware Relations | http://arxiv.org/abs/2604.03649v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-03 | Joint Prediction of Human Motions and Actions in Human-Robot Collaboration | http://arxiv.org/abs/2604.03065v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-03 | GP-4DGS: Probabilistic 4D Gaussian Splatting from Monocular Video via Variational Gaussian Processes | http://arxiv.org/abs/2604.02915v1 | <details><summary>展开</summary>待生成</details> |
