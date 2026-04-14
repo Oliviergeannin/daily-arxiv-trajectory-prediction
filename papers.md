@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-13 | GenTac: Generative Modeling and Forecasting of Soccer Tactics | http://arxiv.org/abs/2604.11786v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-13 | EagleVision: A Multi-Task Benchmark for Cross-Domain Perception in High-Speed Autonomous Racing | http://arxiv.org/abs/2604.11400v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-11 | COSMIK-MPPI: Scaling Constrained Model Predictive Control to Collision Avoidance in Close-Proximity Dynamic Human Environments | http://arxiv.org/abs/2604.10358v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-11 | MAVEN-T: Multi-Agent enVironment-aware Enhanced Neural Trajectory predictor with Reinforcement Learning | http://arxiv.org/abs/2604.10169v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-11 | Ontological Trajectory Forecasting via Finite Semigroup Iteration and Lie Algebra Approximation in Geopolitical Knowledge Graphs | http://arxiv.org/abs/2604.10087v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-10 | Envisioning the Future, One Step at a Time | http://arxiv.org/abs/2604.09527v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-10 | Rays as Pixels: Learning A Joint Distribution of Videos and Camera Trajectories | http://arxiv.org/abs/2604.09429v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-09 | WorldMAP: Bootstrapping Vision-Language Navigation Trajectory Prediction with Generative World Models | http://arxiv.org/abs/2604.07957v1 | <details><summary>展开</summary>待生成</details> |
