@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-16 | Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees | http://arxiv.org/abs/2604.15221v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-16 | Predicting Power-System Dynamic Trajectories with Foundation Models | http://arxiv.org/abs/2604.14991v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-13 | GenTac: Generative Modeling and Forecasting of Soccer Tactics | http://arxiv.org/abs/2604.11786v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-13 | EagleVision: A Multi-Task Benchmark for Cross-Domain Perception in High-Speed Autonomous Racing | http://arxiv.org/abs/2604.11400v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-11 | COSMIK-MPPI: Scaling Constrained Model Predictive Control to Collision Avoidance in Close-Proximity Dynamic Human Environments | http://arxiv.org/abs/2604.10358v1 | <details><summary>展开</summary>待生成</details> |
