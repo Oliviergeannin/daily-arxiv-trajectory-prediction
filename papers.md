@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-20 | OneVL: One-Step Latent Reasoning and Planning with Vision-Language Explanation | http://arxiv.org/abs/2604.18486v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-20 | TacticGen: Grounding Adaptable and Scalable Generation of Football Tactics | http://arxiv.org/abs/2604.18210v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-20 | Chatting about Conditional Trajectory Prediction | http://arxiv.org/abs/2604.18126v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-18 | NaviFormer: A Deep Reinforcement Learning Transformer-like Model to Holistically Solve the Navigation Problem | http://arxiv.org/abs/2604.16967v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-18 | EdgeVTP: Exploration of Latency-efficient Trajectory Prediction for Edge-based Embedded Vision Applications | http://arxiv.org/abs/2604.16783v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-16 | Vision-Based Safe Human-Robot Collaboration with Uncertainty Guarantees | http://arxiv.org/abs/2604.15221v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-16 | Predicting Power-System Dynamic Trajectories with Foundation Models | http://arxiv.org/abs/2604.14991v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-13 | GenTac: Generative Modeling and Forecasting of Soccer Tactics | http://arxiv.org/abs/2604.11786v1 | <details><summary>展开</summary>待生成</details> |
