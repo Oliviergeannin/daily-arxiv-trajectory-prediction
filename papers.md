@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-04-26 | Emotion-Conditioned Short-Horizon Human Pose Forecasting with a Lightweight Predictive World Model | http://arxiv.org/abs/2604.23532v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-24 | Collaborative Trajectory Prediction via Late Fusion | http://arxiv.org/abs/2604.22973v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-23 | SketchVLM: Vision language models can annotate images to explain thoughts and guide users | http://arxiv.org/abs/2604.22875v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-23 | Frozen LLMs as Map-Aware Spatio-Temporal Reasoners for Vehicle Trajectory Prediction | http://arxiv.org/abs/2604.21479v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-23 | Long-Horizon Manipulation via Trace-Conditioned VLA Planning | http://arxiv.org/abs/2604.21924v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-23 | Frozen LLMs as Map-Aware Spatio-Temporal Reasoners for Vehicle Trajectory Prediction | http://arxiv.org/abs/2604.21479v1 | <details><summary>展开</summary>待生成</details> |
