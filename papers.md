@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-01 | Time-series Meets Complex Motion Modeling: Robust and Computational-effective Motion Predictor for Multi-object Tracking | http://arxiv.org/abs/2605.00362v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-04-30 | Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction | http://arxiv.org/abs/2605.00059v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-30 | Action Motifs: Self-Supervised Hierarchical Representation of Human Body Movements | http://arxiv.org/abs/2604.28173v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-30 | Uni-HOI:A Unified framework for Learning the Joint distribution of Text and Human-Object Interaction | http://arxiv.org/abs/2604.27491v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-23 | Frozen LLMs as Map-Aware Spatio-Temporal Reasoners for Vehicle Trajectory Prediction | http://arxiv.org/abs/2604.21479v3 | <details><summary>展开</summary>待生成</details> |
