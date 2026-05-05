@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-04 | HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar | http://arxiv.org/abs/2605.02784v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-04 | DynoSLAM: Dynamic SLAM with Generative Graph Neural Networks for Real-World Social Navigation | http://arxiv.org/abs/2605.02759v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-04 | The 2026 ACII Dyadic Conversations (DaiKon) Workshop & Challenge | http://arxiv.org/abs/2605.02672v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-02 | Recall to Predict: Grounding Motion Forecasting in Interpretable Motion Bank | http://arxiv.org/abs/2605.01393v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-01 | Time-series Meets Complex Motion Modeling: Robust and Computational-effective Motion Predictor for Multi-object Tracking | http://arxiv.org/abs/2605.00362v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-30 | Dynamic-TD3: A Novel Algorithm for UAV Path Planning with Dynamic Obstacle Trajectory Prediction | http://arxiv.org/abs/2605.00059v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-04-30 | Action Motifs: Self-Supervised Hierarchical Representation of Human Body Movements | http://arxiv.org/abs/2604.28173v1 | <details><summary>展开</summary>待生成</details> |
