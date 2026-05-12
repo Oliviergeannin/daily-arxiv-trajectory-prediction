@@ -1,5 +1,13 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-11 | Temporal Sampling Frequency Matters: A Capacity-Aware Study of End-to-End Driving Trajectory Prediction | http://arxiv.org/abs/2605.10388v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-11 | SleepWalk: A Three-Tier Benchmark for Stress-Testing Instruction-Guided Vision-Language Navigation | http://arxiv.org/abs/2605.10376v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-11 | MoPO: Incorporating Motion Prior for Occluded Human Mesh Recovery | http://arxiv.org/abs/2605.09856v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-10 | SAMOFT: Robust Multi-Object Tracking via Region and Flow | http://arxiv.org/abs/2605.09417v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-09 | Latency Analysis and Optimization of Alpamayo 1 via Efficient Trajectory Generation | http://arxiv.org/abs/2605.08975v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-09 | VECTOR-Drive: Tightly Coupled Vision-Language and Trajectory Expert Routing for End-to-End Autonomous Driving | http://arxiv.org/abs/2605.08830v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-09 | Enhancing Consistency Models for Multi-Agent Trajectory Prediction | http://arxiv.org/abs/2605.08572v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-07 | Bi3: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation | http://arxiv.org/abs/2605.06863v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-04 | HumanSplatHMR: Closing the Loop Between Human Mesh Recovery and Gaussian Splatting Avatar | http://arxiv.org/abs/2605.02784v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-04 | DynoSLAM: Dynamic SLAM with Generative Graph Neural Networks for Real-World Social Navigation | http://arxiv.org/abs/2605.02759v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-04 | The 2026 ACII Dyadic Conversations (DaiKon) Workshop & Challenge | http://arxiv.org/abs/2605.02672v1 | <details><summary>展开</summary>待生成</details> |
