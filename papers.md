@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-12 | Encore: Conditioning Trajectory Forecasting via Biased Ego Rehearsals | http://arxiv.org/abs/2605.11463v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-12 | JACoP: Joint Alignment for Compliant Multi-Agent Prediction | http://arxiv.org/abs/2605.11385v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-11 | Temporal Sampling Frequency Matters: A Capacity-Aware Study of End-to-End Driving Trajectory Prediction | http://arxiv.org/abs/2605.10388v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-11 | SleepWalk: A Three-Tier Benchmark for Stress-Testing Instruction-Guided Vision-Language Navigation | http://arxiv.org/abs/2605.10376v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-11 | MoPO: Incorporating Motion Prior for Occluded Human Mesh Recovery | http://arxiv.org/abs/2605.09856v1 | <details><summary>展开</summary>待生成</details> |
