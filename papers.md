@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-14 | Social-Mamba: Socially-Aware Trajectory Forecasting with State-Space Models | http://arxiv.org/abs/2605.15424v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-13 | Causality-Aware End-to-End Autonomous Driving via Ego-Centric Joint Scene Modeling | http://arxiv.org/abs/2605.13646v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-13 | Real2Sim: A Physics-driven and Editable Gaussian Splatting Framework for Autonomous Driving Scenes | http://arxiv.org/abs/2605.13591v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-12 | Encore: Conditioning Trajectory Forecasting via Biased Ego Rehearsals | http://arxiv.org/abs/2605.11463v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-12 | JACoP: Joint Alignment for Compliant Multi-Agent Prediction | http://arxiv.org/abs/2605.11385v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-11 | Temporal Sampling Frequency Matters: A Capacity-Aware Study of End-to-End Driving Trajectory Prediction | http://arxiv.org/abs/2605.10388v1 | <details><summary>展开</summary>待生成</details> |
