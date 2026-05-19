@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-18 | On Improving Multimodal Pedestrian Trajectory Prediction with CVAE: A Study on Benchmark and Robot Data | http://arxiv.org/abs/2605.18262v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-18 | 4DLidarOpen: An Open 4D FMCW Lidar Dataset for Motion-Aware Autonomous Driving | http://arxiv.org/abs/2605.18074v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-18 | Functionalization via Structure Completion and Motion Rectification | http://arxiv.org/abs/2605.18010v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-15 | Hierarchical Two-Stage Framework for Environment-Aware Long-Horizon Vessel Trajectory Prediction | http://arxiv.org/abs/2605.16442v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-14 | Social-Mamba: Socially-Aware Trajectory Forecasting with State-Space Models | http://arxiv.org/abs/2605.15424v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-13 | Causality-Aware End-to-End Autonomous Driving via Ego-Centric Joint Scene Modeling | http://arxiv.org/abs/2605.13646v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-13 | Real2Sim: A Physics-driven and Editable Gaussian Splatting Framework for Autonomous Driving Scenes | http://arxiv.org/abs/2605.13591v1 | <details><summary>展开</summary>待生成</details> |
