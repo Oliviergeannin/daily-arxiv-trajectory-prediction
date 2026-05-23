@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-21 | LVDrive: Latent Visual Representation Enhanced Vision-Language-Action Autonomous Driving Model | http://arxiv.org/abs/2605.22089v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-21 | Diverse Yet Consistent: Context-Guided Diffusion with Energy-Based Joint Refinement for Multi-Agent Motion Prediction | http://arxiv.org/abs/2605.22017v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-19 | Spatially Prompted Visual Trajectory Prediction for Egocentric Manipulation | http://arxiv.org/abs/2605.20085v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-19 | VL-DPO: Vision-Language-Guided Finetuning for Preference-Aligned Autonomous Driving | http://arxiv.org/abs/2605.20082v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-19 | Learning-Accelerated Optimization-based Trajectory Planning for Cooperative Aerial-Ground Handover Missions | http://arxiv.org/abs/2605.19562v1 | <details><summary>展开</summary>待生成</details> |
