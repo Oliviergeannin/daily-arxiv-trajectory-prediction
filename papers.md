@@ -1,5 +1,12 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-25 | A Pedestrian-Vehicle Interaction Benchmark and Annotation Framework for Unstructured Scenes via Uncalibrated Cameras | http://arxiv.org/abs/2605.25947v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-25 | $D^2$-Monitor: Dynamic Safety Monitoring for Diffusion LLMs via Hesitation-Aware Routing | http://arxiv.org/abs/2605.25893v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-25 | OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation | http://arxiv.org/abs/2605.25829v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-25 | Agent-Centric Social Trajectory Prediction: A Free Energy Principle Perspective | http://arxiv.org/abs/2605.25748v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-23 | PEDESTRIANQA: A Benchmark for Vision-Language Models on Pedestrian Intention and Trajectory Prediction | http://arxiv.org/abs/2605.24562v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-23 | SparseWorld: Enhancing End-to-End Autonomous Driving via World Models with Sparse Scene Representation | http://arxiv.org/abs/2605.24354v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-21 | Mode-as-Sequence: Translating Multimodal Motion Prediction into Unified Sequential Mode Modeling | http://arxiv.org/abs/2605.24037v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-21 | LVDrive: Latent Visual Representation Enhanced Vision-Language-Action Autonomous Driving Model | http://arxiv.org/abs/2605.22089v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-21 | Diverse Yet Consistent: Context-Guided Diffusion with Energy-Based Joint Refinement for Multi-Agent Motion Prediction | http://arxiv.org/abs/2605.22017v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-19 | Spatially Prompted Visual Trajectory Prediction for Egocentric Manipulation | http://arxiv.org/abs/2605.20085v1 | <details><summary>展开</summary>待生成</details> |
