@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-05-26 | BatteryMFormer: Multi-level Learning for Battery Degradation Trajectory Forecasting | http://arxiv.org/abs/2605.27044v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-26 | CmIVTP: Cross-modal Interaction-based Vessel Trajectory Prediction for Maritime Intelligence | http://arxiv.org/abs/2605.26524v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-25 | A Pedestrian-Vehicle Interaction Benchmark and Annotation Framework for Unstructured Scenes via Uncalibrated Cameras | http://arxiv.org/abs/2605.25947v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-25 | $D^2$-Monitor: Dynamic Safety Monitoring for Diffusion LLMs via Hesitation-Aware Routing | http://arxiv.org/abs/2605.25893v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-25 | OASIS: Observation-Action Space Alignment via SE(3) Trajectory Prediction for Robotic Manipulation | http://arxiv.org/abs/2605.25829v1 | <details><summary>展开</summary>待生成</details> |
