@@ -1,5 +1,17 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-04 | AIS-Based Vessel Trajectory Prediction Using Memory-Augmented Neural Networks | http://arxiv.org/abs/2606.06311v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-04 | LiAuto-GeoX: Efficient Grounded Driving Transformer | http://arxiv.org/abs/2606.05774v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-02 | StandardE2E: A Unified Framework for End-to-End Autonomous Driving Datasets | http://arxiv.org/abs/2606.04271v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-02 | RSC: Decentralized Rigid Formation Flocking for Large-Scale Swarms via Hybrid Predictive Control and Online Reconfiguration | http://arxiv.org/abs/2606.04248v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-02 | Mamba-Enhanced Implicit Motion Learning for Audio-Driven Portrait Animation | http://arxiv.org/abs/2606.03402v2 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-31 | Learning Multi-Modal Trajectory Policies for Data-Efficient Robotic Manipulation | http://arxiv.org/abs/2606.01047v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-30 | From Cues to Horizons: Dynamic Risk Horizon Profiling for Trajectory Prediction | http://arxiv.org/abs/2606.00857v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-30 | MUSCLE-NET: Predicted-Multiscale-Aware Network for Pedestrian Trajectory Forecasting | http://arxiv.org/abs/2606.00471v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-29 | Simulation of collision avoidance behavior in crowd movement by data-driven approach | http://arxiv.org/abs/2605.31210v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-29 | Does Visual Information Play a Decisive Role in Vision-Language-Action Model Driving Behavior? | http://arxiv.org/abs/2605.31041v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-28 | Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments | http://arxiv.org/abs/2605.30280v2 | <details><summary>展开</summary>待生成</details> |
+| 2026-05-26 | BatteryMFormer: Multi-level Learning for Battery Degradation Trajectory Forecasting | http://arxiv.org/abs/2605.27044v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-28 | Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments, and Robot Embodiments | http://arxiv.org/abs/2605.30280v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-28 | BitTP: The Lightweight Trajectory Prediction Model with BitLLM for Edge-Devices | http://arxiv.org/abs/2605.29705v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-05-27 | Embodied3DBench: Benchmarking Low-Level Embodied Spatial Intelligence of Vision Language Models | http://arxiv.org/abs/2605.29074v1 | <details><summary>展开</summary>待生成</details> |
