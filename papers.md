@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-08 | Real-time body pose non-verbal communication with a consistency-based reliability measure | http://arxiv.org/abs/2606.09390v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-07 | Towards Long-Horizon Vessel Trajectory and Destination Forecasting with Reasoning Large Language Models | http://arxiv.org/abs/2606.08633v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-04 | AIS-Based Vessel Trajectory Prediction Using Memory-Augmented Neural Networks | http://arxiv.org/abs/2606.06311v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-04 | LiAuto-GeoX: Efficient Grounded Driving Transformer | http://arxiv.org/abs/2606.05774v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-02 | StandardE2E: A Unified Framework for End-to-End Autonomous Driving Datasets | http://arxiv.org/abs/2606.04271v1 | <details><summary>展开</summary>待生成</details> |
