@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-15 | ExoTraj: A General Lower-limb Exoskeleton Assistance Policy for Complex Environments | http://arxiv.org/abs/2606.16876v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-13 | Driving, Fast or Slow? Neuro-Symbolic Guidance for Motion Prediction in Multi-Modal Ground Mobility | http://arxiv.org/abs/2606.15251v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-11 | An Attention-based Model for Robust Forecasting with Missing Modality | http://arxiv.org/abs/2606.13970v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-04 | LiAuto-GeoX: Efficient Grounded Driving Transformer | http://arxiv.org/abs/2606.05774v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-09 | SceneMiner: Identity-Preserving Multi-Task Fine-Tuning for Unified BEV Scene Mining | http://arxiv.org/abs/2606.11507v1 | <details><summary>展开</summary>待生成</details> |
