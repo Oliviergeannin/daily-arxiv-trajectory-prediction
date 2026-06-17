@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-16 | EventDrive: Event Cameras for Vision-Language Driving Intelligence | http://arxiv.org/abs/2606.18242v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-16 | Learn to Quantify Social Interaction with Constraints for Pedestrian Walking | http://arxiv.org/abs/2606.17897v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-15 | ExoTraj: A General Lower-limb Exoskeleton Assistance Policy for Complex Environments | http://arxiv.org/abs/2606.16876v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-13 | Driving, Fast or Slow? Neuro-Symbolic Guidance for Motion Prediction in Multi-Modal Ground Mobility | http://arxiv.org/abs/2606.15251v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-11 | An Attention-based Model for Robust Forecasting with Missing Modality | http://arxiv.org/abs/2606.13970v1 | <details><summary>展开</summary>待生成</details> |
