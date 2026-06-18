@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-17 | Constant Time-Delay Leader Following with Neural Networks and Invariant Extended Kalman Filters for Arbitrary Trajectories | http://arxiv.org/abs/2606.19227v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-17 | Where Will They Go? Modelling Multimodal Pedestrian Manoeuvres from Ego-centric Videos | http://arxiv.org/abs/2606.18824v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-17 | MolmoMotion: Forecasting Point Trajectories in 3D with Language Instruction | http://arxiv.org/abs/2606.18558v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-16 | EventDrive: Event Cameras for Vision-Language Driving Intelligence | http://arxiv.org/abs/2606.18242v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-16 | Learn to Quantify Social Interaction with Constraints for Pedestrian Walking | http://arxiv.org/abs/2606.17897v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-15 | ExoTraj: A General Lower-limb Exoskeleton Assistance Policy for Complex Environments | http://arxiv.org/abs/2606.16876v1 | <details><summary>展开</summary>待生成</details> |
