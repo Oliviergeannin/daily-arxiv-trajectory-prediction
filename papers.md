@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-22 | Polycepta: Object-Centric Appearance Estimation for Multi-Object Tracking | http://arxiv.org/abs/2606.23604v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-22 | Three-Step Hierarchical Transformer for Multi-Pedestrian Trajectory Prediction | http://arxiv.org/abs/2606.23058v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-19 | A DVDrive Approach for doScenes Instructed Driving Challenge | http://arxiv.org/abs/2606.21623v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-19 | Mind the Noise: Sensitivity of Transformer-based Interaction-Aware Trajectory Prediction Models to Noisy Data | http://arxiv.org/abs/2606.21344v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-14 | JPPD: Joint Prediction_Planning Diffusion with Differentiable Safety Guidance for Dynamic Obstacle Avoidance in Intelligent Transportation Systems | http://arxiv.org/abs/2606.20686v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-18 | Autonomous Driving with Priority-Ordered STL Specifications Under Multimodal Uncertainty | http://arxiv.org/abs/2606.20336v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-17 | Constant Time-Delay Leader Following with Neural Networks and Invariant Extended Kalman Filters for Arbitrary Trajectories | http://arxiv.org/abs/2606.19227v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-17 | Where Will They Go? Modelling Multimodal Pedestrian Manoeuvres from Ego-centric Videos | http://arxiv.org/abs/2606.18824v1 | <details><summary>展开</summary>待生成</details> |
