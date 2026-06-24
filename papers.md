@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-23 | NavWM: A Unified Navigation World Model for Foresight-Driven Planning | http://arxiv.org/abs/2606.24101v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-22 | Polycepta: Object-Centric Appearance Estimation for Multi-Object Tracking | http://arxiv.org/abs/2606.23604v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-22 | Polycepta: Object-Centric Appearance Estimation for Multi-Object Tracking | http://arxiv.org/abs/2606.23604v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-22 | Three-Step Hierarchical Transformer for Multi-Pedestrian Trajectory Prediction | http://arxiv.org/abs/2606.23058v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-19 | A DVDrive Approach for doScenes Instructed Driving Challenge | http://arxiv.org/abs/2606.21623v1 | <details><summary>展开</summary>待生成</details> |
