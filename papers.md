@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-24 | 1000 Rallies: An Event-Camera Dataset and Real-Time Learned Ball-State Estimation for Robotic Table Tennis | http://arxiv.org/abs/2606.25620v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-24 | DynaMOMA: Instantaneous Prediction of Grasp Poses for Mobile Manipulation of Dynamic Objects | http://arxiv.org/abs/2606.25295v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-23 | AeroCast: Probabilistic 3D Trajectory Prediction for Non-Cooperative Aerial Obstacles via Transformer-MDN Architecture | http://arxiv.org/abs/2606.25122v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-23 | NavWM: A Unified Navigation World Model for Foresight-Driven Planning | http://arxiv.org/abs/2606.24101v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-22 | Polycepta: Object-Centric Appearance Estimation for Multi-Object Tracking | http://arxiv.org/abs/2606.23604v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-22 | Polycepta: Object-Centric Appearance Estimation for Multi-Object Tracking | http://arxiv.org/abs/2606.23604v1 | <details><summary>展开</summary>待生成</details> |
