@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-06-30 | 3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance | http://arxiv.org/abs/2606.31329v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-30 | Diffusion-based 4D Trajectory Prediction and Distributed Control for UAV Swarms | http://arxiv.org/abs/2606.31197v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-30 | Rethinking Foundation Model Collaboration: Enhancing Specialized Models through Proxy Task Reasoning | http://arxiv.org/abs/2606.31157v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-29 | Unveiling Transferability in Trajectory Prediction via Latent Scene Embeddings | http://arxiv.org/abs/2606.30777v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-29 | CylindTrack: Depth-Aware Cylindrical Motion Modeling for Panoramic Multi-Object Tracking | http://arxiv.org/abs/2606.30097v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-28 | Zero-Gated Language-conditioned Human Motion Prediction | http://arxiv.org/abs/2606.29208v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-27 | TrajRS: Towards Certified Robustness in Pedestrian Trajectory Prediction | http://arxiv.org/abs/2606.28716v1 | <details><summary>展开</summary>待生成</details> |
