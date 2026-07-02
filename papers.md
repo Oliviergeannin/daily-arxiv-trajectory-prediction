@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-01 | SD-RouteFusion: Ego-Trajectory Prediction with SD-Map Route Conditioning | http://arxiv.org/abs/2607.01139v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-01 | Towards Metric-Agnostic Trajectory Forecasting | http://arxiv.org/abs/2607.01133v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-01 | Learning When to Listen: Gated Affect Fusion for Human Motion Prediction | http://arxiv.org/abs/2607.00296v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-06-30 | 3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance | http://arxiv.org/abs/2606.31329v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-30 | 3D HAMSTER: Bridging Planning and Control in Hierarchical Vision Language Action Models through 3D Trajectory Guidance | http://arxiv.org/abs/2606.31329v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-30 | Diffusion-based 4D Trajectory Prediction and Distributed Control for UAV Swarms | http://arxiv.org/abs/2606.31197v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-06-30 | Rethinking Foundation Model Collaboration: Enhancing Specialized Models through Proxy Task Reasoning | http://arxiv.org/abs/2606.31157v1 | <details><summary>展开</summary>待生成</details> |
