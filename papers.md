@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-02 | LLM-Empowered Multimodal Fusion Framework for Autonomous Driving: Semantic Enhancement and Channel-Adaptive Design | http://arxiv.org/abs/2607.01772v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-02 | Teaching Vision-Language-Action Models What to See and Where to Look | http://arxiv.org/abs/2607.01658v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-01 | Neuro-Symbolic Safety Guidance for Vision-Language-Action Models via Constrained Flow Matching | http://arxiv.org/abs/2607.01378v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-01 | WaveLander: A Generalizable Hierarchical Control Framework for UAV Landing on Wave-Disturbed Platforms via Reinforcement Learning | http://arxiv.org/abs/2607.01281v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-01 | SD-RouteFusion: Ego-Trajectory Prediction with SD-Map Route Conditioning | http://arxiv.org/abs/2607.01139v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-01 | Towards Metric-Agnostic Trajectory Forecasting | http://arxiv.org/abs/2607.01133v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-01 | Learning When to Listen: Gated Affect Fusion for Human Motion Prediction | http://arxiv.org/abs/2607.00296v1 | <details><summary>展开</summary>待生成</details> |
