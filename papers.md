@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-06 | TGRIP: A Text-Guided Approach to Vehicle Instance Prediction in Autonomous Driving | http://arxiv.org/abs/2607.04812v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-06 | A Reliable Context-Aware and Temporal Planning Framework for Autonomous Driving | http://arxiv.org/abs/2607.04689v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-06 | PixelPilot: Scalable Vision-Language-Action Models for End-to-End Autonomous Driving | http://arxiv.org/abs/2607.04637v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-05 | CRISP: A Spatiotemporal Camera-Radar Backbone for Driving via Forecasting-Based World-Model Pretraining | http://arxiv.org/abs/2607.04541v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-03 | AnchorVLA: Bridging Discrete Decisions and Continuous Trajectories for Vision-Language-Action Planning | http://arxiv.org/abs/2607.03182v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-02 | LLM-Empowered Multimodal Fusion Framework for Autonomous Driving: Semantic Enhancement and Channel-Adaptive Design | http://arxiv.org/abs/2607.01772v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-02 | Teaching Vision-Language-Action Models What to See and Where to Look | http://arxiv.org/abs/2607.01658v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-01 | Neuro-Symbolic Safety Guidance for Vision-Language-Action Models via Constrained Flow Matching | http://arxiv.org/abs/2607.01378v1 | <details><summary>展开</summary>待生成</details> |
