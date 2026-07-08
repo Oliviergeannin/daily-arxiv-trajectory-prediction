@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-07 | Synthetic-to-Real Translation for Class-Agnostic Motion Prediction | http://arxiv.org/abs/2607.06319v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-06 | IMR: Iterative Mode-World Weighted Regression for Multi-Agent Trajectory Prediction | http://arxiv.org/abs/2607.05705v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-06 | TGRIP: A Text-Guided Approach to Vehicle Instance Prediction in Autonomous Driving | http://arxiv.org/abs/2607.04812v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-06 | A Reliable Context-Aware and Temporal Planning Framework for Autonomous Driving | http://arxiv.org/abs/2607.04689v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-06 | PixelPilot: Scalable Vision-Language-Action Models for End-to-End Autonomous Driving | http://arxiv.org/abs/2607.04637v1 | <details><summary>展开</summary>待生成</details> |
