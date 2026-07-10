@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-09 | AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding | http://arxiv.org/abs/2607.08745v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-09 | Swapping Faces, Saving Features: A Dual-Purpose Pipeline for Pedestrian Privacy in ITS | http://arxiv.org/abs/2607.08402v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-09 | INTENT: An LSTM Framework for Vehicle Intention Prediction in Intersection Scenarios with Comprehensive Ablation Analysis | http://arxiv.org/abs/2607.08316v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-08 | HumAIN: Human-Aware Implicit Social Robot Navigation | http://arxiv.org/abs/2607.07357v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-08 | Ego-Human Motion Prediction with 3D-Aware LLM | http://arxiv.org/abs/2607.07001v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-07 | Synthetic-to-Real Translation for Class-Agnostic Motion Prediction | http://arxiv.org/abs/2607.06319v1 | <details><summary>展开</summary>待生成</details> |
