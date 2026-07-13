@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-10 | Robot Trajectron V3: A Probabilistic Shared Control Framework for SE(3) Manipulation | http://arxiv.org/abs/2607.09315v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-09 | AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding | http://arxiv.org/abs/2607.08745v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-09 | Swapping Faces, Saving Features: A Dual-Purpose Pipeline for Pedestrian Privacy in ITS | http://arxiv.org/abs/2607.08402v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-09 | INTENT: An LSTM Framework for Vehicle Intention Prediction in Intersection Scenarios with Comprehensive Ablation Analysis | http://arxiv.org/abs/2607.08316v1 | <details><summary>展开</summary>待生成</details> |
