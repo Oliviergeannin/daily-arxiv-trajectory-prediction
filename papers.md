@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-13 | EquiFusion: Kinematics-Agnostic Human Motion Prediction via Equivariant Latent Diffusion | http://arxiv.org/abs/2607.10984v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-12 | OmniX: Any-view and Any-time 4D Reconstruction via Feed-forward Trajectory Fields | http://arxiv.org/abs/2607.10840v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-11 | Navigating the Crowd: Non-linear MPC with Social Forces Dynamics for Human-Aware Robot Navigation | http://arxiv.org/abs/2607.10374v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-11 | PrismAD: Decoupled Planning via Semantic Mixture-of-Planners for End-to-End Autonomous Driving | http://arxiv.org/abs/2607.10336v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-10 | Robot Trajectron V3: A Probabilistic Shared Control Framework for SE(3) Manipulation | http://arxiv.org/abs/2607.09315v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-09 | AUTOPILOT VQA: Benchmarking Vision-Language Models for Incident-Centric Dashcam Understanding | http://arxiv.org/abs/2607.08745v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-09 | Swapping Faces, Saving Features: A Dual-Purpose Pipeline for Pedestrian Privacy in ITS | http://arxiv.org/abs/2607.08402v1 | <details><summary>展开</summary>待生成</details> |
