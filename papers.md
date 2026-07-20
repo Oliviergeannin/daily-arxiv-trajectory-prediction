@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-17 | MotionForesight: Re-purposing Video Models for Future 3D Scene-Flow Prediction | http://arxiv.org/abs/2607.16192v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-16 | Learning Agile Navigation in Crowded Environments for Quadruped Robots | http://arxiv.org/abs/2607.15036v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-16 | WorkDrive: Roadwork Chain of Causation for Autonomous Driving | http://arxiv.org/abs/2607.14727v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-11 | TSCA-Net: Temporal-Spatial Clique Attention for Interpretable Multimodal Pedestrian Trajectory Prediction | http://arxiv.org/abs/2607.11939v1 | <details><summary>展开</summary>待生成</details> |
