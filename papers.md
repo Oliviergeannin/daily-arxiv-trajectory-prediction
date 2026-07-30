@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-07-28 | Medical world models in healthcare: foundations, applications, and challenges for trustworthy clinical translation | http://arxiv.org/abs/2607.25242v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-22 | ODeform: Learning Continuous 4D Motion for Shape Deformation with Neural ODEs | http://arxiv.org/abs/2607.20670v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-18 | SAGE: A Socially-Aware Generative Engine for Heterogeneous Multi-Agent Navigation | http://arxiv.org/abs/2607.16619v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-22 | Unified Prediction and Planning via Conflict-Aware Disjoint Parameter Training | http://arxiv.org/abs/2607.19971v1 | <details><summary>展开</summary>待生成</details> |
