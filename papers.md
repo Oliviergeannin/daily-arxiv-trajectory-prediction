@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-04 | Learning Biomechanically Plausible Human Motion from Sparse Radar Point Clouds | http://arxiv.org/abs/2608.03637v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-04 | Pivot-Centric Trajectory Prediction: Bridging Long Horizons via Dynamical Guidance | http://arxiv.org/abs/2608.03521v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-04 | Residual Flow Matching with Dynamic Cross-Interaction for 3D Multi-Person Motion Prediction | http://arxiv.org/abs/2608.03379v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-04 | UniNav: A Unified World-Action Diffusion Model for Visual Navigation | http://arxiv.org/abs/2608.03244v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-07-28 | Medical world models in healthcare: foundations, applications, and challenges for trustworthy clinical translation | http://arxiv.org/abs/2607.25242v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-03 | Generative Brownian Bridge Diffusion In Motion Space For Enhanced Myocardial Strain Analysis | http://arxiv.org/abs/2608.01677v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-01 | SIPTraj: Map-Free End-to-End Trajectory Prediction via Physics-Guided Scene Interaction | http://arxiv.org/abs/2608.00779v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-07-28 | Medical world models in healthcare: foundations, applications, and challenges for trustworthy clinical translation | http://arxiv.org/abs/2607.25242v1 | <details><summary>展开</summary>待生成</details> |
