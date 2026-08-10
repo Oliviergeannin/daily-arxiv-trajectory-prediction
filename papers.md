@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-07 | Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception | http://arxiv.org/abs/2608.06907v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-06 | A Unified Framework for Trajectory Prediction with Explicit Planning and Reaction Decomposition | http://arxiv.org/abs/2608.05673v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-05 | NSF-HRPT: Neural Semantic Field meets Hierarchical Risk Perception Tree for Safety-Critical Scenario Assessment | http://arxiv.org/abs/2608.04776v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-04 | Learning Biomechanically Plausible Human Motion from Sparse Radar Point Clouds | http://arxiv.org/abs/2608.03637v1 | <details><summary>展开</summary>待生成</details> |
