@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-10 | Energy-Structured Latent World Models with Neural Time Fields for Physically Constistent Open-World Motion Planning | http://arxiv.org/abs/2608.09876v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-10 | SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation | http://arxiv.org/abs/2608.09771v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-10 | Towards Collaborative Joint Perception and Prediction: Framework, Baseline Evaluation, and Deployment Perspectives | http://arxiv.org/abs/2608.09541v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-10 | Control-Oriented Scenario Tree Construction through Reinforcement Learning | http://arxiv.org/abs/2608.09335v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-08 | SurgWMBench: A Vision-Based Benchmark for World-Modeling Surgical Instrument Motion Planning | http://arxiv.org/abs/2608.08070v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-07 | Spatiotemporal Agility: Time-Constrained Reinforcement Learning for Vision-Guided Dynamic Quadrupedal Interception | http://arxiv.org/abs/2608.06907v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-06 | A Unified Framework for Trajectory Prediction with Explicit Planning and Reaction Decomposition | http://arxiv.org/abs/2608.05673v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-05 | NSF-HRPT: Neural Semantic Field meets Hierarchical Risk Perception Tree for Safety-Critical Scenario Assessment | http://arxiv.org/abs/2608.04776v1 | <details><summary>展开</summary>待生成</details> |
