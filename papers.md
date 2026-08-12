@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-11 | Capturing Uncertainty in Human Motion for Representation Learning in Soccer | http://arxiv.org/abs/2608.11203v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-11 | Nonlinear Model Predictive Control via Sequential Convex Programming for Drone-to-Drone Docking | http://arxiv.org/abs/2608.10542v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-10 | MAD-HOI: Masked Autoregressive Diffusion for Generating Articulated Hand Object Interactions from Text | http://arxiv.org/abs/2608.10162v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-07 | SimWAM: A Simple World Action Model for End-to-End Autonomous Driving | http://arxiv.org/abs/2608.07468v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-10 | Energy-Structured Latent World Models with Neural Time Fields for Physically Constistent Open-World Motion Planning | http://arxiv.org/abs/2608.09876v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-10 | SLIM-0.5B: Learning Action-Grounded Predictive Latents for Robot Manipulation | http://arxiv.org/abs/2608.09771v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-10 | Towards Collaborative Joint Perception and Prediction: Framework, Baseline Evaluation, and Deployment Perspectives | http://arxiv.org/abs/2608.09541v1 | <details><summary>展开</summary>待生成</details> |
