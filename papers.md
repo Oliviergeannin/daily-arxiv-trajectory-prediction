@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-12 | Autonomous Telerehabilitation via Skeletal Motion Prediction and Joint-Level Performance Assessment | http://arxiv.org/abs/2608.12145v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-11 | Top-down Traffic Scenario Generation via Joint Initial-Goal Diffusion and Trajectory Infilling | http://arxiv.org/abs/2608.11407v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-11 | Capturing Uncertainty in Human Motion for Representation Learning in Soccer | http://arxiv.org/abs/2608.11203v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-11 | Nonlinear Model Predictive Control via Sequential Convex Programming for Drone-to-Drone Docking | http://arxiv.org/abs/2608.10542v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-10 | MAD-HOI: Masked Autoregressive Diffusion for Generating Articulated Hand Object Interactions from Text | http://arxiv.org/abs/2608.10162v1 | <details><summary>展开</summary>待生成</details> |
