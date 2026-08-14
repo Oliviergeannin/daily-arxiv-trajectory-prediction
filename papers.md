@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-13 | AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN | http://arxiv.org/abs/2608.12835v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-12 | Autonomous Telerehabilitation via Skeletal Motion Prediction and Joint-Level Performance Assessment | http://arxiv.org/abs/2608.12145v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-11 | Top-down Traffic Scenario Generation via Joint Initial-Goal Diffusion and Trajectory Infilling | http://arxiv.org/abs/2608.11407v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-11 | Capturing Uncertainty in Human Motion for Representation Learning in Soccer | http://arxiv.org/abs/2608.11203v1 | <details><summary>展开</summary>待生成</details> |
