@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-16 | Unified Pedestrian Path Prediction Using Inverse Reinforcement Learning | http://arxiv.org/abs/2608.15929v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-15 | PersonaDrive: Controllable Trajectory Prediction with Multi-Dimensional Driving Personas | http://arxiv.org/abs/2608.15230v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-10 | MAD-HOI: Masked Autoregressive Diffusion for Generating Articulated Hand Object Interactions from Text | http://arxiv.org/abs/2608.10162v2 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-07 | SimWAM: A Simple World Action Model for End-to-End Autonomous Driving | http://arxiv.org/abs/2608.07468v3 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-13 | AirForesight: Current-to-Future Spatial Map Imagination with Cross-Space Planning Consistency for UAV-VLN | http://arxiv.org/abs/2608.12835v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-12 | Autonomous Telerehabilitation via Skeletal Motion Prediction and Joint-Level Performance Assessment | http://arxiv.org/abs/2608.12145v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-11 | Top-down Traffic Scenario Generation via Joint Initial-Goal Diffusion and Trajectory Infilling | http://arxiv.org/abs/2608.11407v1 | <details><summary>展开</summary>待生成</details> |
