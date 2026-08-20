@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-19 | DyG$^2$T: Modeling Object Dynamics with 3D Gaussian Temporal-Spatial Particle Graph Transformer | http://arxiv.org/abs/2608.18498v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-18 | ControlledShifts: Towards Standardizing Robustness Evaluation in Trajectory Prediction Under Distribution Shifts | http://arxiv.org/abs/2608.17882v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-16 | Unified Pedestrian Path Prediction Using Inverse Reinforcement Learning | http://arxiv.org/abs/2608.15929v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-15 | PersonaDrive: Controllable Trajectory Prediction with Multi-Dimensional Driving Personas | http://arxiv.org/abs/2608.15230v1 | <details><summary>展开</summary>待生成</details> |
