@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-21 | Gaussian-Mixture Latent Flow for Stochastic 3D Human Motion Prediction | http://arxiv.org/abs/2608.21093v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-21 | SPARC: Single-Pass Scaling for Motion Forecasting with Conformal Bayesian Last Layers | http://arxiv.org/abs/2608.20802v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-18 | ControlledShifts: Towards Standardizing Robustness Evaluation in Trajectory Prediction Under Distribution Shifts | http://arxiv.org/abs/2608.17882v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-20 | Towards Surgical World-Action Modeling: A Preliminary Joint Visual-Trajectory Forecasting for Surgical Motion Planning | http://arxiv.org/abs/2608.20284v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-20 | ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting | http://arxiv.org/abs/2608.20009v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-20 | Mix&Fix-Net: A Dual-Stage Trajectory Prediction Model for AIS and Vision-Derived Vessel Data | http://arxiv.org/abs/2608.19580v1 | <details><summary>展开</summary>待生成</details> |
