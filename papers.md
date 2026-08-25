@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-24 | GeoWAM: Visual Geometry World Action Models for Autonomous Driving | http://arxiv.org/abs/2608.23486v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-23 | EMPIRE: Explicit Manipulation Planning as a Learnable Intermediate Representation for Egocentric Hand-Motion Forecasting | http://arxiv.org/abs/2608.22449v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-21 | Gaussian-Mixture Latent Flow for Stochastic 3D Human Motion Prediction | http://arxiv.org/abs/2608.21093v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-21 | SPARC: Single-Pass Scaling for Motion Forecasting with Conformal Bayesian Last Layers | http://arxiv.org/abs/2608.20802v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-18 | ControlledShifts: Towards Standardizing Robustness Evaluation in Trajectory Prediction Under Distribution Shifts | http://arxiv.org/abs/2608.17882v2 | <details><summary>展开</summary>待生成</details> |
