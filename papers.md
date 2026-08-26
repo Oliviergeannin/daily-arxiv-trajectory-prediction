@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-25 | SIREN-Bench: Behavior-Driven Generation and Evaluation of Emergency-Vehicle Interactions | http://arxiv.org/abs/2608.24094v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-24 | GeoWAM: Visual Geometry World Action Models for Autonomous Driving | http://arxiv.org/abs/2608.23486v2 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-20 | ExPhy: A Benchmark for Explicit Physical Property Learning in Multi-Object Trajectory Forecasting | http://arxiv.org/abs/2608.20009v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-24 | GeoWAM: Visual Geometry World Action Models for Autonomous Driving | http://arxiv.org/abs/2608.23486v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-23 | EMPIRE: Explicit Manipulation Planning as a Learnable Intermediate Representation for Egocentric Hand-Motion Forecasting | http://arxiv.org/abs/2608.22449v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-21 | Gaussian-Mixture Latent Flow for Stochastic 3D Human Motion Prediction | http://arxiv.org/abs/2608.21093v1 | <details><summary>展开</summary>待生成</details> |
