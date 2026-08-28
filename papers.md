@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-08-27 | Multi-Person Human Motion Forecasting in Complex Scenes | http://arxiv.org/abs/2608.27039v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-08-26 | DESCENT: Directed Edge Scene Encoding for Airport Surface Movement Prediction | http://arxiv.org/abs/2608.26002v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-26 | DESCENT: Directed Edge Scene Encoding for Airport Surface Movement Prediction | http://arxiv.org/abs/2608.26002v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-25 | SIREN-Bench: Behavior-Driven Generation and Evaluation of Emergency-Vehicle Interactions | http://arxiv.org/abs/2608.24094v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-08-24 | GeoWAM: Visual Geometry World Action Models for Autonomous Driving | http://arxiv.org/abs/2608.23486v2 | <details><summary>展开</summary>待生成</details> |
