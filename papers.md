@@ -1,5 +1,12 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-08 | Point4D: Long-range 4D Motion Reconstruction | http://arxiv.org/abs/2609.09145v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-08 | From Where to How: Continuous 4D Interaction Forecasting from Egocentric Video | http://arxiv.org/abs/2609.08636v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-08 | DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting | http://arxiv.org/abs/2609.08117v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-07 | MamMA: A Mamba-Based Pedestrian Trajectory Prediction Algorithm Considering Occupancy Map and Pedestrian Awareness States | http://arxiv.org/abs/2609.08041v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-07 | CrowdTraj: A Benchmark for Dense Crowd Trajectory Prediction in Realistic Crowded Environments | http://arxiv.org/abs/2609.07685v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-07 | SSP-DMGTimeNet: Physics-Constrained Learning for Spatiotemporal Trajectory Prediction of Vehicle Platoons | http://arxiv.org/abs/2609.06961v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-05 | A4A: Cross-Embodiment Transfer of Action-Oriented 4D Affordances from Human Demonstrations | http://arxiv.org/abs/2609.05892v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-03 | Scalable Edge-assisted Fusion and Path Prediction for Connected Autonomous Vehicles | http://arxiv.org/abs/2609.04364v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-02 | GPU-Accelerated Astrodynamics World Models for Spacecraft Rendezvous and Proximity Operations | http://arxiv.org/abs/2609.03067v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-02 | DiffuSearch: How Hybrid Trajectory Planning Benefits from Aligned Objectives in Diffusion and Action Space | http://arxiv.org/abs/2609.02252v1 | <details><summary>展开</summary>待生成</details> |
