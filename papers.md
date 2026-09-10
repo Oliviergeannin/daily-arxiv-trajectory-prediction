@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-09 | Adaptive Shared Control with Online Bounded-Rational Human Behavior Estimation | http://arxiv.org/abs/2609.10215v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-08 | Point4D: Long-range 4D Motion Reconstruction | http://arxiv.org/abs/2609.09145v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-08 | From Where to How: Continuous 4D Interaction Forecasting from Egocentric Video | http://arxiv.org/abs/2609.08636v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-08 | DriveMotion: A Large-Scale Multi-Source Benchmark for Driver Motion Sequence Modeling and Forecasting | http://arxiv.org/abs/2609.08117v1 | <details><summary>展开</summary>待生成</details> |
