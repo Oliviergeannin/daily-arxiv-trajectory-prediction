@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-10 | MC-DeTra: Motion-Consistent Joint Object Detection and Socially-Aware Trajectory Forecasting in Bird's-Eye-View Images | http://arxiv.org/abs/2609.11717v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-09 | Adaptive Shared Control with Online Bounded-Rational Human Behavior Estimation | http://arxiv.org/abs/2609.10215v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-08 | Point4D: Long-range 4D Motion Reconstruction | http://arxiv.org/abs/2609.09145v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-08 | From Where to How: Continuous 4D Interaction Forecasting from Egocentric Video | http://arxiv.org/abs/2609.08636v1 | <details><summary>展开</summary>待生成</details> |
