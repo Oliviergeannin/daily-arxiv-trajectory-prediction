@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-16 | FIVE-VLA: Fast and EffectIVE Autonomous Driving with Recurrent Action Memory | http://arxiv.org/abs/2609.18623v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-16 | HAP: A Hand-Driven Active Perception Framework for Egocentric Head Motion Prediction | http://arxiv.org/abs/2609.18548v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-16 | WholeBodyWAM: Learning Whole-Body World Action Models with Scalable Motion Priors | http://arxiv.org/abs/2609.18197v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-12 | GeomVLA: Unifying Scene, Motion, and Action in 3D | http://arxiv.org/abs/2609.13812v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-15 | Tracking the Unseen: An Occlusion-Robust Framework for Target Tracking Under Full and Long-Term Occlusion | http://arxiv.org/abs/2609.17427v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-15 | Kernel-Based Metrics Learning for Uncertain Opponent Vehicle Trajectory Prediction in Autonomous Racing | http://arxiv.org/abs/2609.17147v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-14 | UDAV: Uncertainty-Driven Adaptive VLM Waypoint Planner | http://arxiv.org/abs/2609.16368v1 | <details><summary>展开</summary>待生成</details> |
