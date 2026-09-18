@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-17 | MoWAM: Explicit Future Motion Prediction for Efficient World Action Models | http://arxiv.org/abs/2609.20709v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-17 | Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation | http://arxiv.org/abs/2609.20114v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-17 | Vehicle Trajectory Prediction via Neural Fusion of Multiple EKF-Based Trajectory Candidates | http://arxiv.org/abs/2609.19813v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-16 | WZPlanner: Safe End-to-End Path Planning for Autonomous Driving in Work Zones | http://arxiv.org/abs/2609.19393v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-16 | FIVE-VLA: Fast and EffectIVE Autonomous Driving with Recurrent Action Memory | http://arxiv.org/abs/2609.18623v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-16 | HAP: A Hand-Driven Active Perception Framework for Egocentric Head Motion Prediction | http://arxiv.org/abs/2609.18548v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-16 | WholeBodyWAM: Learning Whole-Body World Action Models with Scalable Motion Priors | http://arxiv.org/abs/2609.18197v1 | <details><summary>展开</summary>待生成</details> |
