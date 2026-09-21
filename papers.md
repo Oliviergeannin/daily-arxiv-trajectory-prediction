@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-18 | Driving on Registers, Reasoning on Risk: Risk-Aware Occupancy for Register-Based End-to-End Autonomous Driving | http://arxiv.org/abs/2609.21486v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-17 | MoWAM: Explicit Future Motion Prediction for Efficient World Action Models | http://arxiv.org/abs/2609.20709v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-17 | Universal Navigation Interface: Robot-Free Data for Wheeled Robot Navigation | http://arxiv.org/abs/2609.20114v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-17 | Vehicle Trajectory Prediction via Neural Fusion of Multiple EKF-Based Trajectory Candidates | http://arxiv.org/abs/2609.19813v1 | <details><summary>展开</summary>待生成</details> |
