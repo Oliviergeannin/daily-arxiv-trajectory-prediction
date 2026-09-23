@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-22 | Latent Dataset Distillation for Human Motion Prediction | http://arxiv.org/abs/2609.26430v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-22 | Destination Support Restoration for Finite-Set Multimodal Trajectory Prediction | http://arxiv.org/abs/2609.25942v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-22 | Towards Omni-dimensional GUI Agent Navigation with Masked Trajectory Prediction | http://arxiv.org/abs/2609.25769v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-21 | MIRA: Real-Time Full-Duplex Human-Robot Interaction for Embodied Companions | http://arxiv.org/abs/2609.24547v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-19 | Planning-Aligned Pretraining of BEV Representations with Sparse Action-Conditioned Targets for End-to-End Autonomous Driving | http://arxiv.org/abs/2609.22868v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-18 | Driving on Registers, Reasoning on Risk: Risk-Aware Occupancy for Register-Based End-to-End Autonomous Driving | http://arxiv.org/abs/2609.21486v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-17 | MoWAM: Explicit Future Motion Prediction for Efficient World Action Models | http://arxiv.org/abs/2609.20709v1 | <details><summary>展开</summary>待生成</details> |
