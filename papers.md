@@ -1,5 +1,13 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-28 | SurgGMF: Fully Causal Gaussian Motion Forecasting for Anticipatory Surgical Scene Rendering | http://arxiv.org/abs/2609.34733v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-26 | Learning response-aware patient dynamics for respiratory support | http://arxiv.org/abs/2609.32782v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-26 | Proactive Motion Planning for Human-Robot Cooperation | http://arxiv.org/abs/2609.32354v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-26 | Human Motion Prediction for Human-Robot Collaboration | http://arxiv.org/abs/2609.32346v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-26 | Skeletons in Flow: Graph Structured Flow Matching for Human Motion Prediction | http://arxiv.org/abs/2609.32231v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-26 | CausalDriveBench: Evaluating Causal Reasoning in Vision-Language-Action Models for Autonomous Driving | http://arxiv.org/abs/2609.32157v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-23 | AnchorReasoning: A Visual Grounding and Causal Reasoning Dataset in Long-Tail Autonomous Driving Scenarios | http://arxiv.org/abs/2609.28366v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-22 | Fast Direction-Conditioned Reachability for Motion Prediction Under Model Uncertainty | http://arxiv.org/abs/2609.27077v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-22 | Latent Dataset Distillation for Human Motion Prediction | http://arxiv.org/abs/2609.26430v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-22 | Destination Support Restoration for Finite-Set Multimodal Trajectory Prediction | http://arxiv.org/abs/2609.25942v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-22 | Towards Omni-dimensional GUI Agent Navigation with Masked Trajectory Prediction | http://arxiv.org/abs/2609.25769v1 | <details><summary>展开</summary>待生成</details> |
