@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-29 | Comparing Utility of Inertial, Occupancy, Semantic, and Intent Information in Human Motion Prediction During Daily Tasks | http://arxiv.org/abs/2609.37971v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-29 | Socialality Anchors: Towards Group-bounded Trajectory Prediction | http://arxiv.org/abs/2609.36852v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-27 | Physics-Guided Flow-Map Matching for Precipitation Nowcasting | http://arxiv.org/abs/2609.37487v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-28 | SurgGMF: Fully Causal Gaussian Motion Forecasting for Anticipatory Surgical Scene Rendering | http://arxiv.org/abs/2609.34733v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-26 | Learning response-aware patient dynamics for respiratory support | http://arxiv.org/abs/2609.32782v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-26 | Proactive Motion Planning for Human-Robot Cooperation | http://arxiv.org/abs/2609.32354v1 | <details><summary>展开</summary>待生成</details> |
