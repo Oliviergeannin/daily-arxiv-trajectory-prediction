@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-09-30 | Efficient Multi-Modal Planning with Reward-Guided Preference Optimization for Autonomous Driving | http://arxiv.org/abs/2609.38862v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-09-29 | Yggdrasil: a Layer-First 3D Scene Graph for Real-Time Querying | http://arxiv.org/abs/2609.38640v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-29 | Comparing Utility of Inertial, Occupancy, Semantic, and Intent Information in Human Motion Prediction During Daily Tasks | http://arxiv.org/abs/2609.37971v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-29 | Socialality Anchors: Towards Group-bounded Trajectory Prediction | http://arxiv.org/abs/2609.36852v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-09-27 | Physics-Guided Flow-Map Matching for Precipitation Nowcasting | http://arxiv.org/abs/2609.37487v1 | <details><summary>展开</summary>待生成</details> |
