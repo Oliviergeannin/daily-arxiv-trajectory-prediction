@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-05 | MoCAR: Motion-code Coordinate-aware AutoRegression for Continuous Trajectory Forecasting | http://arxiv.org/abs/2610.06210v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-04 | LifeLong Digital Twin: A Unified Modeling Paradigm and Agent Harness for Event-Driven Lifelong Health State Trajectories | http://arxiv.org/abs/2610.05566v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-02 | TACD: Distilling Efficient Text-to-Motion Models via Terminal Amplification Control | http://arxiv.org/abs/2610.02867v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-02 | Proprioceptive Sketches as Long-Horizon Intent for Generative Action Policies | http://arxiv.org/abs/2610.02759v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-01 | MapLightning: Online Vectorized HD Map Construction with 1D Map Tokens | http://arxiv.org/abs/2610.01905v1 | <details><summary>展开</summary>待生成</details> |
