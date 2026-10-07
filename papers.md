@@ -1,5 +1,10 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-06 | Parallel Predictive World Models for Accurate and Efficient Long-Horizon Planning | http://arxiv.org/abs/2610.08627v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-06 | Revisiting Numerical Forecasting Models for Language-Based Trajectory Prediction | http://arxiv.org/abs/2610.07954v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-05 | Risk-Sensitive Crowd Navigation with Adaptive Ellipsoidal Conformal Prediction | http://arxiv.org/abs/2610.07474v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-05 | Distribution-Transfer Safe-Horizon MPC under Mode Uncertainty | http://arxiv.org/abs/2610.07277v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-05 | AIM: Adaptive Interaction Modeling Networks for Real-to-Sim Soft-Body Simulation | http://arxiv.org/abs/2610.07116v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-05 | MoCAR: Motion-code Coordinate-aware AutoRegression for Continuous Trajectory Forecasting | http://arxiv.org/abs/2610.06210v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-04 | LifeLong Digital Twin: A Unified Modeling Paradigm and Agent Harness for Event-Driven Lifelong Health State Trajectories | http://arxiv.org/abs/2610.05566v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-02 | TACD: Distilling Efficient Text-to-Motion Models via Terminal Amplification Control | http://arxiv.org/abs/2610.02867v1 | <details><summary>展开</summary>待生成</details> |
