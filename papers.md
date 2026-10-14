@@ -1,5 +1,13 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-13 | LynxScenes: A Large-Scale Real-World Benchmark for Outdoor Wheel-Legged Robot Perception, Navigation, Imagination and Reconstruction | http://arxiv.org/abs/2610.18093v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | Box-WAM: Box Trajectories as Compact State Representations for World Action Models | http://arxiv.org/abs/2610.17526v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | Adaptive Interaction Network for Human Motion Prediction During Human-Robot Collaboration | http://arxiv.org/abs/2610.16624v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | G$^2$WAM: World Action Models for Efficient and Geometry Grounded Image-Goal Navigation | http://arxiv.org/abs/2610.16558v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-12 | All-St3R SLAM: Real-time RGB Dynamic SLAM with Pixel-wise Motion Masking | http://arxiv.org/abs/2610.16143v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-11 | Vision: "What Don't I Know About User's Preferences?" How Uncertainty Estimation Improves Proactive Assistant Alignment | http://arxiv.org/abs/2610.15948v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-10 | CAST: Real-Time Motion Capture for Any Skeleton Topology | http://arxiv.org/abs/2610.14856v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-07 | Video Prediction Policy 2: Predict Better, Act Better | http://arxiv.org/abs/2610.10270v3 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-09 | Evo-World: A Lightweight Vision-Language-Action Model with Future Motion Prediction via Optical-Flow Supervision | http://arxiv.org/abs/2610.12936v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-08 | Trajectory Prediction for Autonomous Driving in Road Construction Zones Using Human-in-the-Loop Driving Data | http://arxiv.org/abs/2610.12747v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-07 | Video Prediction Policy 2: Predict Better, Act Better | http://arxiv.org/abs/2610.10270v2 | <details><summary>展开</summary>待生成</details> |
