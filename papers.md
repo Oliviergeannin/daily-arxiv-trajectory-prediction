@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-15 | ARC-SORT: Adaptive, Robust, Compensated Multi-Object Tracking with Interacting Multiple Models | http://arxiv.org/abs/2610.22306v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting | http://arxiv.org/abs/2610.22215v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-15 | Trajectory Prediction Method for person under WSN with Hierarchical Envelope Adversarial Domain Adaptation | http://arxiv.org/abs/2610.21132v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-14 | Atomic-WAM: Execution-Grounded Atomic-Motion Reasoning for World Action Models | http://arxiv.org/abs/2610.20157v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-14 | Spacecraft Pose Tracking via Kinematic Prediction and Selective Event Correction | http://arxiv.org/abs/2610.19465v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-13 | LynxScenes: A Large-Scale Real-World Benchmark for Outdoor Wheel-Legged Robot Perception, Navigation, Imagination and Reconstruction | http://arxiv.org/abs/2610.18093v1 | <details><summary>展开</summary>待生成</details> |
