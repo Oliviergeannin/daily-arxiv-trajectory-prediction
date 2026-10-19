@@ -1,5 +1,6 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-16 | STRIDE: Evaluating Spatiotemporal Reasoning in Driving Edge Cases | http://arxiv.org/abs/2610.22795v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | ARC-SORT: Adaptive, Robust, Compensated Multi-Object Tracking with Interacting Multiple Models | http://arxiv.org/abs/2610.22306v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting | http://arxiv.org/abs/2610.22215v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | Trajectory Prediction Method for person under WSN with Hierarchical Envelope Adversarial Domain Adaptation | http://arxiv.org/abs/2610.21132v1 | <details><summary>展开</summary>待生成</details> |
