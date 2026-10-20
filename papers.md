@@ -1,5 +1,9 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-19 | A Semantic Knowledge Graph Construction Pipeline for Vehicle Intention Prediction in nuScenes | http://arxiv.org/abs/2610.26528v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-18 | AeroDASH: Asynchronous Vision-Language-Action Control for Continuous UAV Flight | http://arxiv.org/abs/2610.25407v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | SituHOI: Scalable Capture of Scene-Situated Full-Body Human-Object Interaction | http://arxiv.org/abs/2610.23980v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-13 | LynxScenes: A Large-Scale Real-World Benchmark for Outdoor Wheel-Legged Robot Perception, Navigation, Imagination and Reconstruction | http://arxiv.org/abs/2610.18093v2 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-16 | STRIDE: Evaluating Spatiotemporal Reasoning in Driving Edge Cases | http://arxiv.org/abs/2610.22795v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | ARC-SORT: Adaptive, Robust, Compensated Multi-Object Tracking with Interacting Multiple Models | http://arxiv.org/abs/2610.22306v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-15 | FutureLift: Lifting Trajectory Proposals into Bidirectional Future Graphs for Motion Forecasting | http://arxiv.org/abs/2610.22215v1 | <details><summary>展开</summary>待生成</details> |
