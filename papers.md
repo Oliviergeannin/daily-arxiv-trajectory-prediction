@@ -1,5 +1,8 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-20 | T-WLA: Bridging Slow Vision and Fast Touch | http://arxiv.org/abs/2610.28814v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | Learning the 4D World through Point Trajectory Forecasting | http://arxiv.org/abs/2610.28594v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-20 | Gaze2HOI: Gaze-Aware Intention Disambiguation for Egocentric Hand-Object Interaction Forecasting | http://arxiv.org/abs/2610.27877v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-19 | A Semantic Knowledge Graph Construction Pipeline for Vehicle Intention Prediction in nuScenes | http://arxiv.org/abs/2610.26528v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-18 | AeroDASH: Asynchronous Vision-Language-Action Control for Continuous UAV Flight | http://arxiv.org/abs/2610.25407v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-13 | SituHOI: Scalable Capture of Scene-Situated Full-Body Human-Object Interaction | http://arxiv.org/abs/2610.23980v1 | <details><summary>展开</summary>待生成</details> |
