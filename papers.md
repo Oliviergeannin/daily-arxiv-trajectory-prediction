@@ -1,5 +1,7 @@
 | 日期 | 标题 | 链接 | 简要总结 |
 | --- | --- | --- | --- |
+| 2026-10-24 | Real-Time Human Trajectory Prediction from RGB-D for Mobile Robots Using Bi-Mamba | http://arxiv.org/abs/2610.33916v1 | <details><summary>展开</summary>待生成</details> |
+| 2026-10-24 | Traffic-Context-Aware Driver Emotion Recognition with Expectation-Deviation-Driven Inference | http://arxiv.org/abs/2610.33713v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-21 | Unified Trajectory and 3D Pose Forecasting for Multi-Agent Sports Analysis | http://arxiv.org/abs/2610.30519v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-20 | T-WLA: Bridging Slow Vision and Fast Touch | http://arxiv.org/abs/2610.28814v1 | <details><summary>展开</summary>待生成</details> |
 | 2026-10-20 | Learning the 4D World through Point Trajectory Forecasting | http://arxiv.org/abs/2610.28594v1 | <details><summary>展开</summary>待生成</details> |
